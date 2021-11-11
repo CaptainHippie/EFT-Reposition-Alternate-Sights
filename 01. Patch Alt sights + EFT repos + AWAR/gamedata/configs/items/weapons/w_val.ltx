@@ -158,6 +158,7 @@ kill_msg_y                               = 154
 kill_msg_width                           = 78
 kill_msg_height                          = 21
 
+snd_reload_misfire				                                  = weapons\vintorez\vintorez_misfire
 
 [wpn_val_hud]:hud_base
 item_visual                              = anomaly_weapons\wpn_val\wpn_val_hud.ogf
@@ -169,13 +170,18 @@ item_orientation                         = 0.0, 0.0, 0.0
 
 hands_position                           = -0.06, -0.13, -0.05
 hands_position_16x9                      = -0.06, -0.13, -0.05
-hands_orientation                        = 0.5, 0, 0
-hands_orientation_16x9                   = 0.5, 0, 0
+hands_orientation                        = 0.5, 0, 0.3
+hands_orientation_16x9                   = 0.5, 0, 0.3
 
-aim_hud_offset_pos                       = -0.0907, 0.0528, -0.12
-aim_hud_offset_pos_16x9                  = -0.0907, 0.0528, -0.12
-aim_hud_offset_rot                       = -0.0049, 0.0081, -0.01
-aim_hud_offset_rot_16x9                  = -0.0049, 0.0081, -0.01
+aim_hud_offset_pos                       = -0.09153, 0.0528, -0.12
+aim_hud_offset_pos_16x9                  = -0.09153, 0.0528, -0.12
+aim_hud_offset_rot                       = -0.0049, 0.008, 0
+aim_hud_offset_rot_16x9                  = -0.0049, 0.008, 0
+
+lowered_hud_offset_pos			= 0.05,-0.04,-0.02
+lowered_hud_offset_pos_16x9		= 0.05,-0.04,-0.02
+lowered_hud_offset_rot			= -0.1,-0.6,0.4
+lowered_hud_offset_rot_16x9		= -0.1,-0.6,0.4
 
 gl_hud_offset_pos                        = 0, 0, 0
 gl_hud_offset_pos_16x9                   = 0, 0, 0
@@ -232,15 +238,15 @@ use_alt_aim_hud                          = true
 [wpn_val_1p29_hud]:wpn_val_hud
 item_visual                              = anomaly_weapons\wpn_val\wpn_val_1p29_hud.ogf
 
-aim_hud_offset_pos                       = -0.093, 0.019, -0.11
-aim_hud_offset_pos_16x9                  = -0.093, 0.019, -0.11
-aim_hud_offset_rot                       = -0.0049, 0.0081, -0.01
-aim_hud_offset_rot_16x9                  = -0.0049, 0.0081, -0.01
+aim_hud_offset_pos                       = -0.0945, 0.019, -0.09
+aim_hud_offset_pos_16x9                  = -0.0945, 0.019, -0.09
+aim_hud_offset_rot                       = -0.005, 0.008, 0
+aim_hud_offset_rot_16x9                  = -0.005, 0.008, 0
 
-aim_hud_offset_alt_pos                       = -0.0907, 0.0528, -0.09
-aim_hud_offset_alt_pos_16x9                  = -0.0907, 0.0528, -0.09
-aim_hud_offset_alt_rot                       = -0.0049, 0.0081, -0.01
-aim_hud_offset_alt_rot_16x9                  = -0.0049, 0.0081, -0.01
+aim_hud_offset_alt_pos                       = -0.09153, 0.0528, -0.09
+aim_hud_offset_alt_pos_16x9                  = -0.09153, 0.0528, -0.09
+aim_hud_offset_alt_rot                       = -0.0049, 0.008, 0
+aim_hud_offset_alt_rot_16x9                  = -0.0049, 0.008, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_val_kobra]:wpn_val
 1icon_layer                              = kobra
@@ -256,11 +262,41 @@ visual                                   = dynamics\weapons\wpn_val\wpn_val_kobr
 [wpn_val_kobra_hud]:wpn_val_1p29_hud
 item_visual                              = anomaly_weapons\wpn_val\wpn_val_kobra_hud.ogf
 
-aim_hud_offset_pos                       = -0.0907, 0.02, -0.08
-aim_hud_offset_pos_16x9                  = -0.0907, 0.02, -0.08
-aim_hud_offset_rot                       = -0.0049, 0.0081, -0.01
-aim_hud_offset_rot_16x9                  = -0.0049, 0.0081, -0.01
+aim_hud_offset_pos                       = -0.0916, 0.016, -0.08
+aim_hud_offset_pos_16x9                  = -0.0916, 0.016, -0.08
+aim_hud_offset_rot                       = -0.0185, 0.0081, 0
+aim_hud_offset_rot_16x9                  = -0.0185, 0.0081, 0
+;------------------------------------------------------------------------------------------------
 
+[wpn_val_pso1m21]:wpn_val
+1icon_layer                              = pso1m21
+1icon_layer_x                            = 51
+1icon_layer_y                            = 3
+
+inv_weight                               = 3.12
+
+hud                                      = wpn_val_pso1m21_hud
+
+scope_status                             = 1
+scope_dynamic_zoom                       = on
+scope_texture                            = wpn_crosshair_vss
+scope_zoom_factor                        = 15
+
+zoom_rotate_time                         = 0.25
+use_alt_aim_hud                          = true
+
+[wpn_val_pso1m21_hud]:wpn_val_hud
+item_visual                              = anomaly_weapons\wpn_val\wpn_val_hud.ogf
+
+aim_hud_offset_pos                       = -0.086, 0.019, -0.05
+aim_hud_offset_pos_16x9                  = -0.086, 0.019, -0.05
+aim_hud_offset_rot                       = 0, 0.007, 0
+aim_hud_offset_rot_16x9                  = 0, 0.007, 0
+
+aim_hud_offset_alt_pos                       = -0.0921, 0.0528, -0.08
+aim_hud_offset_alt_pos_16x9                  = -0.0921, 0.0528, -0.08
+aim_hud_offset_alt_rot                       = -0.005, 0.0085, 0
+aim_hud_offset_alt_rot_16x9                  = -0.005, 0.0085, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_val_modern]:wpn_val
 parent_section                           = wpn_val_modern
@@ -295,10 +331,10 @@ snd_reload_empty                         = weapons\val\val_sk1_reload
 [wpn_val_sk1_hud]:wpn_val_hud
 item_visual                              = anomaly_weapons\wpn_val\wpn_val_sk1_hud.ogf
 
-aim_hud_offset_pos                       = -0.0884, 0.0505, -0.11
-aim_hud_offset_pos_16x9                  = -0.0884, 0.0505, -0.11
-aim_hud_offset_rot                       = -0.0045, 0.0082, -0.01
-aim_hud_offset_rot_16x9                  = -0.0045, 0.0082, -0.01
+aim_hud_offset_pos                       = -0.0891, 0.0505, -0.11
+aim_hud_offset_pos_16x9                  = -0.0891, 0.0505, -0.11
+aim_hud_offset_rot                       = -0.0045, 0.0078, 0
+aim_hud_offset_rot_16x9                  = -0.0045, 0.0078, 0
 
 anm_hide                                 = lancew_val_holster
 anm_idle                                 = lancew_val_idle
@@ -338,13 +374,18 @@ scope_zoom_factor                        = 15
 zoom_rotate_time                         = 0.25
 use_alt_aim_hud                          = true
 
-[wpn_val_1p29_sk1_hud]:wpn_val_1p29_hud
+[wpn_val_1p29_sk1_hud]:wpn_val_sk1_hud
 item_visual                              = anomaly_weapons\wpn_val\wpn_val_1p29_sk1_hud.ogf
 
-aim_hud_offset_alt_pos                       = -0.0884, 0.0505, -0.08
-aim_hud_offset_alt_pos_16x9                  = -0.0884, 0.0505, -0.08
-aim_hud_offset_alt_rot                       = -0.002, 0.0082, -0.01
-aim_hud_offset_alt_rot_16x9                  = -0.002, 0.0082, -0.01
+aim_hud_offset_pos                       = -0.0905, 0.0145, -0.07
+aim_hud_offset_pos_16x9                  = -0.0905, 0.0145, -0.07
+aim_hud_offset_rot                       = -0.005, 0.008, 0
+aim_hud_offset_rot_16x9                  = -0.005, 0.008, 0
+
+aim_hud_offset_alt_pos                       = -0.0891, 0.0505, -0.1
+aim_hud_offset_alt_pos_16x9                  = -0.0891, 0.0505, -0.1
+aim_hud_offset_alt_rot                       = -0.0045, 0.0078, 0
+aim_hud_offset_alt_rot_16x9                  = -0.0045, 0.0078, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_val_modern_kobra]:wpn_val_modern
 1icon_layer                              = kobra
@@ -356,13 +397,13 @@ inv_weight                               = 2.9
 hud                                      = wpn_val_kobra_sk1_hud
 visual                                   = dynamics\weapons\wpn_val\wpn_val_kobra_sk1.ogf
 
-[wpn_val_kobra_sk1_hud]:wpn_val_kobra_hud
+[wpn_val_kobra_sk1_hud]:wpn_val_sk1_hud
 item_visual                              = anomaly_weapons\wpn_val\wpn_val_kobra_sk1_hud.ogf
 
-aim_hud_offset_pos                       = -0.0867, 0.0115, -0.05
-aim_hud_offset_pos_16x9                  = -0.0867, 0.0115, -0.05
-aim_hud_offset_rot                       = -0.0045, 0.0082, -0.01
-aim_hud_offset_rot_16x9                  = -0.0045, 0.0082, -0.01
+aim_hud_offset_pos                       = -0.0875, 0.0085, -0.05
+aim_hud_offset_pos_16x9                  = -0.0875, 0.0085, -0.05
+aim_hud_offset_rot                       = -0.024, 0.0082, 0
+aim_hud_offset_rot_16x9                  = -0.024, 0.0082, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_val_modern_ps01]:wpn_val_modern
 1icon_layer                              = ps01
@@ -384,44 +425,12 @@ use_alt_aim_hud                          = true
 [wpn_val_pso1_hud]:wpn_val_sk1_hud
 item_visual                              = anomaly_weapons\wpn_val\wpn_val_sk1_hud.ogf
 
-aim_hud_offset_pos                       = -0.08, 0.021, -0.1
-aim_hud_offset_pos_16x9                  = -0.08, 0.021, -0.1
-aim_hud_offset_rot                       = -0.005, 0.0082, 0
-aim_hud_offset_rot_16x9                  = -0.005, 0.0082, 0
+aim_hud_offset_pos                       = -0.0796, 0.0234, -0.07
+aim_hud_offset_pos_16x9                  = -0.0796, 0.0234, -0.07
+aim_hud_offset_rot                       = -0.005, 0.002, 0
+aim_hud_offset_rot_16x9                  = -0.005, 0.002, 0
 
-aim_hud_offset_alt_pos                       = -0.0885, 0.0505, -0.08
-aim_hud_offset_alt_pos_16x9                  = -0.0885, 0.0505, -0.08
-aim_hud_offset_alt_rot                       = -0.004, 0.0073, 0
-aim_hud_offset_alt_rot_16x9                  = -0.004, 0.0073, 0
-
-;------------------------------------------------------------------------------------------------
-[wpn_val_pso1m21]:wpn_val
-1icon_layer                              = pso1m21
-1icon_layer_x                            = 51
-1icon_layer_y                            = 3
-
-inv_weight                               = 3.12
-
-hud                                      = wpn_val_pso1m21_hud
-
-scope_status                             = 1
-scope_dynamic_zoom                       = on
-scope_texture                            = wpn_crosshair_vss
-scope_zoom_factor                        = 15
-
-zoom_rotate_time                         = 0.25
-use_alt_aim_hud                          = true
-
-[wpn_val_pso1m21_hud]:wpn_val_hud
-item_visual                              = anomaly_weapons\wpn_val\wpn_val_hud.ogf
-
-aim_hud_offset_pos                       = -0.085, 0.018, -0.08
-aim_hud_offset_pos_16x9                  = -0.085, 0.018, -0.08
-aim_hud_offset_rot                       = -0.0049, 0.0081, -0.01
-aim_hud_offset_rot_16x9                  = -0.0049, 0.0081, -0.01
-
-aim_hud_offset_alt_pos                       = -0.0914, 0.0517, -0.08
-aim_hud_offset_alt_pos_16x9                  = -0.0914, 0.0517, -0.08
-aim_hud_offset_alt_rot                       = -0.0055, 0.0086, -0.01
-aim_hud_offset_alt_rot_16x9                  = -0.0055, 0.0086, -0.01
-
+aim_hud_offset_alt_pos                       = -0.0891, 0.0505, -0.1
+aim_hud_offset_alt_pos_16x9                  = -0.0891, 0.0505, -0.1
+aim_hud_offset_alt_rot                       = -0.0045, 0.0078, 0
+aim_hud_offset_alt_rot_16x9                  = -0.0045, 0.0078, 0

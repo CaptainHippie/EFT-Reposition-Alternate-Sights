@@ -163,6 +163,8 @@ kill_msg_y                               = 0
 kill_msg_width                           = 82
 kill_msg_height                          = 28
 
+snd_reload				                                          = weapons\g3\g3_reload
+snd_reload_empty				                                  = weapons\g3\g3_reload_empty
 
 [wpn_g3sg1_new_hud]:hud_base
 item_visual                              = anomaly_weapons\wpn_g3sg1\wpn_g3sg1_hud.ogf
@@ -177,15 +179,15 @@ hands_position_16x9                      = -0.07, -0.18, -0.08
 hands_orientation                        = -0.5, -1.5, 0.15
 hands_orientation_16x9                   = -0.5, -1.5, 0.15
 
-aim_hud_offset_pos                       = -0.0835, 0.003, -0.05
-aim_hud_offset_pos_16x9                  = -0.0835, 0.003, -0.05
+aim_hud_offset_pos                       = -0.0835, 0.003, -0.064
+aim_hud_offset_pos_16x9                  = -0.0835, 0.003, -0.064
 aim_hud_offset_rot                       = -0.028, -0.0095, 0.0
 aim_hud_offset_rot_16x9                  = -0.028, -0.0095, 0.0
 
-aim_hud_offset_alt_pos	  		 = -0.0835, 0.031, -0.06
-aim_hud_offset_alt_pos_16x9 		 = -0.0835, 0.031, -0.06
-aim_hud_offset_alt_rot			 = -0.031, -0.0092, 0
-aim_hud_offset_alt_rot_16x9 		 = -0.031, -0.0092, 0
+aim_hud_offset_alt_pos	  				= -0.0835, 0.031, -0.06
+aim_hud_offset_alt_pos_16x9 		 	= -0.0835, 0.031, -0.06
+aim_hud_offset_alt_rot			 		= -0.031, -0.0092, 0
+aim_hud_offset_alt_rot_16x9 		 	= -0.031, -0.0092, 0
 
 gl_hud_offset_pos                        = 0, 0, 0
 gl_hud_offset_pos_16x9                   = 0, 0, 0
@@ -403,6 +405,11 @@ aim_hud_offset_alt_pos_16x9 		 = -0.0835, 0.0114, 0.01
 aim_hud_offset_alt_rot			 = -0.0542, -0.0096, 0
 aim_hud_offset_alt_rot_16x9 		 = -0.0542, -0.0096, 0
 
+lowered_hud_offset_pos			= 0.06, -0.03, -0.02
+lowered_hud_offset_pos_16x9		= 0.06, -0.03, -0.02
+lowered_hud_offset_rot			= -0.05, -0.7, 0.4
+lowered_hud_offset_rot_16x9		= -0.05, -0.7, 0.4
+
 gl_hud_offset_pos                        = 0, 0, 0
 gl_hud_offset_pos_16x9                   = 0, 0, 0
 gl_hud_offset_rot                        = 0, 0, 0
@@ -429,7 +436,7 @@ shell_point                              = 0.021, 0.099, 0.286
 
 fire_bone                                = muzzle
 fire_bone2                               = wpn_body
-fire_point                               = 0, 0, 0
+fire_point                               = 0, -0.005, 0
 fire_point2                              = 0, 0, 0
 
 freelook_z_offset_mul					 = 0.5

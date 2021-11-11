@@ -163,6 +163,8 @@ kill_msg_y                               = 0
 kill_msg_width                           = 82
 kill_msg_height                          = 28
 
+snd_reload_empty				                                  = weapons\m16\m16_reload_empty
+snd_reload_misfire				                                  = weapons\m16\m16_misfire
 
 [wpn_m16_hud]:hud_base
 item_visual                              = anomaly_weapons\wpn_m16\wpn_m16_hud.ogf
@@ -181,6 +183,11 @@ aim_hud_offset_pos                       = -0.0845, 0.0265, -0.005
 aim_hud_offset_pos_16x9                  = -0.0845, 0.0265, -0.005
 aim_hud_offset_rot                       = -0.0255, -0.0005, -0.005
 aim_hud_offset_rot_16x9                  = -0.0255, -0.0005, -0.005
+
+lowered_hud_offset_pos			= 0.05,-0.04,-0.02
+lowered_hud_offset_pos_16x9		= 0.05,-0.04,-0.02
+lowered_hud_offset_rot			= -0.1,-0.6,0.4
+lowered_hud_offset_rot_16x9		= -0.1,-0.6,0.4
 
 gl_hud_offset_pos                        = -0.083, -0.055, -0.07
 gl_hud_offset_pos_16x9                   = -0.083, -0.055, -0.07
@@ -233,7 +240,7 @@ shell_point                              = 0, 0, 0
 
 fire_bone                                = muzzle
 fire_bone2                               = muzzle_gl
-fire_point                               = 0, 0, 0
+fire_point                               = 0, -0.005, 0
 fire_point2                              = 0, 0, 0
 
 freelook_z_offset_mul					 = 0.1
@@ -373,3 +380,4 @@ gl_hud_offset_pos_16x9                   = -0.0865, -0.0205, -0.07
 gl_hud_offset_rot                        = -0.0857, 0.0037, -0.008
 gl_hud_offset_rot_16x9                   = -0.0857, 0.0037, -0.008
 
+fire_point                               = 0, -0.005, 0

@@ -162,6 +162,7 @@ control_inertion_factor = 1.0f
         kill_msg_width              = 64
         kill_msg_height             = 30
  
+	snd_reload_empty				                                  = weapons\fn2000\fn2000_reload_empty
 
 [wpn_fn2000_hud]:hud_base
         item_visual                 = anomaly_weapons\wpn_fn2000\wpn_fn2000_hud.ogf
@@ -181,10 +182,15 @@ control_inertion_factor = 1.0f
         aim_hud_offset_rot          = -0.02, 0.0185, 0
         aim_hud_offset_rot_16x9     = -0.02, 0.0185, 0
         
-	aim_hud_offset_alt_pos	  	 = -0.1006, 0.002, -0.11
-	aim_hud_offset_alt_pos_16x9 	 = -0.1006, 0.002, -0.11
-	aim_hud_offset_alt_rot		 = 0.001, 0.0174, 0
-	aim_hud_offset_alt_rot_16x9 	 = 0.001, 0.0174, 0
+		aim_hud_offset_alt_pos	  	 = -0.1006, 0.002, -0.11
+		aim_hud_offset_alt_pos_16x9 	 = -0.1006, 0.002, -0.11
+		aim_hud_offset_alt_rot		 = 0.001, 0.0174, 0
+		aim_hud_offset_alt_rot_16x9 	 = 0.001, 0.0174, 0
+
+		lowered_hud_offset_pos			= 0.05,-0.04,-0.02
+		lowered_hud_offset_pos_16x9		= 0.05,-0.04,-0.02
+		lowered_hud_offset_rot			= -0.1,-0.6,0.4
+		lowered_hud_offset_rot_16x9		= -0.1,-0.6,0.4
 
         gl_hud_offset_pos           = -0.16, -0.17, 0.0
         gl_hud_offset_pos_16x9      = -0.16, -0.17, 0.0
@@ -212,7 +218,7 @@ control_inertion_factor = 1.0f
         
         fire_bone                   = muzzle
         fire_bone2                  = muzzle_gl
-        fire_point                  = 0, 0, 0
+        fire_point                  = 0.012, -0.008, 0.06
         fire_point2                 = 0, 0, 0
  
 		freelook_z_offset_mul		= 0.65
