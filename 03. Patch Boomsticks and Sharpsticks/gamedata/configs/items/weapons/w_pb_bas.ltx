@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------------------------
-[wpn_pb]:identity_immunities,weapon_probability,default_weapon_params,wpn_pm_sounds
+[wpn_pb_bas]:identity_immunities,weapon_probability,default_weapon_params,wpn_pm_sounds
 GroupControlSection                      = spawn_group
 $npc                                     = on
 $prefetch                                = 8
@@ -33,8 +33,8 @@ inv_weight                               = 1.15
 cost                                     = 6580
 repair_type                              = pistol
 
-hud                                      = wpn_pb_hud
-visual                                   = dynamics\weapons\wpn_pb\wpn_pb.ogf
+hud                                      = wpn_pb_bas_hud
+visual                                   = dynamics\weapons\wpn_pb_bas\wpn_pb.ogf
 position                                 = -0.021, -0.07, 0.0
 orientation                              = 0, 0, 0
 fire_point                               = 0.0, 0.104, 0.273
@@ -155,9 +155,9 @@ snd_reload				= eft_wp\pm\reload, 1.0
 snd_reload_empty		= eft_wp\pm\reload_empty, 1.0
 snd_bore				= eft_wp\sil
 ;----------------------------------------------------------------------HUD------------------------------------------------------------------------------
-[wpn_pb_hud]:hud_base
+[wpn_pb_bas_hud]:hud_base
 
-item_visual                              = dynamics\weapons\wpn_pb\wpn_pb_hud.ogf
+item_visual                              = dynamics\weapons\wpn_pb_bas\wpn_pb_hud.ogf
 
 attach_place_idx                         = 0
 
@@ -216,14 +216,14 @@ anm_idle_sprint_empty			= pm_new_eft_ins_idle_sprint, idle_empty
 anm_bore						= pm_new_eft_ins_idle_aim, idle
 anm_bore_empty					= pm_new_eft_ins_idle_aim, idle
 
-shell_point						= 0,0.036,0 ;0.013,0.046,0.463
+shell_point						= 0.04,-0.03,0.25
 shell_bone              	    = wpn_body
 
 fire_point			            = -0.01, 0.016, 0.018
 fire_bone               	    = muzzle
 
 ;------------------------------------------------------------------------------------------------
-[wpn_pb_custom]:wpn_pb
+[wpn_pb_bas_custom]:wpn_pb_bas
 inv_grid_x                               = 73
 inv_name                                 = st_wpn_pb_bas_custom
 inv_name_short                           = st_wpn_pb_bas_custom
@@ -236,8 +236,8 @@ inv_grid_x         = 62
 inv_grid_y         = 6
 
 
-hud                                      = wpn_pb_sk1_hud
-visual                                   = dynamics\weapons\wpn_pb\wpn_pb_sk1.ogf
+hud                                      = wpn_pb_bas_sk1_hud
+visual                                   = dynamics\weapons\wpn_pb_bas\wpn_pb_sk1.ogf
 
 installed_upgrades                       = up_fiftha_pb
 
@@ -254,6 +254,6 @@ condition_queue_shot_dec                 = 0.0016
 condition_shot_dec                       = 0.0016
 
 
-[wpn_pb_sk1_hud]:wpn_pb_hud
-item_visual                              = dynamics\weapons\wpn_pb\wpn_pb_hud.ogf
+[wpn_pb_bas_sk1_hud]:wpn_pb_bas_hud
+item_visual                              = dynamics\weapons\wpn_pb_bas\wpn_pb_hud.ogf
 

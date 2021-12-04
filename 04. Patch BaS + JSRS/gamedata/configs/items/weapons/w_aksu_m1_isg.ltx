@@ -39,7 +39,7 @@ cost 					= 86880
         visual                      = dynamics\weapons\wpn_ak74u_m1_isg\wpn_ak74u_m1_isg_world.ogf
         position                    = -0.026, 0.0, 0.0
         orientation                 = 0, 0, 0
-        fire_point                  = 0, 0.0, 0.656
+        fire_point                  = 0, 0.0, 0.45
         fire_point2                 = 0, 0.161, 0.583
         strap_bone0                 = bip01_spine2
         strap_bone1                 = bip01_spine1
@@ -172,6 +172,8 @@ control_inertion_factor = 1.0f
 		
 scope_zoom_factor_alt             = 0
 
+
+laser_status = true
 ;---------------------------------------------------------------------SND-------------------------------------------------------------------------------
 snd_bore                = $no_sound
 snd_draw                = weapons\ak74\ak74_draw
@@ -281,9 +283,9 @@ anm_switch_mode                  		 = blnd_ak74m_firemode, idle, 1
 ;-----
 
         
-        shell_bone                  = gilza
+        shell_bone			        = wpn_body
         shell_dir                   = 0, 1, 0
-        shell_point                 = 0,0,0
+        shell_point			        = 0,0.02,0.12
         
         fire_bone                   = wpn_body
         fire_bone2                  = wpn_body

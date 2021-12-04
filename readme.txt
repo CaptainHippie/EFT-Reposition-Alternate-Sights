@@ -1,4 +1,4 @@
-===EFT REPOSITION UPDATED 1.4===
+===EFT REPOSITION UPDATED 1.6===
 
 Installation :
 Important Note : use Mod organizer 2 using this MO2 guide. Don't mess up your game with JSGME or manual installation and come complaining to mod authors
@@ -17,6 +17,8 @@ You have to follow this precise load order below and install any other weapon ad
 10. Apply BaS JSRS patch 04. Patch BaS + JSRS if you have JSRS installed11. Optional but highly recommended, install Firemode switcher sound because its better and I commented out the ones from BaS12. Optional individual weapon mods like G36 pack, Saiga replacer, SVD replacer, Abakan replacer,  must only be installed after all this
 
 Changelog:
+1.6 - Updated to BaS latest release(Nov 28), balanced the pka(pip scope) sights on all weapons
+1.5 - fixed vityaz ironsight, fixed PDAs and adjusted binocs
 1.4 - Added Hk417 and AUG A3 to the list. These were disabled by default but its easy to renable it. Also updated description to improve compatibility
 1.3 - Major Update, merged original EFT reposition with mine so you dont need to install it and I renamed the mod. Fixed fire point and lowered weapon positions, added vanilla stats patch for blindsides. Removed dependancy on weapon_sounds ltx for AWAR.
 v1.2 - Added EFT like alternate aims to all pistols, Updated to latest Blindsides reanim and Updated to latest Boomsticks and sharpsticks version
@@ -26,5 +28,5 @@ v1.1 - readjusted sights for all weapons, updated to the latest blindsides reani
 Credits :
 Apathy knight for original EFT reposition mod which is now integrated with my fixes
 Some of the previous authors for the general idea
-Cr3pis for the screenshots and okp2 crosshair
+Cr3pis for the screenshots
 SD and Maid for help with testing and stuff

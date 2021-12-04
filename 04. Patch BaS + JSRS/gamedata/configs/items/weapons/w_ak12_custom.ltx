@@ -40,7 +40,7 @@ cost 					= 70000
         visual                      = dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
         position                    = -0.026, 0.0, 0.0
         orientation                 = 0, 0, 0
-        fire_point                  = 0, 0.218, 0.656
+        fire_point                  = 0, 0.0, 0.656
         fire_point2                 = 0, 0.161, 0.583
         strap_bone0                 = bip01_spine2
         strap_bone1                 = bip01_spine1
@@ -175,14 +175,14 @@ grenade_flame_particles                  = weapons\generic_weapon01
 smoke_particles				             = ghost_particles\weapons\flame_eft_ak           ;particles remade incomp.
 silencer_smoke_particles   		         = ghost_particles\weapons\generic_smoke_eft_sil  ;particles remade incomp.
 ;---------------------------------------------------------------------SND-------------------------------------------------------------------------------
-snd_bore                = $no_sound
+snd_bore                = weapons\aksu_prince\aksu_tact_boring
 snd_draw                = weapons\ak12custom\draw
 snd_holster             = weapons\ak12custom\hide
 
 snd_empty               = weapons\ak12custom\ak12_empty
-snd_reload              = weapons\ak12custom\ak12_m1_reload
-snd_reload_empty        = weapons\ak12custom\ak12_m1_reload_empty
-snd_reload_misfire      = weapons\ak12custom\ak12_m1_misfire
+snd_reload              = weapons\ak104_tac_prince\ak104a_reload
+snd_reload_empty        = weapons\ak104_tac_prince\ak104a_reload_empty
+snd_reload_misfire      = weapons\ak104_tac_prince\ak104_unjam
 
 ;snd_shoot               = eft_wp\ak74\ak74_shoot_mono\ak74_shoot_1, 4.8 ;ak74_shoot
 ;snd_shoot1              = eft_wp\ak74\ak74_shoot_mono\ak74_shoot_2, 4.8
@@ -209,7 +209,7 @@ snd_reload_misfire      = weapons\ak12custom\ak12_m1_misfire
 ;snd_silncer_shot5       = eft_wp\ak74\ak74_shoot_mono\ak74_shoot_sil_6, 2.1
 ;snd_silncer_shot6       = eft_wp\ak74\ak74_shoot_mono\ak74_shoot_sil_7, 2.1
 
-;snd_switch_mode			= weapons\generic\switch_mode
+snd_switch_mode			= weapons\ru556\ru556_firemode
 ;---------------------------------------------------------------------HUD-------------------------------------------------------------------------------
 [wpn_ak12_custom_hud]:hud_base
 
@@ -225,37 +225,38 @@ snd_reload_misfire      = weapons\ak12custom\ak12_m1_misfire
         lean_hud_offset_rot         = 0, 0, 0
 		
 ;--------
-hands_position                           = 0.01, 0.005, -0.17
-hands_position_16x9                      = 0.01, 0.005, -0.17
-hands_orientation                        = -0.5, -0.5, 0
-hands_orientation_16x9                   = -0.5, -0.5, 0
+hands_position                           = -0.002, -0.005, 0.054
+hands_position_16x9                      = -0.002, -0.005, 0.054
+hands_orientation                        = -1.5, 0.3, 5.2
+hands_orientation_16x9                   = -1.5, 0.3, 5.2
 
-aim_hud_offset_pos                       = -0.07675, 0.0228, -0.015
-aim_hud_offset_pos_16x9                  = -0.07675, 0.0228, -0.015
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.019, -0.03
+aim_hud_offset_pos_16x9                  = -0.05786, 0.019, -0.03
+aim_hud_offset_rot                       = -0.0104, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.0104, -0.0275, 0
 
 lowered_hud_offset_pos			= 0.065, -0.036, -0.02
 lowered_hud_offset_pos_16x9		= 0.065, -0.036, -0.02
 lowered_hud_offset_rot			= -0.1, -0.63, 0.4
 lowered_hud_offset_rot_16x9		= -0.1, -0.63, 0.4
 
-item_position				= 0,0,0
-item_orientation			= 0,0,0
+item_position				= -0.000020,0.000203,-0.000002
+item_orientation			= -0.076388,-1.117577,0.009775
 ;-------		
 
-anm_show				        = ak12_mono_ins_vgrip_draw
-anm_hide                		= ak12_mono_ins_vgrip_hide
-anm_idle                		= ak12_mono_ins_vgrip_idle
-anm_idle_sprint         		= ak12_mono_ins_vgrip_idle_sprint
-anm_idle_moving         		= ak12_mono_ins_vgrip_idle_moving
-anm_idle_moving_crouch			= ak12_mono_ins_vgrip_idle_crouch
-anm_shots               		= ak12_mono_ins_vgrip_shoot, shoot
-anm_reload	        		    = ak12_mono_ins_vgrip_reload, reload
-anm_reload_empty	        	= ak12_mono_ins_vgrip_reload_empty, reload_empty
-anm_reload_misfire			    = ak12_mono_ins_vgrip_misfire, misfire
-anm_idle_aim            		= ak12_mono_ins_vgrip_idle_aim
-anm_bore                        = ak74_eft_ins_vgrip_idle_bore
+anm_show			            = wpn_hand_ak_tact_in
+anm_hide                		= wpn_hand_ak_tact_out
+anm_idle                		= wpn_hand_ak_tact_idle
+anm_idle_sprint         		= wpn_hand_aksu_tact_run
+anm_idle_moving         		= wpn_hand_ak_tact_walk, 1.5
+anm_idle_moving_crouch			= wpn_hand_ak_tact_walk
+anm_shots               		= wpn_hand_ak_tact_shoot, wpn_ak_tact_shoot
+anm_shots_aim              		= wpn_hand_aksu_tact_run
+anm_reload              		= wpn_hand_ak_tact_reload, wpn_ak_tact_reload 
+anm_reload_empty        		= wpn_hand_ak_tact_reload_empty, wpn_ak_tact_reload_empty
+anm_idle_aim            		= wpn_hand_ak_tact_idle_aim
+anm_bore                        = wpn_hand_ak_tact_boring
+anm_reload_misfire			    = wpn_hand_ak_tact_misfire, wpn_ak_tact_misfire
         
         shell_bone                  = gilza
         shell_dir                   = 0, 1, 0
@@ -269,11 +270,7 @@ anm_bore                        = ak74_eft_ins_vgrip_idle_bore
         fire_point2			= 0.000000,-0.029000,0.575000
  
 		freelook_z_offset_mul		= 0.7
-		
-scope_zoom_factor_alt             = 0
-
-use_alt_aim_hud                   = true	
- 
+		 
 ;--------------------------------------------------------------------Addons-----------------------------------------------------------------------------
 [wpn_ak12_custom_acog]:wpn_ak12_custom
 
@@ -295,10 +292,10 @@ hud					                               = wpn_ak12_custom_acog_hud
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_acog_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.003, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.003, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.0579, -0.003, -0.1
+aim_hud_offset_pos_16x9                  = -0.0579, -0.003, -0.1
+aim_hud_offset_rot                       = -0.02, -0.028, 0
+aim_hud_offset_rot_16x9                  = -0.02, -0.028, 0
 ;----------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_eot]:wpn_ak12_custom
 $spawn                                             = "weapons\ak12_eot"
@@ -310,16 +307,14 @@ inv_weight                                         = 3.400
 
 visual                                             = dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
 
-
-
 [wpn_ak12_custom_eot_hud]:wpn_ak12_custom_hud
 
 item_visual = dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_eot_hud.ogf
 
-aim_hud_offset_pos                       = -0.0768, -0.007, -0.015
-aim_hud_offset_pos_16x9                  = -0.0768, -0.007, -0.015
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, -0.003, -0.05
+aim_hud_offset_pos_16x9                  = -0.05786, -0.003, -0.05
+aim_hud_offset_rot                       = 0.015, -0.0275, 0
+aim_hud_offset_rot_16x9                  = 0.015, -0.0275, 0
 ;----------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_specter]:wpn_ak12_custom
 $spawn					= "weapons\ak12_custom_specter"
@@ -347,15 +342,15 @@ use_alt_aim_hud                   = true
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_specter_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.005, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.005, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.008, -0.106
+aim_hud_offset_pos_16x9                  = -0.05786, 0.008, -0.106
+aim_hud_offset_rot                       = 0.025, -0.0275, 0
+aim_hud_offset_rot_16x9                  = 0.025, -0.0275, 0
 
-aim_hud_offset_alt_pos                       = -0.07685, -0.0197, -0.07
-aim_hud_offset_alt_pos_16x9                  = -0.07685, -0.0197, -0.07
-aim_hud_offset_alt_rot                       = -0.0065, -0.0082, 0
-aim_hud_offset_alt_rot_16x9                  = -0.0065, -0.0082, 0
+aim_hud_offset_alt_pos                       = -0.05786, -0.0213, -0.07
+aim_hud_offset_alt_pos_16x9                  = -0.05786, -0.0213, -0.07
+aim_hud_offset_alt_rot                       = -0.0015, -0.0272, 0
+aim_hud_offset_alt_rot_16x9                  = -0.0015, -0.0272, 0
 -------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_c-more]:wpn_ak12_custom
 $spawn					= "weapons\ak12_custom_c-more"
@@ -374,10 +369,10 @@ inv_weight                                         = 3.400
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_c-more_hud.ogf
 
-aim_hud_offset_pos                       = -0.0773, 0.0085, -0.015
-aim_hud_offset_pos_16x9                  = -0.0773, 0.0085, -0.015
-aim_hud_offset_rot                       = 0.003, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = 0.003, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.007, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, 0.007, -0.06
+aim_hud_offset_rot                       = 0.005, -0.0285, 0
+aim_hud_offset_rot_16x9                  = 0.005, -0.0285, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_0kp2]:wpn_ak12_custom
 $spawn					= "weapons\ak12_custom_0kp2"
@@ -396,12 +391,13 @@ inv_weight                                         = 3.300
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_0kp2_hud.ogf
 
-aim_hud_offset_pos                       = -0.0735, 0.009, -0.015
-aim_hud_offset_pos_16x9                  = -0.0735, 0.009, -0.015
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.056, 0.008, -0.06
+aim_hud_offset_pos_16x9                  = -0.056, 0.008, -0.06
+aim_hud_offset_rot                       = -0.0044, -0.0235, 0
+aim_hud_offset_rot_16x9                  = -0.0044, -0.0235, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_ac10632]:wpn_ak12_custom
+
 $spawn					= "weapons\ak12_custom_ac10632"
 
 visual					= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
@@ -418,12 +414,13 @@ inv_weight                                         = 3.215
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_ac10632_hud.ogf
 
-aim_hud_offset_pos                       = -0.0769, 0.0069, -0.015
-aim_hud_offset_pos_16x9                  = -0.0769, 0.0069, -0.015
-aim_hud_offset_rot                       = -0.002, -0.009, 0.0
-aim_hud_offset_rot_16x9                  = -0.002, -0.009, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.005, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, 0.005, -0.06
+aim_hud_offset_rot                       = 0, -0.0275, 0
+aim_hud_offset_rot_16x9                  = 0, -0.0275, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_d0cter]:wpn_ak12_custom
+
 $spawn					= "weapons\ak12_custom_d0cter"
 
 visual					= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
@@ -440,10 +437,10 @@ inv_weight                                         = 3.130
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_docter_hud.ogf
 
-aim_hud_offset_pos                       = -0.07685, 0.0208, -0.035
-aim_hud_offset_pos_16x9                  = -0.07685, 0.0208, -0.035
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.017, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, 0.017, -0.06
+aim_hud_offset_rot                       = -0.01, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.01, -0.0275, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_mepro]:wpn_ak12_custom
 
@@ -461,10 +458,10 @@ inv_weight                                         = 3.472
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_mepro_hud.ogf
 
-aim_hud_offset_pos                       = -0.0761, -0.00155, -0.015
-aim_hud_offset_pos_16x9                  = -0.0761, -0.00155, -0.015
-aim_hud_offset_rot                       = -0.0073, -0.0127, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0127, 0.0
+aim_hud_offset_pos                       = -0.05795, -0.003, -0.06
+aim_hud_offset_pos_16x9                  = -0.05795, -0.003, -0.06
+aim_hud_offset_rot                       = -0.005, -0.029, 0
+aim_hud_offset_rot_16x9                  = -0.005, -0.029, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_leupold]:wpn_ak12_custom
 
@@ -489,17 +486,13 @@ scope_dynamic_zoom                                 = on
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_leupold_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.0005, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.0005, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
-
-aim_hud_offset_alt_pos                       = 0.002, 0.037, -0.015
-aim_hud_offset_alt_pos_16x9                  = 0.002, 0.037, -0.015
-aim_hud_offset_alt_rot                       = -0.043, -0.039, -0.8
-aim_hud_offset_alt_rot_16x9                  = -0.043, -0.039, -0.8
+aim_hud_offset_pos                       = -0.05786, -0.002, -0.08
+aim_hud_offset_pos_16x9                  = -0.05786, -0.002, -0.08
+aim_hud_offset_rot                       = -0.005, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.005, -0.0275, 0
 -------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_aimpoint]:wpn_ak12_custom
+
 $spawn					= "weapons\ak12_custom_aimpoint"
 
 visual					= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
@@ -516,12 +509,13 @@ inv_weight                                         = 3.230
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_aimpoint_hud.ogf
 
-aim_hud_offset_pos                       = -0.0769, 0.001, -0.015
-aim_hud_offset_pos_16x9                  = -0.0769, 0.001, -0.015
-aim_hud_offset_rot                       = -0.007, -0.0095, 0.0
-aim_hud_offset_rot_16x9                  = -0.007, -0.0095, 0.0
+aim_hud_offset_pos                       = -0.0579, -0.003, -0.06
+aim_hud_offset_pos_16x9                  = -0.0579, -0.003, -0.06
+aim_hud_offset_rot                       = -0.0113, -0.0283, 0
+aim_hud_offset_rot_16x9                  = -0.0113, -0.0283, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_aim_low]:wpn_ak12_custom
+
 $spawn					= "weapons\ak12_custom_aim_low"
 
 visual					= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
@@ -538,10 +532,10 @@ inv_weight                                         = 3.205
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_aim_low_hud.ogf
 
-aim_hud_offset_pos                       = -0.0767, 0.01943, -0.035
-aim_hud_offset_pos_16x9                  = -0.0767, 0.01943, -0.035
-aim_hud_offset_rot                       = -0.0073, -0.009, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.009, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.0147, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, 0.0147, -0.06
+aim_hud_offset_rot                       = -0.011, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.011, -0.0275, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_point_aimpro]:wpn_ak12_custom
 
@@ -559,10 +553,10 @@ inv_weight                                         = 3.430
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_aimpoint_pro_hud.ogf
 
-aim_hud_offset_pos                       = -0.0766, 0.0004, -0.015
-aim_hud_offset_pos_16x9                  = -0.0766, 0.0004, -0.015
-aim_hud_offset_rot                       = -0.0085, -0.0092, 0
-aim_hud_offset_rot_16x9                  = -0.0085, -0.0092, 0
+aim_hud_offset_pos                       = -0.0576, -0.0032, -0.06
+aim_hud_offset_pos_16x9                  = -0.0576, -0.0032, -0.06
+aim_hud_offset_rot                       = -0.011, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.011, -0.0275, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_ekp8_18]:wpn_ak12_custom
 
@@ -580,10 +574,10 @@ inv_weight                                         = 3.373
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_ekp8_18_hud.ogf
 
-aim_hud_offset_pos                       = -0.07645, -0.0059, -0.015
-aim_hud_offset_pos_16x9                  = -0.07645, -0.0059, -0.015
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, -0.008, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, -0.008, -0.06
+aim_hud_offset_rot                       = -0.0056, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.0056, -0.0275, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_e0t2]:wpn_ak12_custom
 
@@ -603,12 +597,13 @@ inv_weight                                         = 3.327
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_e0t2_hud.ogf
 
-aim_hud_offset_pos                       = -0.07692, 0.0082, -0.015
-aim_hud_offset_pos_16x9                  = -0.07692, 0.0082, -0.015
-aim_hud_offset_rot                       = 0.0105, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = 0.0105, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.0035, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, 0.0035, -0.06
+aim_hud_offset_rot                       = 0.005, -0.0275, 0
+aim_hud_offset_rot_16x9                  = 0.005, -0.0275, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_pn23]:wpn_ak12_custom
+
 $spawn					= "weapons\ak12_custom_pn23"
 
 visual					= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
@@ -624,8 +619,6 @@ hud					= wpn_ak12_custom_pn23_hud
 
 nv_scope_status = 1
 
-nv_scope_status = 1                                            ;for maslina
-
 inv_weight                                         = 3.749
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_pn23
@@ -636,15 +629,18 @@ zoom_rotate_time                                   = 0.25
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_pn23_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, -0.007, -0.035
-aim_hud_offset_pos_16x9                  = -0.07675, -0.007, -0.035
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, -0.009, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, -0.009, -0.06
+aim_hud_offset_rot                       = -0.003, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.003, -0.0275, 0
 
-lowered_hud_offset_pos			= 0.05, -0.06, -0.02
-lowered_hud_offset_pos_16x9		= 0.05, -0.06, -0.02
+lowered_hud_offset_pos			= 0.085, -0.05, -0.02
+lowered_hud_offset_pos_16x9		= 0.085, -0.05, -0.02
+lowered_hud_offset_rot			= -0.1, -0.68, 0.4
+lowered_hud_offset_rot_16x9		= -0.1, -0.68, 0.4
 -------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_gauss_sight]:wpn_ak12_custom
+
 $spawn					= "weapons\ak12_custom_gauss_sight"
 
 visual					= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
@@ -667,15 +663,11 @@ scope_dynamic_zoom                                 = on
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_gauss_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.014, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.014, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.0581, 0.0128, -0.05
+aim_hud_offset_pos_16x9                  = -0.0581, 0.0128, -0.05
+aim_hud_offset_rot                       = -0.002, -0.029, 0
+aim_hud_offset_rot_16x9                  = -0.002, -0.029, 0
 
-aim_hud_offset_alt_pos                       = 0.002, 0.037, -0.015
-aim_hud_offset_alt_pos_16x9                  = 0.002, 0.037, -0.015
-aim_hud_offset_alt_rot                       = -0.043, -0.039, -0.8
-aim_hud_offset_alt_rot_16x9                  = -0.043, -0.039, -0.8
 -------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_deltapoint]:wpn_ak12_custom
 
@@ -697,10 +689,10 @@ scope_dynamic_zoom = off
 
 item_visual                	= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_deltapoint_hud.ogf
 
-aim_hud_offset_pos                       = -0.0767, 0.023, -0.015
-aim_hud_offset_pos_16x9                  = -0.0767, 0.023, -0.015
-aim_hud_offset_rot                       = 0.012, -0.0106, 0.0
-aim_hud_offset_rot_16x9                  = 0.012, -0.0106, 0.0
+aim_hud_offset_pos                       = -0.0577, 0.018, -0.06
+aim_hud_offset_pos_16x9                  = -0.0577, 0.018, -0.06
+aim_hud_offset_rot                       = 0.008, -0.0289, 0
+aim_hud_offset_rot_16x9                  = 0.008, -0.0289, 0
 ;----------------------------------------------------------------------------------------
 [wpn_ak12_custom_rmr]:wpn_ak12_custom
 
@@ -714,18 +706,14 @@ hud				= wpn_ak12_custom_rmr_hud
 
 visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak12_custom_rmr_hud]:wpn_ak12_custom_hud
 
 item_visual                	= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_rmr_hud.ogf
 
-aim_hud_offset_pos                       = -0.0769, 0.01775, -0.035
-aim_hud_offset_pos_16x9                  = -0.0769, 0.01775, -0.035
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.017, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, 0.017, -0.06
+aim_hud_offset_rot                       = 0, -0.0275, 0
+aim_hud_offset_rot_16x9                  = 0, -0.0275, 0
 ;--------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_compm4s]:wpn_ak12_custom
 
@@ -745,12 +733,13 @@ inv_weight                               = 3.480
 
 item_visual                		= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_compm4s_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.00285, -0.015
-aim_hud_offset_pos_16x9                  = -0.07675, 0.00285, -0.015
-aim_hud_offset_rot                       = -0.0085, -0.0094, 0.0
-aim_hud_offset_rot_16x9                  = -0.0085, -0.0094, 0.0
+aim_hud_offset_pos                       = -0.05786, -0.0012, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, -0.0012, -0.06
+aim_hud_offset_rot                       = -0.015, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.015, -0.0275, 0
 ;--------------------------------------------------------------------------------------------
 [wpn_ak12_custom_rakurs]:wpn_ak12_custom
+
 $spawn             			= "weapons\wpn_ak12_custom_rakurs"
 
 hud					= wpn_ak12_custom_rakurs_hud
@@ -767,12 +756,13 @@ inv_weight                               = 3.600
 
 item_visual                		= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_rakurs_hud.ogf
 
-aim_hud_offset_pos                       = -0.07685, 0.014, -0.035
-aim_hud_offset_pos_16x9                  = -0.07685, 0.014, -0.035
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.0095, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, 0.0095, -0.06
+aim_hud_offset_rot                       = -0.013, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.013, -0.0275, 0
 ;-----------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_susat]:wpn_ak12_custom
+
 1icon_layer                              = susat
 1icon_layer_x                            = 85
 1icon_layer_y                            = -3
@@ -787,6 +777,7 @@ scope_status                             = 1
 scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_susat
 scope_zoom_factor                                  = 25
+
 scope_zoom_factor_alt             = 0
 
 use_alt_aim_hud                   = true	
@@ -795,15 +786,15 @@ use_alt_aim_hud                   = true
 
 item_visual                              = dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_susat_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.0, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.0, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, -0.001, -0.105
+aim_hud_offset_pos_16x9                  = -0.05786, -0.001, -0.105
+aim_hud_offset_rot                       = 0.005, -0.0275, 0
+aim_hud_offset_rot_16x9                  = 0.005, -0.0275, 0
 
-aim_hud_offset_alt_pos                       = -0.07675, -0.023, -0.07
-aim_hud_offset_alt_pos_16x9                  = -0.07675, -0.023, -0.07
-aim_hud_offset_alt_rot                       = -0.0025, -0.0086, 0.0
-aim_hud_offset_alt_rot_16x9                  = -0.0025, -0.0086, 0.0
+aim_hud_offset_alt_pos                       = -0.05786, -0.0263, -0.075
+aim_hud_offset_alt_pos_16x9                  = -0.05786, -0.0263, -0.075
+aim_hud_offset_alt_rot                       = -0.0045, -0.027, 0
+aim_hud_offset_alt_rot_16x9                  = -0.0045, -0.027, 0
 ;-----------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_marchf]:wpn_ak12_custom
 1icon_layer                              = marchf
@@ -820,16 +811,14 @@ scope_dynamic_zoom                       = on
 scope_texture                            = wpn_crosshair_marchf
 scope_zoom_factor                        = 6
 
-scope_zoom_factor_alt             = 0
-
-use_alt_aim_hud                   = true	
 [wpn_ak12_custom_marchf_hud]:wpn_ak12_custom_hud
+
 item_visual                              = dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_marchf_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.005, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.005, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.002, -0.09
+aim_hud_offset_pos_16x9                  = -0.05786, 0.002, -0.09
+aim_hud_offset_rot                       = -0.011, -0.0275, 0
+aim_hud_offset_rot_16x9                  = -0.011, -0.0275, 0
 
 ;------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_kemper]:wpn_ak12_custom
@@ -844,18 +833,14 @@ hud				= wpn_ak12_custom_kemper_hud
 
 visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak12_custom_kemper_hud]:wpn_ak12_custom_hud
 
 item_visual                	= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_kemper_hud.ogf
 
-aim_hud_offset_pos                       = -0.07678, 0.00235, -0.015
-aim_hud_offset_pos_16x9                  = -0.07678, 0.00235, -0.015
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.008, -0.06
+aim_hud_offset_pos_16x9                  = -0.05786, 0.008, -0.06
+aim_hud_offset_rot                       = 0.007, -0.0275, 0
+aim_hud_offset_rot_16x9                  = 0.007, -0.0275, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_triji]:wpn_ak12_custom
 
@@ -883,15 +868,15 @@ use_alt_aim_hud                   = true
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_trijicon_rmr_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.002, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.002, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.0579, -0.002, -0.1
+aim_hud_offset_pos_16x9                  = -0.0579, -0.002, -0.1
+aim_hud_offset_rot                       = -0.015, -0.0285, 0
+aim_hud_offset_rot_16x9                  = -0.015, -0.0285, 0
 
-aim_hud_offset_alt_pos                       = -0.0863, -0.0757, -0.035
-aim_hud_offset_alt_pos_16x9                  = -0.0863, -0.0757, -0.035
-aim_hud_offset_alt_rot                       = -0.0339, 0.0084, 0.78
-aim_hud_offset_alt_rot_16x9                  = -0.0339, 0.0084, 0.78
+aim_hud_offset_alt_pos                       = -0.073, -0.0553, -0.03
+aim_hud_offset_alt_pos_16x9                  = -0.073, -0.0553, -0.03
+aim_hud_offset_alt_rot                       = -0.0182, -0.021, 0.78
+aim_hud_offset_alt_rot_16x9                  = -0.0182, -0.021, 0.78
 ;----------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_spec_alt]:wpn_ak12_custom
 
@@ -921,15 +906,15 @@ use_alt_aim_hud                   = true
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_spec_alt_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.005, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.005, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.05786, 0.01, -0.11
+aim_hud_offset_pos_16x9                  = -0.05786, 0.01, -0.11
+aim_hud_offset_rot                       = 0.032, -0.028, 0
+aim_hud_offset_rot_16x9                  = 0.032, -0.028, 0
 
-aim_hud_offset_alt_pos                       = -0.0863, -0.0757, -0.035
-aim_hud_offset_alt_pos_16x9                  = -0.0863, -0.0757, -0.035
-aim_hud_offset_alt_rot                       = -0.0339, 0.0084, 0.78
-aim_hud_offset_alt_rot_16x9                  = -0.0339, 0.0084, 0.78
+aim_hud_offset_alt_pos                       = -0.073, -0.0553, -0.03
+aim_hud_offset_alt_pos_16x9                  = -0.073, -0.0553, -0.03
+aim_hud_offset_alt_rot                       = -0.0182, -0.021, 0.78
+aim_hud_offset_alt_rot_16x9                  = -0.0182, -0.021, 0.78
 -------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_mark8_rmr]:wpn_ak12_custom
 
@@ -959,15 +944,15 @@ use_alt_aim_hud                   = true
 
 item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_mark8_rmr_hud.ogf
 
-aim_hud_offset_pos                       = -0.07675, 0.0, -0.045
-aim_hud_offset_pos_16x9                  = -0.07675, 0.0, -0.045
-aim_hud_offset_rot                       = -0.0073, -0.0086, 0.0
-aim_hud_offset_rot_16x9                  = -0.0073, -0.0086, 0.0
+aim_hud_offset_pos                       = -0.0585, 0.002, -0.075
+aim_hud_offset_pos_16x9                  = -0.0585, 0.002, -0.075
+aim_hud_offset_rot                       = 0.02, -0.03, 0
+aim_hud_offset_rot_16x9                  = 0.02, -0.03, 0
 
-aim_hud_offset_alt_pos                       = -0.0863, -0.0757, -0.035
-aim_hud_offset_alt_pos_16x9                  = -0.0863, -0.0757, -0.035
-aim_hud_offset_alt_rot                       = -0.0339, 0.0084, 0.78
-aim_hud_offset_alt_rot_16x9                  = -0.0339, 0.0084, 0.78
+aim_hud_offset_alt_pos                       = -0.073, -0.0553, -0.03
+aim_hud_offset_alt_pos_16x9                  = -0.073, -0.0553, -0.03
+aim_hud_offset_alt_rot                       = -0.0182, -0.021, 0.78
+aim_hud_offset_alt_rot_16x9                  = -0.0182, -0.021, 0.78
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak12_custom_mono_kit]:wpn_ak12_custom
 
@@ -1008,6 +993,8 @@ parent_section                                     = wpn_ak12_custom_mono_kit
 silencer_x                          = 220
 silencer_y                          = 8
 
+;snd_shoot                                = weapons\ak12custom\shoot_sil, 0.5
+
 flame_particles                          = ghost_particles\weapons\generic_smoke_eft_sil           ;amik\weapons\ak_shoot_00
 smoke_particles				             = ghost_particles\weapons\flame_eft_ak           ;particles remade incomp.
 silencer_smoke_particles   		         = ghost_particles\weapons\generic_smoke_eft_sil  ;particles remade incomp.
@@ -1020,6 +1007,8 @@ grenade_launcher_status                  = 2
 
         ammo_elapsed                = 60
         ammo_mag_size               = 60
+		
+		laser_status = true
 ;---------------------------------------------------------------------SND-------------------------------------------------------------------------------
 snd_draw                = weapons\ak74\ak74_draw
 snd_holster             = weapons\ak74\ak74_draw
@@ -1029,8 +1018,8 @@ snd_reload_empty        = weapons\ak105_sp\ak105_reload_empty
 
 snd_reload_misfire      = weapons\ak74_blindside\ak74_unjam
 
-;snd_shoot_grenade		= weapons\gp30\GP30_grenshoot
-;snd_reload_grenade		= weapons\gp30\gp30_grenload,	1.0, 0.8
+snd_shoot_grenade		= weapons\gp30\GP30_grenshoot
+snd_reload_grenade		= weapons\gp30\gp30_grenload,	1.0, 0.8
 ;---------------------------------------------------------------------HUD-------------------------------------------------------------------------------
 [wpn_ak12_custom_mono_kit_hud]:wpn_ak12_custom_hud
 
@@ -1106,58 +1095,12 @@ shell_point                 = 0,0,0
 shell_dir               	= 0.0, 1.0, 0.0
 shell_bone                	= gilza
 
-fire_point					= 0,-0.032,-0.1
+fire_point					= 0, -0.018, -0.1
 fire_bone                   = muzzle
 fire_point2                 = 0,0,0
 fire_bone2                	= muzzle_gl
 ;-------------------------------------------------------------------------------------------------------------------------------
-;---
-;anm_show						= ak74_eft_ins_vgrip_draw
-;anm_hide                		= ak74_eft_ins_vgrip_hide
 
-;anm_idle                		= ak74_eft_ins_vgrip_idle
-
-;anm_idle_sprint         		= ak74_eft_ins_vgrip_idle_sprint
-;anm_idle_moving         		= ak74_eft_ins_vgrip_idle_moving, idle, 0.9
-;anm_idle_moving_crouch			= ak74_eft_ins_vgrip_idle_moving, idle, 0.5
-;anm_shots               		= ak74_eft_ins_vgrip_shoot, shoot
-;anm_shots_aim              		= ak74_eft_ins_vgrip_shoot_aim, shoot
-;anm_reload              		= ak74_eft_ins_vgrip_reload, reload_vgrip                ,1.5
-;anm_reload_empty        		= ak74_eft_ins_vgrip_reload_empty, reload_empty_vgrip    ,1.42
-;anm_idle_aim            		= ak74_eft_ins_vgrip_idle_aim
-;anm_bore                        = ak74_eft_ins_vgrip_idle_bore
-;anm_reload_misfire			    = ak12_mono_ins_vgrip_misfire, misfire
-
-;anm_reload_misfire_w_gl         = ak12_mono_ins_vgrip_misfire, misfire
-
-;;anm_switch              = ak74_eft_ins_vgrip_idle                                  ;ak74_eft_ins_gl_off
-;;anm_switch_g            = ak74_eft_ins_vgrip_idle                                  ;ak74_eft_ins_gl_on
-
-;anm_hide_w_gl               		= ak74_eft_ins_vgrip_hide                     
-;anm_show_w_gl 						= ak74_eft_ins_vgrip_draw                     
-;anm_idle_w_gl                		= ak74_eft_ins_vgrip_idle                      
-;anm_shots_w_gl               		= ak74_eft_ins_vgrip_shoot, shoot              
-;anm_shots_aim_w_gl              		= ak74_eft_ins_vgrip_shoot_aim, shoot         
-;anm_shots_w_gl_aim              		= ak74_eft_ins_vgrip_shoot_aim, shoot         
-
-;anm_reload_w_gl              		= ak74_eft_ins_vgrip_reload, reload_vgrip                ,1.5                      
-;anm_reload_empty_w_gl        		= ak74_eft_ins_vgrip_reload_empty, reload_empty_vgrip    ,1.42                      
-
-;anm_idle_w_gl_aim       = ak74_eft_ins_vgrip_idle_aim                                                                   
-;anm_idle_sprint_w_gl    = ak74_eft_ins_vgrip_idle_sprint                                                                
-;anm_idle_moving_w_gl    = ak74_eft_ins_vgrip_idle_moving, idle, 0.9                                                     
-;anm_bore_w_gl           = ak74_eft_ins_vgrip_idle_bore                                                                  
-
-;anm_show_g              = ak74_eft_ins_vgrip_draw                                                                        
-;anm_hide_g              = ak74_eft_ins_vgrip_hide                                                                        
-;anm_idle_g              = ak74_eft_ins_vgrip_idle                                                                       
-;anm_reload_g            = ak74_eft_ins_reload_gl, reload_gl
-;anm_idle_g_aim          = ak74_eft_ins_vgrip_idle_aim                                                                   
-;anm_shots_g             = ak74_eft_ins_shoot_gl, shoot_gl
-;anm_idle_sprint_g       = ak74_eft_ins_vgrip_idle_sprint                                                                 
-;anm_idle_moving_g       = ak74_eft_ins_vgrip_idle_moving, idle, 0.9                                                     
-;anm_bore_g              = ak74_eft_ins_vgrip_idle_bore                                                                  
-;---
 
 ;--------------------------------------------------------------------NOT_IN_USE------------------------------------------------------------------------
 [wpn_ak12_custom_aimpoint_pro]:wpn_ak12_custom

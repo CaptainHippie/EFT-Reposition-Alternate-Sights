@@ -159,8 +159,14 @@ control_inertion_factor = 1.0f
 	use_alt_aim_hud		    = true
 
 ;-----------------------------------------------------------------SND-----------------------------------------------------------------------------------
+snd_draw				= eft_wp\shared\draw_pistol
+snd_holster				= eft_wp\shared\hide_pistol
 snd_shoot				= weapons\pl15\glock17_shoot
 snd_silncer_shot		= weapons\pl15\glock17_shoot_s
+snd_reload						= weapons\pl15\grach_reload
+snd_reload_empty				= weapons\pl15\grach_reload_empty
+snd_reload_misfire              = weapons\pl15\grach_unjam
+snd_empty				= eft_wp\shared\empty_click_pistol
 ;-----------------------------------------------------------------HUD-----------------------------------------------------------------------------------
 [wpn_pl15_hud]:hud_base
 
@@ -172,10 +178,10 @@ snd_silncer_shot		= weapons\pl15\glock17_shoot_s
 		safemode_anm				= 
 		safemode_anm2				= 
 		
-lowered_hud_offset_pos		        = 0.04, -0.22, -0.06
-lowered_hud_offset_pos_16x9	        = 0.04, -0.22, -0.06
-lowered_hud_offset_rot		        = -0.7, 0, -0.05
-lowered_hud_offset_rot_16x9	        = -0.7, 0, -0.05
+lowered_hud_offset_pos		        = 0.07, -0.226, 0.14
+lowered_hud_offset_pos_16x9	        = 0.07, -0.226, 0.14
+lowered_hud_offset_rot		        = -0.84, 0, -0.05
+lowered_hud_offset_rot_16x9	        = -0.84, 0, -0.05
 
 gl_hud_offset_pos           = 0, 0, 0
 gl_hud_offset_rot           = 0, 0, 0
@@ -183,55 +189,55 @@ gl_hud_offset_rot           = 0, 0, 0
 lean_hud_offset_pos         = 0, 0, 0
 lean_hud_offset_rot         = 0, 0, 0
 		
-hands_position              = 0.074, 0.01, -0.11
-hands_position_16x9         = 0.074, 0.01, -0.11
-hands_orientation           = -0.6, -7.8, 1.5
-hands_orientation_16x9      = -0.6, -7.8, 1.5
+hands_position              = 0.04, 0.05, -0.176
+hands_position_16x9         = 0.04, 0.05, -0.176
+hands_orientation           = -0.84, -8.13, 2
+hands_orientation_16x9      = -0.84, -8.13, 2
 
-aim_hud_offset_pos          = -0.0789, 0.0638, -0.05
-aim_hud_offset_pos_16x9     = -0.0789, 0.0638, -0.05
-aim_hud_offset_rot          = 0.0085, 0.0085, -0.015
-aim_hud_offset_rot_16x9     = 0.0085, 0.0085, -0.015
+aim_hud_offset_pos          = -0.0456, 0.0233, -0.028
+aim_hud_offset_pos_16x9     = -0.0456, 0.0233, -0.028
+aim_hud_offset_rot          = 0.003, 0.003, 0
+aim_hud_offset_rot_16x9     = 0.003, 0.003, 0
 
-aim_hud_offset_alt_pos          = -0.018, 0.07, 0.09
-aim_hud_offset_alt_pos_16x9     = -0.018, 0.07, 0.09
-aim_hud_offset_alt_rot          = 0.009, -0.0074, 0.7
-aim_hud_offset_alt_rot_16x9     = 0.009, -0.0074, 0.7
+aim_hud_offset_alt_pos          = 0.01, 0.05, 0.09
+aim_hud_offset_alt_pos_16x9     = 0.01, 0.05, 0.09
+aim_hud_offset_alt_rot          = 0.0048, -0.009, 0.7
+aim_hud_offset_alt_rot_16x9     = 0.0048, -0.009, 0.7
 
 item_position				= 0.000253,-0.003206,-0.024966
 item_orientation			= 1.365195,8.451855,-2.489095
 ;------------  
-	anm_bore                                 = blnd_tt33_bore, idle
-	anm_bore_empty                           = blnd_tt33_bore, idle_empty
-	anm_hide                                 = grach_holster, idle, 1.07
-	anm_hide_empty                           = grach_holster, idle_empty, 1.07
-	anm_idle                                 = grach_idle, idle, 0.75
-	anm_idle_aim                             = grach_idle_ads, idle
-	anm_idle_aim_empty                       = grach_idle_ads, idle_empty
-	anm_idle_aim_moving                      = grach_walk, idle
-	anm_idle_aim_moving_crouch               = grach_walk, idle
-	anm_idle_aim_moving_crouch_empty         = grach_walk, idle_empty
-	anm_idle_aim_moving_empty                = grach_walk, idle_empty
-	anm_idle_empty                           = grach_idle, idle_empty
-	anm_idle_moving                          = grach_walk, idle, 0.85
-	anm_idle_moving_crouch                   = grach_walk, idle, 0.95
-	anm_idle_moving_crouch_empty             = grach_walk, idle_empty, 0.95
-	anm_idle_moving_empty                    = grach_walk, idle_empty
-	anm_idle_sprint                          = grach_sprint, idle
-	anm_idle_sprint_empty                    = grach_sprint, idle_empty
-	anm_reload                               = grach_reload, reload_pl15_mortan, 1.1
-	anm_reload_empty                         = grach_reload_empty, reload_empty_pl15_mortan, 1.1
-	anm_shot_l                               = blnd_tt33_shoot, shoot_empty, 1.05
-	anm_shots                                = blnd_tt33_shoot, shoot, 1.05
-	anm_show                                 = grach_draw, idle
-	anm_show_empty                           = grach_draw, idle_empty
-	anm_reload_misfire                       = grach_unjam, unjam, 1.05
+	anm_bore                                 = blnd_tt33_bore_bs,      idle
+	anm_bore_empty                           = blnd_tt33_bore_bs,      idle_empty
+	anm_hide                                 = grach_holster_bs,       idle, 1.07
+	anm_hide_empty                           = grach_holster_bs,       idle_empty, 1.07
+	anm_idle                                 = grach_idle_bs,          idle, 0.75
+	anm_idle_aim                             = grach_idle_ads_bs,      idle
+	anm_idle_aim_empty                       = grach_idle_ads_bs,      idle_empty
+	anm_idle_aim_moving                      = grach_walk_bs,          idle
+	anm_idle_aim_moving_crouch               = grach_walk_bs,          idle
+	anm_idle_aim_moving_crouch_empty         = grach_walk_bs,          idle_empty
+	anm_idle_aim_moving_empty                = grach_walk_bs,          idle_empty
+	anm_idle_empty                           = grach_idle_bs,          idle_empty
+	anm_idle_moving                          = grach_walk_bs,          idle, 0.85
+	anm_idle_moving_crouch                   = grach_walk_bs,          idle, 0.95
+	anm_idle_moving_crouch_empty             = grach_walk_bs,          idle_empty, 0.95
+	anm_idle_moving_empty                    = grach_walk_bs,          idle_empty
+	anm_idle_sprint                          = grach_sprint_bs,        idle
+	anm_idle_sprint_empty                    = grach_sprint_bs,        idle_empty
+	anm_reload                               = grach_reload_bs,        reload_pl15_mortan, 1.1
+	anm_reload_empty                         = grach_reload_empty_bs,  reload_empty_pl15_mortan, 1.1
+	anm_shot_l                               = blnd_tt33_shoot_bs,     shoot_empty, 1.05
+	anm_shots                                = blnd_tt33_shoot_bs,     shoot, 1.05
+	anm_show                                 = grach_draw_bs,          idle
+	anm_show_empty                           = grach_draw_bs,          idle_empty
+	anm_reload_misfire                       = grach_unjam_bs,         unjam, 1.05
         
         shell_bone                  = gilza
-        shell_point                 = 0, 0, 0
+        shell_point                 = -0.03, -0.05, 0.1
         
         fire_bone                   = muzzle
-        fire_point                  = 0.01, -0.018, 0.015
+        fire_point                  = 0.01, -0.018, 0.025
  
 ;--------------------------------------------------------------------Addons-----------------------------------------------------------------------------
 [wpn_pl15_lazup_pl15]:wpn_pl15
@@ -251,6 +257,8 @@ visual                                   = dynamics\weapons\wpn_pl15\wpn_pl15_wo
 scope_dynamic_zoom                       = off
 
 scope_zoom_factor_alt             = 0
+
+laser_status = true
 
 [wpn_pl15_lazup_pl15_hud]:wpn_pl15_hud
 
@@ -281,12 +289,14 @@ scope_zoom_factor_alt             = 0
 
 fire_dispersion_base        = 0.27
 
+laser_status = true
+
 [wpn_pl15_pl15_scolaz_hud]:wpn_pl15_hud
 
 item_visual                              = dynamics\weapons\wpn_pl15\wpn_pl15_pl15_scolaz_hud.ogf
 
-aim_hud_offset_pos          = -0.0794, 0.0376, -0.05
-aim_hud_offset_pos_16x9     = -0.0794, 0.0376, -0.05
-aim_hud_offset_rot          = 0.0052, 0.0086, -0.015
-aim_hud_offset_rot_16x9     = 0.0052, 0.0086, -0.015
+aim_hud_offset_pos          = -0.0456, -0.0016, -0.03
+aim_hud_offset_pos_16x9     = -0.0456, -0.0016, -0.03
+aim_hud_offset_rot          = 0.0016, 0.003, 0
+aim_hud_offset_rot_16x9     = 0.0016, 0.003, 0
 ;---------------------------------------------------------------------------------------------------

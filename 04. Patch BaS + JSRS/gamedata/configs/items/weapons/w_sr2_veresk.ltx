@@ -59,7 +59,7 @@ light_time                               = 0.2
 light_var_color                          = 0.05
 light_var_range                          = 0.5
 
-upgrades                                 = up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5
+upgrades                                 = up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5
 installed_upgrades                       =
 upgrade_scheme                           = upgrade_scheme_mp5_nimble
 
@@ -98,7 +98,7 @@ grenade_launcher_y                       = 24
 launch_speed                             = 0
 
 hit_impulse                              = 50
-hit_power                                = 0.48, 0.48, 0.48, 0.48
+hit_power                                = 0.49, 0.49, 0.49, 0.49
 hit_type                                 = fire_wound
 fire_distance                            = 400
 bullet_speed                             = 400
@@ -127,8 +127,8 @@ misfire_start_prob                       = 0.005
 misfire_end_condition                    = 0.1
 misfire_end_prob                         = 0.09
 
-condition_queue_shot_dec                 = 0.0014
-condition_shot_dec                       = 0.0012
+condition_queue_shot_dec                 = 0.0008
+condition_shot_dec                       = 0.0008
 
 cam_return                               = 0
 cam_relax_speed                          = 5
@@ -229,6 +229,8 @@ anm_reload              = kyky_sr2m_reload, reload
 anm_reload_empty        = kyky_sr2m_reload_empty, reload_empty
 anm_idle_aim           	= kyky_sr2m_idle_aim, idle
 anm_bore                = kyky_sr2m_idle_aim, idle
+anm_reload_misfire      = kyky_sr2m_reload_empty, reload_empty
+
 
 shell_dir				= 0.0, 1.0, 0.0
 shell_bone				= wpn_body
@@ -281,6 +283,8 @@ hud                                      = wpn_sr2_veresk_sr2_upkit_hud
 visual                                   = dynamics\weapons\wpn_sr2_veresk\wpn_sr2_veresk_world.ogf
 
 scopes                                   = none
+
+laser_status = true
 
 [wpn_sr2_veresk_sr2_upkit_hud]:wpn_sr2_veresk_hud
 

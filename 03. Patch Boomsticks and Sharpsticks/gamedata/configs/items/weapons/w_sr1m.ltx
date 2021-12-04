@@ -237,7 +237,7 @@ anm_idle_sprint_empty			= glock_eft_ins_idle_sprint_v4,     idle_empty
 anm_bore						= glock_eft_ins_idle_aim,           idle
 anm_bore_empty					= glock_eft_ins_idle_aim,           idle_empty
         
-shell_point						= 0,0,0
+shell_point						= -0.03,-0.02,0.05
 shell_bone              		= gilza
 
 fire_point						= 0.009, -0.012, -0.017
@@ -265,8 +265,6 @@ parent_section              = wpn_sr1m_sr1upgr1
 
 visual				    = dynamics\weapons\wpn_sr1m\wpn_sr1m_sr1upgr1_world.ogf
 
-scope_status			= 0
-
 scope_dynamic_zoom      = off
 
 scope_zoom_factor_alt             = 0
@@ -274,6 +272,8 @@ scope_zoom_factor_alt             = 0
         silencer_status             = 2
         silencer_x                  = 60
         silencer_y                  = -20
+
+laser_status = true
 
 [wpn_sr1m_sr1upgr1_hud]:wpn_sr1m_hud
 
@@ -299,7 +299,7 @@ parent_section              = wpn_sr1m_gurza_up
 
 visual				    = dynamics\weapons\wpn_sr1m\wpn_sr1m_sr1upgr1_world.ogf
 
-scope_status			= 0
+laser_status = true
 
 scope_dynamic_zoom      = off
 

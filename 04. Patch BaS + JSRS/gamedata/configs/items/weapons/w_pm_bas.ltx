@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------------------------
-[wpn_pm]:identity_immunities,weapon_probability,default_weapon_params,wpn_pm_sounds
+[wpn_pm_bas]:identity_immunities,weapon_probability,default_weapon_params,wpn_pm_sounds
         GroupControlSection         = spawn_group
         $npc                        = on
         $prefetch                   = 8
@@ -24,17 +24,17 @@ inv_grid_x         = 62
 inv_grid_y         = 5
 
 
-        inv_name                    = st_wpn_pm
-        inv_name_short              = st_wpn_pm
-        description                 = st_wpn_pm_descr
+        inv_name                    = st_wpn_pm_bas
+        inv_name_short              = st_wpn_pm_bas
+        description                 = st_wpn_pm_bas_descr
         
         kind                        = w_pistol
         inv_weight                  = 0.73
         cost                        = 4890
         repair_type                 = pistol
         
-        hud                         = wpn_pm_hud
-        visual                      = dynamics\weapons\wpn_pm\wpn_pm.ogf
+        hud                         = wpn_pm_bas_hud
+        visual                      = dynamics\weapons\wpn_pm_bas\wpn_pm.ogf
         position                    = -0.021, -0.085, 0.0
         orientation                 = 0, 0, 0
         fire_point                  = 0.0, 0.133, 0.161
@@ -153,19 +153,19 @@ use_alt_aim_hud 		= true
 ;---------------------------------------------------------------------SND-------------------------------------------------------------------------------
 snd_draw				= eft_wp\shared\draw_pistol
 snd_holster				= eft_wp\shared\hide_pistol
-snd_shoot				= eft_wp\pm\shoot, 2.0
-snd_shoot1				= eft_wp\pm\shoot2, 2.0
-snd_shoot2				= eft_wp\pm\shoot3, 2.0
-snd_shoot3				= eft_wp\pm\shoot4, 2.0
+;snd_shoot				= eft_wp\pm\shoot, 2.0
+;snd_shoot1				= eft_wp\pm\shoot2, 2.0
+;snd_shoot2				= eft_wp\pm\shoot3, 2.0
+;snd_shoot3				= eft_wp\pm\shoot4, 2.0
 ;snd_silncer_shot		= eft_wp\pm\shoot_silenced, 2.0
 snd_empty				= eft_wp\shared\empty_click_pistol
 snd_reload				= eft_wp\pm\reload, 1.0
 snd_reload_empty		= eft_wp\pm\reload_empty, 1.0
 snd_bore				= eft_wp\sil
 ;--------------------------------------------------------------------HUD--------------------------------------------------------------------------------
-[wpn_pm_hud]:hud_base
+[wpn_pm_bas_hud]:hud_base
 
-        item_visual                 = dynamics\weapons\wpn_pm\wpn_pm_hud.ogf
+        item_visual                 = dynamics\weapons\wpn_pm_bas\wpn_pm_hud.ogf
 		
         attach_place_idx            = 0
         zoom_hide_crosshair         = true
@@ -221,17 +221,19 @@ anm_idle_sprint					= pm_new_eft_ins_idle_sprint, idle
 anm_idle_sprint_empty			= pm_new_eft_ins_idle_sprint, idle_empty
 anm_bore						= pm_new_eft_ins_idle_aim, idle
 anm_bore_empty					= pm_new_eft_ins_idle_aim, idle
+anm_reload_misfire              = pm_new_eft_ins_reload_empty, reload_empty
+
         
 shell_dir		 		= 0,0,0.4 
 
 ;----
-shell_point						= 0,0.036,0 ;0.013,0.046,0.463
+shell_point						= 0,0,0.25 
 shell_bone              		= wpn_body
 
 fire_point						= -0.01, 0.01, 0.018
 fire_bone               		= muzzle
 ;-----------------------------------------------------------------------ACTOR---------------------------------------------------------------------------
-[wpn_pm_actor]:wpn_pm ;wpn_pm_sounds ;zaton b33
+[wpn_pm_bas_actor]:wpn_pm_bas ;wpn_pm_bas_sounds ;zaton b33
 
         $spawn                      = "weapons\pm_actor"
         
@@ -241,17 +243,17 @@ inv_grid_x         = 62
 inv_grid_y         = 5
 
 
-        inv_name                    = st_wpn_pm_actor
-        inv_name_short              = st_wpn_pm_actor
-        description                 = st_wpn_pm_actor_descr
+        inv_name                    = st_wpn_pm_bas_actor
+        inv_name_short              = st_wpn_pm_bas_actor
+        description                 = st_wpn_pm_bas_actor_descr
         
         cost                        = 7130
         
-        hud                         = wpn_pm_actor_hud
+        hud                         = wpn_pm_bas_actor_hud
 		
-        visual                      = dynamics\weapons\wpn_pm\wpn_pm_actor_world.ogf
+        visual                      = dynamics\weapons\wpn_pm_bas\wpn_pm_actor_world.ogf
         
-        rpm                         = 305
+        rpm                         = 405
         
         fire_dispersion_base        = 0.57
         
@@ -277,10 +279,10 @@ inv_grid_y         = 5
  
 snd_draw				= eft_wp\shared\draw_pistol
 snd_holster				= eft_wp\shared\hide_pistol
-snd_shoot				= eft_wp\pm\shoot, 2.0
-snd_shoot1				= eft_wp\pm\shoot2, 2.0
-snd_shoot2				= eft_wp\pm\shoot3, 2.0
-snd_shoot3				= eft_wp\pm\shoot4, 2.0
+;snd_shoot				= eft_wp\pm\shoot, 2.0
+;snd_shoot1				= eft_wp\pm\shoot2, 2.0
+;snd_shoot2				= eft_wp\pm\shoot3, 2.0
+;snd_shoot3				= eft_wp\pm\shoot4, 2.0
 ;snd_silncer_shot		= eft_wp\pm\shoot_silenced, 2.0
 snd_empty				= eft_wp\shared\empty_click_pistol
 snd_reload				= eft_wp\pm\reload, 1.0
@@ -288,31 +290,31 @@ snd_reload_empty		= eft_wp\pm\reload_empty, 1.0
 snd_bore				= eft_wp\sil
 
 ;----------------------------------------------------------------------HUD------------------------------------------------------------------------------
-[wpn_pm_actor_hud]:wpn_pm_hud
+[wpn_pm_bas_actor_hud]:wpn_pm_bas_hud
 
-item_visual                 = dynamics\weapons\wpn_pm\wpn_pm_actor_hud.ogf
+item_visual                 = dynamics\weapons\wpn_pm_bas\wpn_pm_actor_hud.ogf
 
 aim_hud_offset_pos          = -0.0925, 0.0685, -0.06
 aim_hud_offset_pos_16x9     = -0.0925, 0.0685, -0.06
 aim_hud_offset_rot          = 0.02, 0.0262, 0.03
 aim_hud_offset_rot_16x9     = 0.02, 0.0262, 0.03
 ;----------------------------------------------------------------------CUSTOM---------------------------------------------------------------------------
-[wpn_pm_custom]:wpn_pm;wpn_pm_sounds
+[wpn_pm_bas_custom]:wpn_pm_bas;wpn_pm_bas_sounds
         
 inv_grid_width     = 2
 inv_grid_height    = 1
 inv_grid_x         = 62
 inv_grid_y         = 4
 		
-        inv_name                    = st_wpn_pm_custom
-        inv_name_short              = st_wpn_pm_custom
-        description                 = st_wpn_pm_custom_descr
+        inv_name                    = st_wpn_pm_bas_custom
+        inv_name_short              = st_wpn_pm_bas_custom
+        description                 = st_wpn_pm_bas_custom_descr
 		
         cost                        = 6890
         
-        hud                         = wpn_pm_sk1_hud
+        hud                         = wpn_pm_bas_sk1_hud
 		
-        visual                      = dynamics\weapons\wpn_pm\wpn_pm_sk1_world.ogf
+        visual                      = dynamics\weapons\wpn_pm_bas\wpn_pm_sk1_world.ogf
         			                         									
         rpm                         = 340
         
@@ -339,19 +341,19 @@ inv_grid_y         = 4
 
 snd_draw				= eft_wp\shared\draw_pistol
 snd_holster				= eft_wp\shared\hide_pistol
-snd_shoot				= eft_wp\pm\shoot, 2.0
-snd_shoot1				= eft_wp\pm\shoot2, 2.0
-snd_shoot2				= eft_wp\pm\shoot3, 2.0
-snd_shoot3				= eft_wp\pm\shoot4, 2.0
+;snd_shoot				= eft_wp\pm\shoot, 2.0
+;snd_shoot1				= eft_wp\pm\shoot2, 2.0
+;snd_shoot2				= eft_wp\pm\shoot3, 2.0
+;snd_shoot3				= eft_wp\pm\shoot4, 2.0
 ;snd_silncer_shot		= eft_wp\pm\shoot_silenced, 2.0
 snd_empty				= eft_wp\shared\empty_click_pistol
 snd_reload				= eft_wp\pm\reload, 1.0
 snd_reload_empty		= eft_wp\pm\reload_empty, 1.0
 snd_bore				= eft_wp\sil
 ;-----------------------------------------------------------------------HUD-----------------------------------------------------------------------------
-[wpn_pm_sk1_hud]:wpn_pm_hud
+[wpn_pm_bas_sk1_hud]:wpn_pm_bas_hud
 
-item_visual                 = dynamics\weapons\wpn_pm\wpn_pm_sk1_hud.ogf
+item_visual                 = dynamics\weapons\wpn_pm_bas\wpn_pm_sk1_hud.ogf
  
 aim_hud_offset_pos          = -0.0933, 0.0645, -0.06
 aim_hud_offset_pos_16x9     = -0.0933, 0.0645, -0.06
@@ -359,7 +361,7 @@ aim_hud_offset_rot          = 0.0105, 0.0266, 0.03
 aim_hud_offset_rot_16x9     = 0.0105, 0.0266, 0.03
 
 ;-----------------------------------------------------------------------PMM-----------------------------------------------------------------------------
-[wpn_pmm]:wpn_pm,wpn_pm_sounds
+[wpn_pmm_bas]:wpn_pm_bas,wpn_pm_sounds
         
 inv_grid_width     = 2
 inv_grid_height    = 1
@@ -367,16 +369,16 @@ inv_grid_x         = 62
 inv_grid_y         = 3
 
 
-        inv_name                    = st_wpn_pmm
-        inv_name_short              = st_wpn_pmm
-        description                 = st_wpn_pmm_descr
+        inv_name                    = st_wpn_pmm_bas
+        inv_name_short              = st_wpn_pmm_bas
+        description                 = st_wpn_pmm_bas_descr
         
         inv_weight                  = 0.76
         cost                        = 7580
         
-        hud                         = wpn_pmm_hud
+        hud                         = wpn_pmm_bas_hud
 		
-        visual                      = dynamics\weapons\wpn_pm\wpn_pmm_world.ogf
+        visual                      = dynamics\weapons\wpn_pm_bas\wpn_pmm_world.ogf
         
         ammo_elapsed                = 12
         ammo_mag_size               = 12
@@ -410,18 +412,19 @@ inv_grid_y         = 3
  
 snd_draw				= eft_wp\shared\draw_pistol
 snd_holster				= eft_wp\shared\hide_pistol
-snd_shoot				= eft_wp\pm\shoot, 2.0
-snd_shoot1				= eft_wp\pm\shoot2, 2.0
-snd_shoot2				= eft_wp\pm\shoot3, 2.0
-snd_shoot3				= eft_wp\pm\shoot4, 2.0
+;snd_shoot				= eft_wp\pm\shoot, 2.0
+;snd_shoot1				= eft_wp\pm\shoot2, 2.0
+;snd_shoot2				= eft_wp\pm\shoot3, 2.0
+;snd_shoot3				= eft_wp\pm\shoot4, 2.0
 ;snd_silncer_shot		= eft_wp\pm\shoot_silenced, 2.0
 snd_empty				= eft_wp\shared\empty_click_pistol
 snd_reload				= eft_wp\pm\reload, 1.0
 snd_reload_empty		= eft_wp\pm\reload_empty, 1.0
 snd_bore				= eft_wp\sil
 ;---------------------------------------------------------------------HUD-------------------------------------------------------------------------------
-[wpn_pmm_hud]:wpn_pm_hud
-item_visual                 = dynamics\weapons\wpn_pm\wpn_pmm_hud.ogf
+[wpn_pmm_bas_hud]:wpn_pm_bas_hud
+
+item_visual                 = dynamics\weapons\wpn_pm_bas\wpn_pmm_hud.ogf
            		
 aim_hud_offset_pos          = -0.0926, 0.0665, -0.06
 aim_hud_offset_pos_16x9     = -0.0926, 0.0665, -0.06
