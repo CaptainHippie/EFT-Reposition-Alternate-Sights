@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------------------------
-[wpn_akms_bas]:identity_immunities,weapon_probability,default_weapon_params,wpn_akm_sounds
+[wpn_akms_bas]:identity_immunities,weapon_probability,default_weapon_params;wpn_akm_sounds
 GroupControlSection                      = spawn_group
 $npc                                     = on
 $prefetch                                = 8
@@ -170,6 +170,7 @@ kill_msg_width                           = 84
 kill_msg_height                          = 28
  
 ;---------------------------------------------------------------------------------------------SND-----------------------------------------------------------------------------------------------------------
+snd_bore                = $no_sound
 snd_draw                = weapons\ak74\ak74_draw
 snd_holster             = weapons\ak74\ak74_draw
 
@@ -182,6 +183,10 @@ snd_shoot               = weapons\akm_blindside\akm_shoot_1
 
 snd_silncer_shot        = weapons\akm_blindside\akm_shoot_sil_01
 snd_switch_mode			= weapons\generic\switch_mode
+
+snd_reload_grenade                       = weapons\ak74_blindside\ak74_grenload
+snd_shoot_grenade                        = weapons\generic\gp30_grenshoot
+snd_switch                               = $no_sound
 ;---------------------------------------------------------------------------------------------HUD-----------------------------------------------------------------------------------------------------------
 [wpn_akms_bas_hud]:hud_base
 
