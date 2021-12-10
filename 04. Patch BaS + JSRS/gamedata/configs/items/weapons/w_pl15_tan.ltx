@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------------------------
-[wpn_pl15]:identity_immunities,weapon_probability,default_weapon_params,wpn_mp443_sounds
+[wpn_pl15_tan]:identity_immunities,weapon_probability,default_weapon_params,wpn_mp443_sounds
         GroupControlSection         = spawn_group
         $npc                        = on
         $prefetch                   = 8
@@ -7,7 +7,7 @@
         scheduled                   = off
         cform                       = skeleton
 
-parent_section                           = wpn_pl15
+parent_section                           = wpn_pl15_tan
 
 scopes                                   = lazup_pl15, pl15_scolaz
         
@@ -25,7 +25,7 @@ icons_texture                                       = ui\ui_icon_bas
 inv_grid_width     = 2
 inv_grid_height    = 1
 inv_grid_x         = 62
-inv_grid_y         = 7
+inv_grid_y         = 11
 
 
         inv_name                    = st_wpn_pl15
@@ -37,8 +37,8 @@ inv_grid_y         = 7
         cost                        = 26960
         repair_type                 = pistol
         
-        hud                         = wpn_pl15_hud
-        visual                      = dynamics\weapons\wpn_pl15\wpn_pl15_world.ogf
+        hud                         = wpn_pl15_tan_hud
+        visual                      = dynamics\weapons\wpn_pl15_tan\wpn_pl15_tan_world.ogf
         position                    = -0.019, 0.006, -0.003
         orientation                 = 0, -0.2, 0
         fire_point                  = 0, 0.133, 0.161
@@ -157,6 +157,7 @@ control_inertion_factor = 1.0f
 		weapon_lower_speed			= 0.2
 		
 	use_alt_aim_hud		    = true
+	scope_zoom_factor_alt             = 0
 
 ;-----------------------------------------------------------------SND-----------------------------------------------------------------------------------
 snd_draw				= eft_wp\shared\draw_pistol
@@ -168,44 +169,47 @@ snd_reload_empty				= weapons\pl15\grach_reload_empty
 snd_reload_misfire              = weapons\pl15\grach_unjam
 snd_empty				= eft_wp\shared\empty_click_pistol
 ;-----------------------------------------------------------------HUD-----------------------------------------------------------------------------------
-[wpn_pl15_hud]:hud_base
+[wpn_pl15_tan_hud]:hud_base
 
-        item_visual                 = dynamics\weapons\wpn_pl15\wpn_pl15_hud.ogf
+        item_visual                 = dynamics\weapons\wpn_pl15_tan\wpn_pl15_tan_hud.ogf
 		
         attach_place_idx            = 0
         zoom_hide_crosshair         = true
-
+                
 		safemode_anm				= 
 		safemode_anm2				= 
-		
-lowered_hud_offset_pos		        = 0.07, -0.23, 0.05
-lowered_hud_offset_pos_16x9	        = 0.07, -0.23, 0.05
-lowered_hud_offset_rot		        = -0.87, 0, -0.05
-lowered_hud_offset_rot_16x9	        = -0.87, 0, -0.05
 
-gl_hud_offset_pos           = 0, 0, 0
-gl_hud_offset_rot           = 0, 0, 0
+;------------
 
-lean_hud_offset_pos         = 0, 0, 0
-lean_hud_offset_rot         = 0, 0, 0
-		
-hands_position              = 0.04, 0.05, -0.176
-hands_position_16x9         = 0.04, 0.05, -0.176
-hands_orientation           = -0.84, -8.13, 2
-hands_orientation_16x9      = -0.84, -8.13, 2
+hands_position					= 0.05, 0.048, -0.135
+hands_position_16x9				= 0.05, 0.048, -0.135
+hands_orientation				= -0.67, -8.21, 2.2
+hands_orientation_16x9			= -0.67, -8.21, 2.2
 
-aim_hud_offset_pos          = -0.0456, 0.0233, -0.028
-aim_hud_offset_pos_16x9     = -0.0456, 0.0233, -0.028
-aim_hud_offset_rot          = 0.003, 0.003, 0
-aim_hud_offset_rot_16x9     = 0.003, 0.003, 0
-
-aim_hud_offset_alt_pos          = 0.01, 0.05, 0.09
-aim_hud_offset_alt_pos_16x9     = 0.01, 0.05, 0.09
-aim_hud_offset_alt_rot          = 0.0048, -0.009, 0.7
-aim_hud_offset_alt_rot_16x9     = 0.0048, -0.009, 0.7
+aim_hud_offset_pos					= -0.055, 0.0255, -0.01
+aim_hud_offset_pos_16x9				= -0.055, 0.0255, -0.01
+aim_hud_offset_rot					= 0.001, 0.0052, 0
+aim_hud_offset_rot_16x9				= 0.001, 0.0052, 0
 
 item_position				= 0.000253,-0.003206,-0.024966
 item_orientation			= 1.365195,8.451855,-2.489095
+
+lowered_hud_offset_pos		        = 0.07, -0.27, 0.03
+lowered_hud_offset_pos_16x9	        = 0.07, -0.27, 0.03
+lowered_hud_offset_rot		        = -0.86, 0, -0.05
+lowered_hud_offset_rot_16x9	        = -0.86, 0, -0.05
+
+aim_hud_offset_alt_pos          = 0.01, 0.05, 0.09
+aim_hud_offset_alt_pos_16x9     = 0.01, 0.05, 0.09
+aim_hud_offset_alt_rot          = 0.0036, -0.008, 0.7
+aim_hud_offset_alt_rot_16x9     = 0.0036, -0.008, 0.7
+
+gl_hud_offset_pos           = 0, 0, 0
+gl_hud_offset_rot           = 0, 0, 0
+        
+lean_hud_offset_pos         = 0, 0, 0
+lean_hud_offset_rot         = 0, 0, 0
+		
 ;------------  
 	anm_bore                                 = blnd_tt33_bore_bs,      idle
 	anm_bore_empty                           = blnd_tt33_bore_bs,      idle_empty
@@ -237,41 +241,38 @@ item_orientation			= 1.365195,8.451855,-2.489095
         shell_point                 = -0.03, -0.05, 0.1
         
         fire_bone                   = muzzle
-        fire_point                  = 0.01, -0.018, 0.025
+        fire_point                  = 0.008, -0.01, 0.025
  
 ;--------------------------------------------------------------------Addons-----------------------------------------------------------------------------
-[wpn_pl15_lazup_pl15]:wpn_pl15
+[wpn_pl15_tan_lazup_pl15]:wpn_pl15_tan
 
 inv_grid_width     = 2
 inv_grid_height    = 1
-inv_grid_x         = 62
-inv_grid_y         = 8
+inv_grid_x         = 64
+inv_grid_y         = 11
 
 
 inv_weight                               = 0.890
 
-hud                                      = wpn_pl15_lazup_pl15_hud
+hud                                      = wpn_pl15_tan_lazup_pl15_hud
 
-visual                                   = dynamics\weapons\wpn_pl15\wpn_pl15_world.ogf
-
-scope_dynamic_zoom                       = off
-
-scope_zoom_factor_alt             = 0
+visual                                   = dynamics\weapons\wpn_pl15_tan\wpn_pl15_tan_world.ogf
 
 laser_status = true
 
-[wpn_pl15_lazup_pl15_hud]:wpn_pl15_hud
+[wpn_pl15_tan_lazup_pl15_hud]:wpn_pl15_tan_hud
 
-item_visual                              = dynamics\weapons\wpn_pl15\wpn_pl15_lazup_pl15_hud.ogf
+item_visual                              = dynamics\weapons\wpn_pl15_tan\wpn_pl15_tan_lazup_pl15_hud.ogf
+
 ;---------------------------------------------------------------------------------------------------
-[wpn_pl15_pl15_scolaz]:wpn_pl15
+[wpn_pl15_tan_pl15_scolaz]:wpn_pl15_tan
 
 inv_grid_width     = 2
 inv_grid_height    = 1
 inv_grid_x         = 62
-inv_grid_y         = 9
+inv_grid_y         = 12
 
-parent_section                           = wpn_pl15_pl15_scolaz
+parent_section                           = wpn_pl15_tan_pl15_scolaz
 
         inv_name                    = st_wpn_pl15_pl15_scolaz
         inv_name_short              = st_wpn_pl15_pl15_scolaz
@@ -279,24 +280,21 @@ parent_section                           = wpn_pl15_pl15_scolaz
 
 inv_weight                               = 0.940
 
-hud                                      = wpn_pl15_pl15_scolaz_hud
+hud                                      = wpn_pl15_tan_pl15_scolaz_hud
 
-visual                                   = dynamics\weapons\wpn_pl15\wpn_pl15_pl15_scolaz_world.ogf
-
-scope_dynamic_zoom                       = off
-
-scope_zoom_factor_alt             = 0
+visual                                   = dynamics\weapons\wpn_pl15_tan\wpn_pl15_tan_pl15_scolaz_world.ogf
 
 fire_dispersion_base        = 0.27
 
 laser_status = true
 
-[wpn_pl15_pl15_scolaz_hud]:wpn_pl15_hud
+[wpn_pl15_tan_pl15_scolaz_hud]:wpn_pl15_tan_hud
 
-item_visual                              = dynamics\weapons\wpn_pl15\wpn_pl15_pl15_scolaz_hud.ogf
+item_visual                              = dynamics\weapons\wpn_pl15_tan\wpn_pl15_tan_pl15_scolaz_hud.ogf
 
-aim_hud_offset_pos          = -0.0456, -0.0016, -0.03
-aim_hud_offset_pos_16x9     = -0.0456, -0.0016, -0.03
-aim_hud_offset_rot          = 0.0016, 0.003, 0
-aim_hud_offset_rot_16x9     = 0.0016, 0.003, 0
+aim_hud_offset_pos					= -0.0553, 0.0006, -0.04
+aim_hud_offset_pos_16x9				= -0.0553, 0.0006, -0.04
+aim_hud_offset_rot					= 0, 0.0052, 0
+aim_hud_offset_rot_16x9				= 0, 0.0052, 0
+
 ;---------------------------------------------------------------------------------------------------

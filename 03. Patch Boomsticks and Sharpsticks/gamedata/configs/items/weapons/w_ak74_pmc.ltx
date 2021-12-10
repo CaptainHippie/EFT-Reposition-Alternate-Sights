@@ -231,6 +231,11 @@ aim_hud_offset_pos_16x9                  = -0.0875, 0.033, -0.02
 aim_hud_offset_rot                       = 0.004, 0.013, -0.01
 aim_hud_offset_rot_16x9                  = 0.004, 0.013, -0.01
 
+aim_hud_offset_alt_pos                       = -0.118, -0.04, -0.02
+aim_hud_offset_alt_pos_16x9                  = -0.118, -0.04, -0.02
+aim_hud_offset_alt_rot                       = 0.0048, 0.0181, 0.6
+aim_hud_offset_alt_rot_16x9                  = 0.0048, 0.0181, 0.6
+
 item_position				= 0,0,0
 item_orientation			= 0,0,0
 
@@ -314,8 +319,10 @@ visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
 scope_status            = 1
 scope_texture			= wpn_crosshair_acog
-scope_zoom_factor                                  = 25
+scope_zoom_factor       = 25
 zoom_rotate_time		= 0.25
+
+use_alt_aim_hud 		= true
 
 [wpn_ak74_pmc_acog_hud]:wpn_ak74_pmc_hud
 
@@ -340,7 +347,7 @@ visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
 scope_status            = 1
 scope_texture			= wpn_crosshair_specter
-scope_zoom_factor                                  = 25
+scope_zoom_factor       = 25
 zoom_rotate_time		= 0.25
 scope_dynamic_zoom      = off
 
@@ -374,10 +381,11 @@ visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
 scope_status            = 1
 scope_texture			= wpn_crosshair_pso2_vss
-scope_zoom_factor                                  = 25
+scope_zoom_factor       = 25
 zoom_rotate_time		= 0.25
 
 use_alt_aim_hud			= true
+
 [wpn_ak74_pmc_pso2_hud]:wpn_ak74_pmc_hud 
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_pso2_hud.ogf
@@ -386,11 +394,6 @@ aim_hud_offset_pos                       = -0.0773, 0.028, -0.05
 aim_hud_offset_pos_16x9                  = -0.0773, 0.028, -0.05
 aim_hud_offset_rot                       = -0.004, 0.0118, -0.01
 aim_hud_offset_rot_16x9                  = -0.004, 0.0118, -0.01
-
-aim_hud_offset_alt_pos                       = -0.0874, 0.053, -0.01
-aim_hud_offset_alt_pos_16x9                  = -0.0874, 0.053, -0.01
-aim_hud_offset_alt_rot                       = 0.053, 0.0134, -0.01
-aim_hud_offset_alt_rot_16x9                  = 0.053, 0.0134, -0.01
 ;--------------------------------------------------------------------------------------------
 [wpn_ak74_pmc_1pn93]:wpn_ak74_pmc
 
@@ -407,13 +410,11 @@ nv_scope_status = 1
 scope_status            = 1
 scope_nightvision       = scope_nightvision_1gen
 scope_texture			= wpn_crosshair_1pn93
-scope_zoom_factor                                  = 25
+scope_zoom_factor       = 25
 zoom_rotate_time		= 0.25
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-;zoom_rotate_time                         = 0.25
-;scope_lense_fov                          = 13.5
 use_alt_aim_hud 		 = true
 
 [wpn_ak74_pmc_1pn93_hud]:wpn_ak74_pmc_hud
@@ -444,9 +445,11 @@ visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
 scope_status            = 1
 scope_texture			= wpn_crosshair_leupold
-scope_zoom_factor                                  = 7
+scope_zoom_factor       = 7
 zoom_rotate_time		= 0.25
-scope_dynamic_zoom      = off
+scope_dynamic_zoom      = on
+
+use_alt_aim_hud 		= true
 
 [wpn_ak74_pmc_leupold_hud]:wpn_ak74_pmc_hud
 
@@ -474,10 +477,8 @@ scope_texture                                      = wpn_crosshair_pn23
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 
+use_alt_aim_hud 		= true
 nv_scope_status = 1
-
-;zoom_rotate_time                         = 0.25
-;scope_lense_fov                          = 13.5
 
 [wpn_ak74_pmc_pn23_hud]:wpn_ak74_pmc_hud
 
@@ -504,7 +505,9 @@ visual                                   = dynamics\weapons\wpn_ak74_pmc\wpn_ak7
 scope_status                             = 1
 scope_dynamic_zoom                       = off 
 scope_texture                            = wpn_crosshair_1p78gs
-scope_zoom_factor                                  = 41
+scope_zoom_factor                        = 41
+
+use_alt_aim_hud 		= true
 
 [wpn_ak74_pmc_1p78gs_hud]:wpn_ak74_pmc_hud
 
@@ -529,14 +532,11 @@ scope_status                             = 1
 scope_dynamic_zoom                       = off
 scope_nightvision                        = scope_nightvision_2gen
 scope_texture                            = wpn_crosshair_1pn93n2_1gs
-scope_zoom_factor                                  = 25
+scope_zoom_factor                        = 25
 
 nv_scope_status = 1
-        
-;zoom_rotate_time                         = 0.25
-;scope_lense_fov                          = 11.4
+use_alt_aim_hud				 = true
 
-use_alt_aim_hud				 = true											
 inv_weight                               = 4.350
 
 [wpn_ak74_pmc_1pn93n2_1gs_hud]:wpn_ak74_pmc_hud
@@ -563,14 +563,11 @@ inv_weight                               = 3.820
 hud                                      = wpn_ak74_pmc_susat_hud
 visual                                   = dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-
-
 scope_status                             = 1
 scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_susat
-scope_zoom_factor                                  = 25                                  
+scope_zoom_factor                        = 25                                  
 use_alt_aim_hud				= true
-
 
 [wpn_ak74_pmc_susat_hud]:wpn_ak74_pmc_hud
 
@@ -596,13 +593,12 @@ inv_weight                               = 4.040
 hud                                      = wpn_ak74_pmc_marchf_hud
 visual                                   = dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-
-
 scope_status                             = 1
-scope_dynamic_zoom                       = off
+scope_dynamic_zoom                       = on
 scope_texture                            = wpn_crosshair_marchf         
 scope_zoom_factor                        = 6
 
+use_alt_aim_hud 		= true
 
 [wpn_ak74_pmc_marchf_hud]:wpn_ak74_pmc_hud
 
@@ -622,8 +618,6 @@ inv_weight                               = 4.200
 
 hud                                      = wpn_ak74_pmc_usp1_hud
 visual                                   = dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-
 
 scope_status                             = 1
 scope_dynamic_zoom                       = off
@@ -647,7 +641,6 @@ aim_hud_offset_alt_rot                       = 0.0438, 0.0132, -0.01
 aim_hud_offset_alt_rot_16x9                  = 0.0438, 0.0132, -0.01
 ;-----------------------------------------------------------------------------------------------------
 [wpn_ak74_pmc_spec_alt]:wpn_ak74_pmc
-
 
 visual					= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
@@ -761,10 +754,6 @@ hud				= wpn_ak74_pmc_kobra_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom      = off
-
 [wpn_ak74_pmc_kobra_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_kobra_hud.ogf
@@ -785,10 +774,6 @@ hud				= wpn_ak74_pmc_okp_hud
 1icon_layer_y			= -4
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom      = off
 
 [wpn_ak74_pmc_okp_hud]:wpn_ak74_pmc_hud
 
@@ -811,10 +796,6 @@ hud				= wpn_ak74_pmc_eot_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom      = off
-
 [wpn_ak74_pmc_eot_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_eot_hud.ogf
@@ -835,8 +816,6 @@ hud				= wpn_ak74_pmc_1p76_hud
 1icon_layer_y			= -9
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0
 
 [wpn_ak74_pmc_1p76_hud]:wpn_ak74_pmc_hud
 
@@ -891,10 +870,6 @@ hud				= wpn_ak74_pmc_ac10632_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak74_pmc_ac10632_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_ac10632_hud.ogf
@@ -915,10 +890,6 @@ hud				= wpn_ak74_pmc_c-more_hud
 1icon_layer_y			= -9
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
 
 [wpn_ak74_pmc_c-more_hud]:wpn_ak74_pmc_hud
 
@@ -941,10 +912,6 @@ hud				= wpn_ak74_pmc_ekp8_02_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off 
-
 [wpn_ak74_pmc_ekp8_02_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_ekp8_02_hud.ogf
@@ -965,10 +932,6 @@ hud				= wpn_ak74_pmc_d0cter_hud
 1icon_layer_y			= -6
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off 
 
 [wpn_ak74_pmc_d0cter_hud]:wpn_ak74_pmc_hud
 
@@ -991,10 +954,6 @@ hud				= wpn_ak74_pmc_mepro_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
- 
 [wpn_ak74_pmc_mepro_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_mepro_hud.ogf
@@ -1015,10 +974,6 @@ hud				= wpn_ak74_pmc_aim_low_hud
 1icon_layer_y			= -5
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
 
 [wpn_ak74_pmc_aim_low_hud]:wpn_ak74_pmc_hud     
 
@@ -1041,10 +996,6 @@ hud				= wpn_ak74_pmc_ekp8_18_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak74_pmc_ekp8_18_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_ekp8_18_hud.ogf
@@ -1066,10 +1017,6 @@ hud				= wpn_ak74_pmc_rmr_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-   
 [wpn_ak74_pmc_rmr_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_rmr_hud.ogf
@@ -1091,10 +1038,6 @@ hud				= wpn_ak74_pmc_aimpoint_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-  
-scope_dynamic_zoom = off
-
 [wpn_ak74_pmc_aimpoint_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_aimpoint_hud.ogf
@@ -1115,10 +1058,6 @@ hud				= wpn_ak74_pmc_point_aimpro_hud
 1icon_layer_y			= -15
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
    
 [wpn_ak74_pmc_point_aimpro_hud]:wpn_ak74_pmc_hud
 
@@ -1141,10 +1080,6 @@ hud				= wpn_ak74_pmc_deltapoint_hud
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak74_pmc_deltapoint_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_deltapoint_hud.ogf
@@ -1165,11 +1100,7 @@ hud				= wpn_ak74_pmc_0kp2_hud
 1icon_layer_y			= -4
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
-     
+  
 [wpn_ak74_pmc_0kp2_hud]:wpn_ak74_pmc_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_0kp2_hud.ogf
@@ -1190,10 +1121,6 @@ hud				= wpn_ak74_pmc_e0t2_hud
 1icon_layer_y			= -8
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
 
 [wpn_ak74_pmc_e0t2_hud]:wpn_ak74_pmc_hud     
 
@@ -1255,10 +1182,6 @@ hud				= wpn_ak74_pmc_kemper_hud
 1icon_layer_y			= -11
 
 visual				= dynamics\weapons\wpn_ak74_pmc\wpn_ak74_pmc_world.ogf
-
-scope_status			= 0                              
-
-scope_dynamic_zoom = off
 
 [wpn_ak74_pmc_kemper_hud]:wpn_ak74_pmc_hud
 

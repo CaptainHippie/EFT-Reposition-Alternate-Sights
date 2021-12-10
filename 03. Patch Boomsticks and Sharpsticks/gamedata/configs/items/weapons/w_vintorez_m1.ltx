@@ -170,7 +170,6 @@ zoom_cam_step_angle_horz                 = 0.44
 
 scope_zoom_factor_alt             = 0
 
-
 laser_status = true
 ;---------------------------------------------------------------------SND-------------------------------------------------------------------------------
 snd_bore                = $no_sound
@@ -191,26 +190,20 @@ snd_switch_mode			= weapons\generic\switch_mode
 		
         attach_place_idx            = 0
         zoom_hide_crosshair         = true
-        
-        gl_hud_offset_pos           = -0.0495, 0.014, -0.155
-        gl_hud_offset_rot           = -0.081, 0.0045, 0
-       
-        lean_hud_offset_pos         = 0, 0, 0
-        lean_hud_offset_rot         = 0, 0, 0
-		
+        		
 ;--------
-hands_position                           = 0.0114, 0.003, -0.14
-hands_position_16x9                      = 0.0114, 0.003, -0.14
+hands_position                           = 0.0114, 0.003, -0.165
+hands_position_16x9                      = 0.0114, 0.003, -0.165
 hands_orientation                        = 0.62, 0.6, 0
 hands_orientation_16x9                   = 0.62, 0.6, 0
 
-aim_hud_offset_pos                       = -0.0759, 0.0406, -0.1
-aim_hud_offset_pos_16x9                  = -0.0759, 0.0406, -0.1
+aim_hud_offset_pos                       = -0.0759, 0.0406, -0.085
+aim_hud_offset_pos_16x9                  = -0.0759, 0.0406, -0.085
 aim_hud_offset_rot                       = 0.0047, 0.0108, 0
 aim_hud_offset_rot_16x9                  = 0.0047, 0.0108, 0
 
-aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.09
-aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.09
+aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.08
+aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.08
 aim_hud_offset_alt_rot                       = 0.0047, 0.0108, 0
 aim_hud_offset_alt_rot_16x9                  = 0.0047, 0.0108, 0
 
@@ -221,6 +214,12 @@ lowered_hud_offset_rot_16x9	        = -0.12, -0.67, 0.4
 
 item_position			= 0,0,0
 item_orientation		= 0,0,0
+
+gl_hud_offset_pos           = -0.0495, 0.014, -0.155
+gl_hud_offset_rot           = -0.081, 0.0045, 0
+       
+lean_hud_offset_pos         = 0, 0, 0
+lean_hud_offset_rot         = 0, 0, 0
 ;-------		
 
 anm_show				        = ak12_mono_ins_vgrip_draw
@@ -244,9 +243,7 @@ fire_point			= 0,-0.008,0
 fire_bone      	      		= muzzle
 fire_point2			= 0,0,0
 fire_bone2			= muzzle
- 
-		;freelook_z_offset_mul		= 0.7
-		
+ 	
 		freelook_z_offset_mul	    = 0.6
 ;--------------------------------------------------------------------Addons-----------------------------------------------------------------------------
 [wpn_vintorez_m1_pso1m21]:wpn_vintorez_m1
@@ -275,8 +272,8 @@ aim_hud_offset_pos_16x9                  = -0.064, 0.004, -0.05
 aim_hud_offset_rot                       = 0.005, -0.01, 0
 aim_hud_offset_rot_16x9                  = 0.005, -0.01, 0
 
-aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.07
-aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.07
+aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.055
+aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.055
 aim_hud_offset_alt_rot                       = 0.0047, 0.0108, 0
 aim_hud_offset_alt_rot_16x9                  = 0.0047, 0.0108, 0
 ;----------------------------------------------------------------------------------
@@ -306,8 +303,8 @@ aim_hud_offset_pos_16x9                  = -0.0665, 0.008, -0.04
 aim_hud_offset_rot                       = 0.005, -0.005, 0
 aim_hud_offset_rot_16x9                  = 0.005, -0.005, 0
 
-aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.07
-aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.07
+aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.055
+aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.055
 aim_hud_offset_alt_rot                       = 0.0047, 0.0108, 0
 aim_hud_offset_alt_rot_16x9                  = 0.0047, 0.0108, 0
 ;-----------------------------------------------------------------------------------
@@ -326,7 +323,6 @@ visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_1p29
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 
 use_alt_aim_hud			= true
 
@@ -351,16 +347,12 @@ hud				= wpn_vintorez_m1_kobra_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom      = off
-
 [wpn_vintorez_m1_kobra_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_kobra_hud.ogf
 
-aim_hud_offset_pos                       = -0.0778, -0.0052, -0.08
-aim_hud_offset_pos_16x9                  = -0.0778, -0.0052, -0.08
+aim_hud_offset_pos                       = -0.0778, -0.0052, -0.06
+aim_hud_offset_pos_16x9                  = -0.0778, -0.0052, -0.06
 aim_hud_offset_rot                       = -0.0006, 0.011, 0
 aim_hud_offset_rot_16x9                  = -0.0006, 0.011, 0
 ;----------------------------------------------------------------------------------------
@@ -379,7 +371,6 @@ visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_acog
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 
 use_alt_aim_hud			= true
 
@@ -387,8 +378,8 @@ use_alt_aim_hud			= true
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_acog_hud.ogf
 
-aim_hud_offset_pos                       = -0.081, -0.01, -0.14
-aim_hud_offset_pos_16x9                  = -0.081, -0.01, -0.14
+aim_hud_offset_pos                       = -0.081, -0.01, -0.13
+aim_hud_offset_pos_16x9                  = -0.081, -0.01, -0.13
 aim_hud_offset_rot                       = 0, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0, 0.011, 0
 ;--------------------------------------------------------------------------------------------
@@ -407,7 +398,6 @@ visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_specter
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 scope_dynamic_zoom      = off
 
 use_alt_aim_hud			= true
@@ -433,16 +423,12 @@ hud				= wpn_vintorez_m1_okp_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom      = off
-
 [wpn_vintorez_m1_okp_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_okp_hud.ogf
 
-aim_hud_offset_pos                       = -0.0733, 0.0141, -0.08
-aim_hud_offset_pos_16x9                  = -0.0733, 0.0141, -0.08
+aim_hud_offset_pos                       = -0.0733, 0.0141, -0.06
+aim_hud_offset_pos_16x9                  = -0.0733, 0.0141, -0.06
 aim_hud_offset_rot                       = 0.0009, 0.0105, 0
 aim_hud_offset_rot_16x9                  = 0.0009, 0.0105, 0
 ;--------------------------------------------------------------------------------------------
@@ -458,16 +444,12 @@ hud				= wpn_vintorez_m1_eot_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom      = off
-
 [wpn_vintorez_m1_eot_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_eot_hud.ogf
 
-aim_hud_offset_pos                       = -0.0806, -0.0188, -0.06
-aim_hud_offset_pos_16x9                  = -0.0806, -0.0188, -0.06
+aim_hud_offset_pos                       = -0.0806, -0.0188, -0.045
+aim_hud_offset_pos_16x9                  = -0.0806, -0.0188, -0.045
 aim_hud_offset_rot                       = -0.0035, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.0035, 0.0114, 0
 ;--------------------------------------------------------------------------------------------
@@ -486,7 +468,6 @@ visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_pso2_vss
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 
 use_alt_aim_hud			= true
 
@@ -505,8 +486,6 @@ inv_weight			= 4.600
 
 hud				= wpn_vintorez_m1_1p59_hud
 
-scope_dynamic_zoom                       = off
-
 1icon_layer			    = 1p59
 1icon_layer_x			= 80
 1icon_layer_y			= -4
@@ -515,8 +494,8 @@ visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
 scope_status            = 1
 scope_texture			= wpn_crosshair_1p59
-scope_zoom_factor                                  = 11 ;(x10)
-zoom_rotate_time		= 0.25
+scope_dynamic_zoom                       = on
+scope_zoom_factor                        = 11
 
 use_alt_aim_hud			= true
 
@@ -541,16 +520,12 @@ hud				= wpn_vintorez_m1_1p76_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_1p76_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_1p76_hud.ogf
 
-aim_hud_offset_pos                       = -0.0773, -0.006, -0.08
-aim_hud_offset_pos_16x9                  = -0.0773, -0.006, -0.08
+aim_hud_offset_pos                       = -0.0771, -0.005, -0.06
+aim_hud_offset_pos_16x9                  = -0.0771, -0.005, -0.06
 aim_hud_offset_rot                       = -0.002, 0.0109, 0
 aim_hud_offset_rot_16x9                  = -0.002, 0.0109, 0
 ;----------------------------------------------------------------------------------------
@@ -559,7 +534,6 @@ aim_hud_offset_rot_16x9                  = -0.002, 0.0109, 0
 inv_weight			= 3.950
 
 hud				= wpn_vintorez_m1_pka_hud
-
 
 1icon_layer			    = pka
 1icon_layer_x			= 95
@@ -576,8 +550,8 @@ use_alt_aim_hud			= true
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_pka_hud.ogf
 
-aim_hud_offset_pos                       = -0.0703, 0.0045, -0.135
-aim_hud_offset_pos_16x9                  = -0.0703, 0.0045, -0.135
+aim_hud_offset_pos                       = -0.07, 0.0053, -0.12
+aim_hud_offset_pos_16x9                  = -0.07, 0.0053, -0.12
 aim_hud_offset_rot                       = -0.0004, 0.01, 0
 aim_hud_offset_rot_16x9                  = -0.0004, 0.01, 0
 ;----------------------------------------------------------------------------------------
@@ -593,16 +567,12 @@ hud				= wpn_vintorez_m1_ac10632_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_ac10632_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_ac10632_hud.ogf
 
-aim_hud_offset_pos                       = -0.081, -0.01, -0.08
-aim_hud_offset_pos_16x9                  = -0.081, -0.01, -0.08
+aim_hud_offset_pos                       = -0.081, -0.01, -0.06
+aim_hud_offset_pos_16x9                  = -0.081, -0.01, -0.06
 aim_hud_offset_rot                       = -0.0027, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.0027, 0.0114, 0
 ;----------------------------------------------------------------------------------------
@@ -618,16 +588,12 @@ hud				= wpn_vintorez_m1_c-more_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_c-more_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_c-more_hud.ogf
 
-aim_hud_offset_pos                       = -0.0818, -0.0072, -0.08
-aim_hud_offset_pos_16x9                  = -0.0818, -0.0072, -0.08
+aim_hud_offset_pos                       = -0.0815, -0.007, -0.06
+aim_hud_offset_pos_16x9                  = -0.0815, -0.007, -0.06
 aim_hud_offset_rot                       = -0.0022, 0.0116, 0
 aim_hud_offset_rot_16x9                  = -0.0022, 0.0116, 0
 ;----------------------------------------------------------------------------------------
@@ -643,16 +609,12 @@ hud				= wpn_vintorez_m1_ekp8_02_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_ekp8_02_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_ekp8_02_hud.ogf
 
-aim_hud_offset_pos                       = -0.0768, -0.0015, -0.08
-aim_hud_offset_pos_16x9                  = -0.0768, -0.0015, -0.08
+aim_hud_offset_pos                       = -0.0765, -0.0013, -0.06
+aim_hud_offset_pos_16x9                  = -0.0765, -0.0013, -0.06
 aim_hud_offset_rot                       = -0.0011, 0.0108, 0
 aim_hud_offset_rot_16x9                  = -0.0011, 0.0108, 0
 ;----------------------------------------------------------------------------------------
@@ -668,16 +630,12 @@ hud				= wpn_vintorez_m1_d0cter_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_d0cter_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_docter_hud.ogf
 
-aim_hud_offset_pos                       = -0.0815, 0.0055, -0.08
-aim_hud_offset_pos_16x9                  = -0.0815, 0.0055, -0.08
+aim_hud_offset_pos                       = -0.0815, 0.006, -0.06
+aim_hud_offset_pos_16x9                  = -0.0815, 0.006, -0.06
 aim_hud_offset_rot                       = 0.0006, 0.0115, 0
 aim_hud_offset_rot_16x9                  = 0.0006, 0.0115, 0
 ;----------------------------------------------------------------------------------------
@@ -693,16 +651,11 @@ hud				= wpn_vintorez_m1_1pn93_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-
-;installed_upgrades                       = up_fourte_svd_nimble
-
 nv_scope_status = 1
 
 scope_status            = 1
-;scope_nightvision       = scope_nightvision_2gen
 scope_texture			= wpn_crosshair_1pn93
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 
 use_alt_aim_hud			= true
 
@@ -715,8 +668,8 @@ aim_hud_offset_pos_16x9                  = -0.0677, 0, -0.09
 aim_hud_offset_rot                       = 0.005, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0.005, 0.011, 0
 
-aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.08
-aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.08
+aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.06
+aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.06
 aim_hud_offset_alt_rot                       = 0.0047, 0.0108, 0
 aim_hud_offset_alt_rot_16x9                  = 0.0047, 0.0108, 0
 ;---------------------------------------------------------------------------------------------------
@@ -735,8 +688,7 @@ visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_leupold
 scope_zoom_factor                                  = 7
-zoom_rotate_time		= 0.25
-scope_dynamic_zoom      = off
+scope_dynamic_zoom      = on
 
 use_alt_aim_hud			= true
 
@@ -744,8 +696,8 @@ use_alt_aim_hud			= true
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_leupold_hud.ogf
 
-aim_hud_offset_pos                       = -0.081, -0.01, -0.13
-aim_hud_offset_pos_16x9                  = -0.081, -0.01, -0.13
+aim_hud_offset_pos                       = -0.081, -0.01, -0.12
+aim_hud_offset_pos_16x9                  = -0.081, -0.01, -0.12
 aim_hud_offset_rot                       = 0.005, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0.005, 0.011, 0
 ;---------------------------------------------------------------------------------------------------
@@ -761,16 +713,12 @@ hud				= wpn_vintorez_m1_mepro_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_mepro_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_mepro_hud.ogf
 
-aim_hud_offset_pos                       = -0.082, -0.017, -0.08
-aim_hud_offset_pos_16x9                  = -0.082, -0.017, -0.08
+aim_hud_offset_pos                       = -0.0818, -0.016, -0.06
+aim_hud_offset_pos_16x9                  = -0.0818, -0.016, -0.06
 aim_hud_offset_rot                       = -0.0037, 0.0117, 0
 aim_hud_offset_rot_16x9                  = -0.0037, 0.0117, 0
 ;----------------------------------------------------------------------------------------
@@ -786,16 +734,12 @@ hud				= wpn_vintorez_m1_aim_low_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_aim_low_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_aim_low_hud.ogf
 
-aim_hud_offset_pos                       = -0.0814, 0.0054, -0.08
-aim_hud_offset_pos_16x9                  = -0.0814, 0.0054, -0.08
+aim_hud_offset_pos                       = -0.0811, 0.0054, -0.06
+aim_hud_offset_pos_16x9                  = -0.0811, 0.0054, -0.06
 aim_hud_offset_rot                       = -0.0005, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.0005, 0.0114, 0
 ;----------------------------------------------------------------------------------------
@@ -811,16 +755,12 @@ hud				= wpn_vintorez_m1_ekp8_18_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_ekp8_18_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_ekp8_18_hud.ogf
 
-aim_hud_offset_pos                       = -0.0804, -0.017, -0.08
-aim_hud_offset_pos_16x9                  = -0.0804, -0.017, -0.08
+aim_hud_offset_pos                       = -0.0802, -0.017, -0.06
+aim_hud_offset_pos_16x9                  = -0.0802, -0.017, -0.06
 aim_hud_offset_rot                       = -0.0033, 0.0113, 0
 aim_hud_offset_rot_16x9                  = -0.0033, 0.0113, 0
 ;----------------------------------------------------------------------------------------
@@ -836,16 +776,12 @@ hud				= wpn_vintorez_m1_rmr_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_rmr_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_rmr_hud.ogf
 
-aim_hud_offset_pos                       = -0.0814, 0.004, -0.08
-aim_hud_offset_pos_16x9                  = -0.0814, 0.004, -0.08
+aim_hud_offset_pos                       = -0.0811, 0.004, -0.06
+aim_hud_offset_pos_16x9                  = -0.0811, 0.004, -0.06
 aim_hud_offset_rot                       = -0.0005, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.0005, 0.0114, 0
 ;----------------------------------------------------------------------------------------
@@ -861,16 +797,12 @@ hud				= wpn_vintorez_m1_aimpoint_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_aimpoint_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_aimpoint_hud.ogf
 
-aim_hud_offset_pos                       = -0.0814, -0.014, -0.08
-aim_hud_offset_pos_16x9                  = -0.0814, -0.014, -0.08
+aim_hud_offset_pos                       = -0.0812, -0.0136, -0.06
+aim_hud_offset_pos_16x9                  = -0.0812, -0.0136, -0.06
 aim_hud_offset_rot                       = -0.0032, 0.0116, 0
 aim_hud_offset_rot_16x9                  = -0.0032, 0.0116, 0
 ;----------------------------------------------------------------------------------------
@@ -886,16 +818,12 @@ hud				= wpn_vintorez_m1_point_aimpro_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_point_aimpro_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_aimpoint_pro_hud.ogf
 
-aim_hud_offset_pos                       = -0.0811, -0.014, -0.08
-aim_hud_offset_pos_16x9                  = -0.0811, -0.014, -0.08
+aim_hud_offset_pos                       = -0.0808, -0.0135, -0.06
+aim_hud_offset_pos_16x9                  = -0.0808, -0.0135, -0.06
 aim_hud_offset_rot                       = -0.003, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.003, 0.0114, 0
 ;----------------------------------------------------------------------------------------
@@ -911,16 +839,12 @@ hud				= wpn_vintorez_m1_deltapoint_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_deltapoint_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_deltapoint_hud.ogf
 
-aim_hud_offset_pos                       = -0.082, -0.0013, -0.08
-aim_hud_offset_pos_16x9                  = -0.082, -0.0013, -0.08
+aim_hud_offset_pos                       = -0.0818, -0.0008, -0.06
+aim_hud_offset_pos_16x9                  = -0.0818, -0.0008, -0.06
 aim_hud_offset_rot                       = -0.0013, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.0013, 0.0114, 0
 ;----------------------------------------------------------------------------------------
@@ -936,16 +860,12 @@ hud				= wpn_vintorez_m1_0kp2_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_0kp2_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_0kp2_hud.ogf
 
-aim_hud_offset_pos                       = -0.0778, -0.0035, -0.08
-aim_hud_offset_pos_16x9                  = -0.0778, -0.0035, -0.08
+aim_hud_offset_pos                       = -0.0778, -0.0035, -0.06
+aim_hud_offset_pos_16x9                  = -0.0778, -0.0035, -0.06
 aim_hud_offset_rot                       = -0.0016, 0.0111, 0
 aim_hud_offset_rot_16x9                  = -0.0016, 0.0111, 0
 ;----------------------------------------------------------------------------------------
@@ -961,16 +881,12 @@ hud				= wpn_vintorez_m1_e0t2_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_e0t2_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_e0t2_hud.ogf
 
-aim_hud_offset_pos                       = -0.081, -0.012, -0.08
-aim_hud_offset_pos_16x9                  = -0.081, -0.012, -0.08
+aim_hud_offset_pos                       = -0.081, -0.012, -0.06
+aim_hud_offset_pos_16x9                  = -0.081, -0.012, -0.06
 aim_hud_offset_rot                       = -0.0028, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.0028, 0.0114, 0
 ;----------------------------------------------------------------------------------------
@@ -986,15 +902,11 @@ hud				= wpn_vintorez_m1_pn23_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-;installed_upgrades                       = up_fourte_svd_nimble
-;scope_nightvision                        = scope_nightvision_3gen
-
 nv_scope_status = 1
 
 scope_status            = 1
 scope_texture			= wpn_crosshair_pn23
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 
 use_alt_aim_hud			= true
 
@@ -1002,8 +914,8 @@ use_alt_aim_hud			= true
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_pn23_hud.ogf
 
-aim_hud_offset_pos                       = -0.081, -0.019, -0.09
-aim_hud_offset_pos_16x9                  = -0.081, -0.019, -0.09
+aim_hud_offset_pos                       = -0.081, -0.019, -0.08
+aim_hud_offset_pos_16x9                  = -0.081, -0.019, -0.08
 aim_hud_offset_rot                       = 0.005, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0.005, 0.011, 0
 ;----------------------------------------------------------------------------------------
@@ -1034,8 +946,8 @@ aim_hud_offset_pos_16x9                  = -0.0787, 0.006, -0.05
 aim_hud_offset_rot                       = 0.005, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0.005, 0.011, 0
 
-aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.07
-aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.07
+aim_hud_offset_alt_pos                       = -0.0759, 0.0406, -0.055
+aim_hud_offset_alt_pos_16x9                  = -0.0759, 0.0406, -0.055
 aim_hud_offset_alt_rot                       = 0.0047, 0.0108, 0
 aim_hud_offset_alt_rot_16x9                  = 0.0047, 0.0108, 0
 ;-----------------------------------------------------------------------------------------------------
@@ -1054,8 +966,8 @@ inv_weight                               = 3.680
 
 item_visual                		= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_compm4s_hud.ogf
 
-aim_hud_offset_pos                       = -0.0813, -0.0113, -0.08
-aim_hud_offset_pos_16x9                  = -0.0813, -0.0113, -0.08
+aim_hud_offset_pos                       = -0.081, -0.0113, -0.06
+aim_hud_offset_pos_16x9                  = -0.081, -0.0113, -0.06
 aim_hud_offset_rot                       = -0.0027, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.0027, 0.0114, 0
 ;--------------------------------------------------------------------------------------------
@@ -1077,8 +989,8 @@ inv_weight                               = 3.800
 
 item_visual                		= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_rakurs_hud.ogf
 
-aim_hud_offset_pos                       = -0.081, 0.0018, -0.08
-aim_hud_offset_pos_16x9                  = -0.081, 0.0018, -0.08
+aim_hud_offset_pos                       = -0.0806, 0.0013, -0.06
+aim_hud_offset_pos_16x9                  = -0.0806, 0.0013, -0.06
 aim_hud_offset_rot                       = 0, 0.0113, 0
 aim_hud_offset_rot_16x9                  = 0, 0.0113, 0
 ;-----------------------------------------------------------------------------------------------------
@@ -1098,7 +1010,6 @@ nv_scope_status = 1
 
 scope_status                             = 1
 scope_dynamic_zoom                       = off
-;scope_nightvision                        = scope_nightvision_1gen
 scope_texture                            = wpn_crosshair_1pn93n2_1gs
 scope_zoom_factor                                  = 25
 
@@ -1110,8 +1021,8 @@ inv_weight                               = 4.250
 
 item_visual                		= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_1pn93n2_1gs_hud.ogf
 
-aim_hud_offset_pos                       = -0.063, 0.007, -0.08
-aim_hud_offset_pos_16x9                  = -0.063, 0.007, -0.08
+aim_hud_offset_pos                       = -0.063, 0.007, -0.06
+aim_hud_offset_pos_16x9                  = -0.063, 0.007, -0.06
 aim_hud_offset_rot                       = 0.005, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0.005, 0.011, 0
 ;---------------------------------------------------------------------------------------------
@@ -1137,8 +1048,8 @@ use_alt_aim_hud			= true
 
 item_visual                              = dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_susat_hud.ogf
 
-aim_hud_offset_pos                       = -0.081, -0.0115, -0.12
-aim_hud_offset_pos_16x9                  = -0.081, -0.0115, -0.12
+aim_hud_offset_pos                       = -0.081, -0.0115, -0.11
+aim_hud_offset_pos_16x9                  = -0.081, -0.0115, -0.11
 aim_hud_offset_rot                       = 0.005, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0.005, 0.011, 0
 ;-----------------------------------------------------------------------------------------------------
@@ -1153,7 +1064,7 @@ hud                                      = wpn_vintorez_m1_marchf_hud
 visual                                   = dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
 scope_status                             = 1
-scope_dynamic_zoom                       = off
+scope_dynamic_zoom                       = on
 scope_texture                            = wpn_crosshair_marchf
 scope_zoom_factor                        = 6
 
@@ -1163,8 +1074,8 @@ use_alt_aim_hud			= true
 
 item_visual                              = dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_marchf_hud.ogf
 
-aim_hud_offset_pos                       = -0.081, -0.009, -0.13
-aim_hud_offset_pos_16x9                  = -0.081, -0.009, -0.13
+aim_hud_offset_pos                       = -0.081, -0.009, -0.12
+aim_hud_offset_pos_16x9                  = -0.081, -0.009, -0.12
 aim_hud_offset_rot                       = 0.005, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0.005, 0.011, 0
 ;-----------------------------------------------------------------------------------------------------
@@ -1180,16 +1091,12 @@ hud				= wpn_vintorez_m1_kemper_hud
 
 visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_vintorez_m1_kemper_hud]:wpn_vintorez_m1_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_kemper_hud.ogf
 
-aim_hud_offset_pos                       = -0.0817, -0.014, -0.08
-aim_hud_offset_pos_16x9                  = -0.0817, -0.014, -0.08
+aim_hud_offset_pos                       = -0.0813, -0.013, -0.06
+aim_hud_offset_pos_16x9                  = -0.0813, -0.013, -0.06
 aim_hud_offset_rot                       = -0.0032, 0.0114, 0
 aim_hud_offset_rot_16x9                  = -0.0032, 0.0114, 0
 ;------------------------------------------------------------------------------------------------
@@ -1216,8 +1123,8 @@ use_alt_aim_hud			= true
 
 item_visual                              = dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_usp1_hud.ogf
 
-aim_hud_offset_pos                       = -0.08, -0.002, -0.09
-aim_hud_offset_pos_16x9                  = -0.08, -0.002, -0.09
+aim_hud_offset_pos                       = -0.08, -0.002, -0.08
+aim_hud_offset_pos_16x9                  = -0.08, -0.002, -0.08
 aim_hud_offset_rot                       = 0.005, 0.011, 0
 aim_hud_offset_rot_16x9                  = 0.005, 0.011, 0
 ;-----------------------------------------------------------------------------------------------------
@@ -1236,8 +1143,7 @@ visual				= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_gauss
 scope_zoom_factor                                  = 12
-zoom_rotate_time		= 0.25
-scope_dynamic_zoom      = off
+scope_dynamic_zoom      = on
 
 use_alt_aim_hud			= true
 
@@ -1245,9 +1151,9 @@ use_alt_aim_hud			= true
 
 item_visual                	= dynamics\weapons\wpn_vintorez_m1\wpn_vintorez_m1_gauss_hud.ogf
 
-aim_hud_offset_pos				= -0.081, 0.002,-0.12
-aim_hud_offset_pos_16x9				= -0.081, 0.002,-0.12
-aim_hud_offset_rot				= 0.005, 0.011,0
+aim_hud_offset_pos					= -0.081, 0.002, -0.11
+aim_hud_offset_pos_16x9				= -0.081, 0.002, -0.11
+aim_hud_offset_rot					= 0.005, 0.011,0
 aim_hud_offset_rot_16x9				= 0.005, 0.011,0
 ;---------------------------------------------------------------------------------------------------
 

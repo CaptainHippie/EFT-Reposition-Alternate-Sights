@@ -227,6 +227,11 @@ aim_hud_offset_pos_16x9				= -0.0579, 0.00035, -0.065
 aim_hud_offset_rot					= -0.0095, 0.0082, 0
 aim_hud_offset_rot_16x9				= -0.0095, 0.0082, 0
 
+aim_hud_offset_alt_pos					= -0.11, -0.032, 0.068
+aim_hud_offset_alt_pos_16x9				= -0.11, -0.032, 0.068
+aim_hud_offset_alt_rot					= 0.0043, 0.0164, 0.5
+aim_hud_offset_alt_rot_16x9				= 0.0043, 0.0164, 0.5
+
 gl_hud_offset_pos					= -0.0374, -0.015, -0.03
 gl_hud_offset_pos_16x9				= -0.0374, -0.015, -0.03
 gl_hud_offset_rot					= -0.0484, 0.011, 0.05
@@ -360,9 +365,10 @@ inv_weight                                         = 4.150
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_acog
 scope_zoom_factor                                  = 25
-zoom_rotate_time                                   = 0.25
 
 hud					                               = wpn_l85_m3_acog_hud
+
+use_alt_aim_hud                   = true		
 
 [wpn_l85_m3_acog_hud]:wpn_l85_m3_hud
 
@@ -405,7 +411,6 @@ hud						= wpn_l85_m3_c-more_hud
 
 inv_weight                                         = 4.100
 
-
 [wpn_l85_m3_c-more_hud]:wpn_l85_m3_hud
 
 item_visual				= dynamics\weapons\wpn_l85_m3\wpn_l85_m3_c-more_hud.ogf
@@ -429,10 +434,7 @@ inv_weight                                         = 4.470
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_specter
 scope_zoom_factor                                  = 25
-zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
-
-scope_zoom_factor_alt             = 0
 
 use_alt_aim_hud                   = true		
 
@@ -506,8 +508,9 @@ inv_weight                                         = 4.480
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_leupold
 scope_zoom_factor                                  = 7
-zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
+
+use_alt_aim_hud                   = true		
 
 [wpn_l85_m3_leupold_hud]:wpn_l85_m3_hud
 
@@ -612,16 +615,14 @@ hud					= wpn_l85_m3_pn23_hud
 1icon_layer_x			= 40
 1icon_layer_y			= -18
 
-;;installed_upgrades                       = up_fourte_svd_nimble
-;scope_nightvision                        = scope_nightvision_3gen
-
 nv_scope_status = 1
 
 inv_weight                                         = 4.450
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_pn23
 scope_zoom_factor                                  = 25
-zoom_rotate_time                                   = 0.25
+
+use_alt_aim_hud                   = true		
 
 [wpn_l85_m3_pn23_hud]:wpn_l85_m3_hud
 
@@ -646,8 +647,9 @@ inv_weight                                         = 5.200
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_gauss
 scope_zoom_factor                                  = 12
-zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
+
+use_alt_aim_hud                   = true		
 
 [wpn_l85_m3_gauss_sight_hud]:wpn_l85_m3_hud
 
@@ -694,8 +696,6 @@ scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_susat
 scope_zoom_factor                                  = 25
 
-scope_zoom_factor_alt             = 0
-
 use_alt_aim_hud                   = true		
 
 [wpn_l85_m3_susat_hud]:wpn_l85_m3_hud
@@ -728,6 +728,8 @@ scope_dynamic_zoom                       = on
 scope_texture                            = wpn_crosshair_marchf
 scope_zoom_factor                        = 6
 
+use_alt_aim_hud                   = true		
+
 [wpn_l85_m3_marchf_hud]:wpn_l85_m3_hud
 
 item_visual                              = dynamics\weapons\wpn_l85_m3\wpn_l85_m3_marchf_hud.ogf
@@ -748,10 +750,6 @@ hud				= wpn_l85_m3_kemper_hud
 1icon_layer_y			= -16
 
 visual				= dynamics\weapons\wpn_l85_m3\wpn_l85_m3_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
 
 [wpn_l85_m3_kemper_hud]:wpn_l85_m3_hud
 

@@ -166,7 +166,7 @@ control_inertion_factor = 1.0f
         kill_msg_width              = 84
         kill_msg_height             = 28
 		
-
+scope_zoom_factor_alt             = 0
 
 ;--------------------------------------------------------------------Particles--------------------------------------------------------------------------
 ;silencer_smoke_particles                = weapons\generic_shoot_00
@@ -264,6 +264,7 @@ $spawn                                             = "weapons\ak12_acog"
 1icon_layer                                        = acog
 1icon_layer_x                                      = 82
 1icon_layer_y                                      = -4
+
 inv_weight                                         = 3.450
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_acog
@@ -317,8 +318,6 @@ scope_texture                                      = wpn_crosshair_specter
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
-
-scope_zoom_factor_alt             = 0
 
 use_alt_aim_hud                   = true	
 
@@ -598,9 +597,6 @@ hud					= wpn_ak12_custom_pn23_hud
 1icon_layer_x                            = 64
 1icon_layer_y                            = -10
 
-;installed_upgrades                       = up_fourte_svd_nimble
-;scope_nightvision                        = scope_nightvision_3gen
-
 nv_scope_status = 1
 
 inv_weight                                         = 3.749
@@ -641,7 +637,6 @@ scope_texture                                      = wpn_crosshair_gauss
 scope_zoom_factor                                  = 12
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
-;installed_upgrades                                 = up_fourtc_svd_nimble
 
 [wpn_ak12_custom_gauss_sight_hud]:wpn_ak12_custom_hud
 
@@ -664,10 +659,6 @@ hud				= wpn_ak12_custom_deltapoint_hud
 1icon_layer_y			= 0
 
 visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
 
 [wpn_ak12_custom_deltapoint_hud]:wpn_ak12_custom_hud
 
@@ -762,8 +753,6 @@ scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_susat
 scope_zoom_factor                                  = 25
 
-scope_zoom_factor_alt             = 0
-
 use_alt_aim_hud                   = true	
 
 [wpn_ak12_custom_susat_hud]:wpn_ak12_custom_hud
@@ -844,8 +833,6 @@ zoom_rotate_time                                   = 0.25
 
 hud					                               = wpn_ak12_custom_triji_hud
 
-scope_zoom_factor_alt             = 0
-
 use_alt_aim_hud                   = true	
 
 [wpn_ak12_custom_triji_hud]:wpn_ak12_custom_hud
@@ -882,8 +869,6 @@ scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
 
-scope_zoom_factor_alt             = 0
-
 use_alt_aim_hud                   = true	
 
 [wpn_ak12_custom_spec_alt_hud]:wpn_ak12_custom_hud
@@ -919,8 +904,6 @@ scope_texture                                      = wpn_crosshair_leupold_rmr
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
-
-scope_zoom_factor_alt             = 0
 
 use_alt_aim_hud                   = true	
 
@@ -983,16 +966,15 @@ flame_particles                          = ghost_particles\weapons\generic_smoke
 smoke_particles				             = ghost_particles\weapons\flame_eft_ak           ;particles remade incomp.
 silencer_smoke_particles   		         = ghost_particles\weapons\generic_smoke_eft_sil  ;particles remade incomp.
 
-scope_zoom_factor_alt             = 0	
-
 grenade_launcher_status                  = 2
-        grenade_launcher_x          = 126
-        grenade_launcher_y          = 19
+grenade_launcher_x          = 126
+grenade_launcher_y          = 19
 
-        ammo_elapsed                = 60
-        ammo_mag_size               = 60
+ammo_elapsed                = 60
+ammo_mag_size               = 60
 		
-		laser_status = true
+laser_status 		= true
+use_alt_aim_hud 	= true
 ;---------------------------------------------------------------------SND-------------------------------------------------------------------------------
 snd_draw                = weapons\ak74\ak74_draw
 snd_holster             = weapons\ak74\ak74_draw
@@ -1002,7 +984,15 @@ snd_reload_empty        = weapons\ak105_sp\ak105_reload_empty
 
 snd_reload_misfire      = weapons\ak74_blindside\ak74_unjam
 
-snd_shoot_grenade		= weapons\gp30\GP30_grenshoot
+;snd_shoot               = weapons\ak104_tac_prince\ak104_shot_1
+;snd_shoot1              = weapons\ak104_tac_prince\ak104_shot_2
+;snd_shoot2              = weapons\ak104_tac_prince\ak104_shot_3
+
+;snd_silncer_shot        = weapons\ak104_tac_prince\ak104_shot_sil_1
+;snd_silncer_shot1       = weapons\ak104_tac_prince\ak104_shot_sil_2
+;snd_silncer_shot2       = weapons\ak104_tac_prince\ak104_shot_sil_3
+
+snd_shoot_grenade		= weapons\gp30\gp30_grenshoot
 snd_reload_grenade		= weapons\gp30\gp30_grenload,	1.0, 0.8
 ;---------------------------------------------------------------------HUD-------------------------------------------------------------------------------
 [wpn_ak12_custom_mono_kit_hud]:wpn_ak12_custom_hud
@@ -1011,22 +1001,27 @@ item_visual				= dynamics\weapons\wpn_ak12_custom\wpn_ak12_custom_mono_kit_hud.o
 
 
 ;--------
-aim_hud_offset_pos				= -0.0695,0.0115,-0.077
-aim_hud_offset_pos_16x9				= -0.0695,0.0115,-0.077
-aim_hud_offset_rot				= 0.005,0.01,-0.0125
-aim_hud_offset_rot_16x9				= 0.005,0.01,-0.0125
-
-hands_position					= 0.069,-0.05,-0.01
-hands_position_16x9				= 0.069,-0.05,-0.01
+hands_position					= 0.069, -0.05, -0.01
+hands_position_16x9				= 0.069, -0.05, -0.01
 hands_orientation				= 0.586,0.91,0
-hands_orientation_16x9				= 0.586,0.91,0
+hands_orientation_16x9			= 0.586,0.91,0
+
+aim_hud_offset_pos					= -0.07, 0.0115, -0.08
+aim_hud_offset_pos_16x9				= -0.07, 0.0115, -0.08
+aim_hud_offset_rot					= 0.005, 0.01, 0
+aim_hud_offset_rot_16x9				= 0.005, 0.01, 0
+
+aim_hud_offset_alt_pos              = -0.113, -0.045, 0.02
+aim_hud_offset_alt_pos_16x9         = -0.113, -0.045, 0.02
+aim_hud_offset_alt_rot              = 0.0095, 0.0169, 0.72
+aim_hud_offset_alt_rot_16x9         = 0.0095, 0.0169, 0.72
 
 item_position				= 0,0,0
 item_orientation			= 0,0,0
 
-gl_hud_offset_pos				= -0.0361,-0.1037,-0.049
+gl_hud_offset_pos					= -0.0361,-0.1037,-0.049
 gl_hud_offset_pos_16x9				= -0.0361,-0.1037,-0.049
-gl_hud_offset_rot				= -0.3352,0.0123,-0.0097
+gl_hud_offset_rot					= -0.3352,0.0123,-0.0097
 gl_hud_offset_rot_16x9				= -0.3352,0.0123,-0.0097
 ;-------
 
@@ -1122,8 +1117,6 @@ scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 
 hud					                               = wpn_ak12_custom_trijicon_rmr_hud
-
-scope_zoom_factor_alt             = 0
 
 use_alt_aim_hud                   = true	
 

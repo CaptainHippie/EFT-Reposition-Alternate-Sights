@@ -200,14 +200,6 @@ snd_reload_grenade		= weapons\gp30\gp30_grenload,	1.0, 0.8
         attach_place_idx            = 0
         zoom_hide_crosshair         = true
         
-gl_hud_offset_pos         	 = -0.035, 0.01, -0.08
-gl_hud_offset_pos_16x9           = -0.035, 0.01, -0.08
-gl_hud_offset_rot         	 = 0.007, 0.0045, 0
-gl_hud_offset_rot_16x9           = 0.007, 0.0045, 0
-       
-        lean_hud_offset_pos         = 0, 0, 0
-        lean_hud_offset_rot         = 0, 0, 0
-		
 ;--------
 hands_position                           = 0.082, -0.04, 0.04
 hands_position_16x9                      = 0.082, -0.04, 0.04
@@ -229,8 +221,16 @@ lowered_hud_offset_pos_16x9	        = 0.075, -0.025, -0.025
 lowered_hud_offset_rot		        = -0.1, -0.65, 0.4
 lowered_hud_offset_rot_16x9	        = -0.1, -0.65, 0.4
 
+gl_hud_offset_pos         	 		= -0.035, 0.01, -0.08
+gl_hud_offset_pos_16x9           	= -0.035, 0.01, -0.08
+gl_hud_offset_rot         	 		= 0.007, 0.0045, 0
+gl_hud_offset_rot_16x9           	= 0.007, 0.0045, 0
+
 item_position				= 0.003783,-0.004619,-0.007836
 item_orientation			= 0.022872,1.932037,0.172046
+
+lean_hud_offset_pos         = 0, 0, 0
+lean_hud_offset_rot         = 0, 0, 0
 ;---------	
         
 anm_bore                                 = blnd_ak74m_inspect, idle
@@ -288,13 +288,6 @@ fire_bone2			= muzzle
  
 		freelook_z_offset_mul		= 0.7
 		
-		;freelook_z_offset_mul	    = 0.6
-		
-;fire_point							= 0,0,0
-;fire_bone                   		= muzzle
-;fire_point2                 		= 0,0,0
-;fire_bone2                			= muzzle_gl		
- 
 ;--------------------------------------------------------------------Addons-----------------------------------------------------------------------------
 [wpn_vintorez_isg_1p29]:wpn_vintorez_isg
 
@@ -311,7 +304,6 @@ visual				= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_1p29
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 
 [wpn_vintorez_isg_1p29_hud]:wpn_vintorez_isg_hud
 
@@ -342,7 +334,6 @@ visual				= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_acog
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 
 [wpn_vintorez_isg_acog_hud]:wpn_vintorez_isg_hud
 
@@ -369,7 +360,6 @@ visual				= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_specter
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 scope_dynamic_zoom      = off
 
 [wpn_vintorez_isg_specter_hud]:wpn_vintorez_isg_hud
@@ -393,18 +383,12 @@ hud				= wpn_vintorez_isg_1pn93_hud
 
 visual				= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 
-;installed_upgrades                       = up_fourte_svd_nimble
-
 nv_scope_status = 1
 
 scope_status                             = 1
 scope_dynamic_zoom                       = off
-;scope_nightvision                        = scope_nightvision_1gen
 scope_texture                            = wpn_crosshair_1pn93
 scope_zoom_factor                                  = 25
-
-;zoom_rotate_time                         = 0.25
-;scope_lense_fov                          = 12
 
 [wpn_vintorez_isg_1pn93_hud]:wpn_vintorez_isg_hud
 
@@ -431,8 +415,7 @@ visual				= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_leupold_rmr
 scope_zoom_factor                                  = 7
-zoom_rotate_time		= 0.25
-scope_dynamic_zoom      = off
+scope_dynamic_zoom      = on
 
 [wpn_vintorez_isg_leupold_hud]:wpn_vintorez_isg_hud
 
@@ -460,7 +443,7 @@ scope_status            = 1
 scope_texture			= wpn_crosshair_gauss
 scope_zoom_factor                                  = 12
 zoom_rotate_time		= 0.25
-scope_dynamic_zoom      = off
+scope_dynamic_zoom      = on
 
 [wpn_vintorez_isg_gauss_sight_hud]:wpn_vintorez_isg_hud
 
@@ -491,9 +474,6 @@ scope_texture                                      = wpn_crosshair_pn23
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 
-;zoom_rotate_time                         = 0.25
-;scope_lense_fov                          = 12
-
 [wpn_vintorez_isg_pn23_hud]:wpn_vintorez_isg_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_pn23_hud.ogf
@@ -518,13 +498,8 @@ nv_scope_status = 1
 
 scope_status                             = 1
 scope_dynamic_zoom                       = off
-;scope_nightvision                        = scope_nightvision_2gen
 scope_texture                            = wpn_crosshair_1pn93n2_1gs
 scope_zoom_factor                                  = 25
-
-
-;zoom_rotate_time                         = 0.25
-;scope_lense_fov                          = 12
 
 inv_weight                               = 4.050
 
@@ -548,13 +523,10 @@ inv_weight                               = 3.520
 hud                                      = wpn_vintorez_isg_susat_hud
 visual                                   = dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 
-
-
 scope_status                             = 1
 scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_susat
 scope_zoom_factor                                  = 25
-
 
 [wpn_vintorez_isg_susat_hud]:wpn_vintorez_isg_hud
 
@@ -580,13 +552,10 @@ inv_weight                               = 3.740
 hud                                      = wpn_vintorez_isg_marchf_hud
 visual                                   = dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 
-
-
 scope_status                             = 1
-scope_dynamic_zoom                       = off
+scope_dynamic_zoom                       = on
 scope_texture                            = wpn_crosshair_marchf
 scope_zoom_factor                                  = 6
-
 
 [wpn_vintorez_isg_marchf_hud]:wpn_vintorez_isg_hud
 
@@ -608,13 +577,10 @@ inv_weight                               = 3.900
 hud                                      = wpn_vintorez_isg_usp1_hud
 visual                                   = dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 
-
-
 scope_status                             = 1
 scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_usp1
 scope_zoom_factor                                  = 25
-
 
 [wpn_vintorez_isg_usp1_hud]:wpn_vintorez_isg_hud
 
@@ -649,10 +615,10 @@ scope_dynamic_zoom		= off
 
 item_visual                		= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_ps01_hud.ogf
 
-aim_hud_offset_pos				= -0.083, 0.0192, -0.04
-aim_hud_offset_pos_16x9				= -0.083, 0.0192, -0.04
-aim_hud_offset_rot				= 0.016, 0.015, 0
-aim_hud_offset_rot_16x9				= 0.016, 0.015, 0
+aim_hud_offset_pos						= -0.083, 0.0192, -0.04
+aim_hud_offset_pos_16x9					= -0.083, 0.0192, -0.04
+aim_hud_offset_rot						= 0.016, 0.015, 0
+aim_hud_offset_rot_16x9					= 0.016, 0.015, 0
 
 aim_hud_offset_alt_pos                       = -0.1102, -0.0585, -0.04
 aim_hud_offset_alt_pos_16x9                  = -0.1102, -0.0585, -0.04
@@ -674,15 +640,14 @@ visual				= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 scope_status            = 1
 scope_texture			= wpn_crosshair_pso2_vss
 scope_zoom_factor                                  = 25
-zoom_rotate_time		= 0.25
 
 [wpn_vintorez_isg_pso2_hud]:wpn_vintorez_isg_hud
 
 item_visual                	= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_pso2_hud.ogf
 
-aim_hud_offset_pos				= -0.078, 0.0192, -0.09
+aim_hud_offset_pos					= -0.078, 0.0192, -0.09
 aim_hud_offset_pos_16x9				= -0.078, 0.0192, -0.09
-aim_hud_offset_rot				= 0.022, 0, 0
+aim_hud_offset_rot					= 0.022, 0, 0
 aim_hud_offset_rot_16x9				= 0.022, 0, 0
 ;---------------------------------------------------------------------------------------------------
 [wpn_vintorez_isg_pso1m21]:wpn_vintorez_isg
@@ -706,9 +671,9 @@ scope_dynamic_zoom		= off
 
 item_visual				= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_pso1m21_hud.ogf
 
-aim_hud_offset_pos				= -0.078, 0.0192, -0.04
+aim_hud_offset_pos					= -0.078, 0.0192, -0.04
 aim_hud_offset_pos_16x9				= -0.078, 0.0192, -0.04
-aim_hud_offset_rot				= 0.022, 0, 0
+aim_hud_offset_rot					= 0.022, 0, 0
 aim_hud_offset_rot_16x9				= 0.022, 0, 0
 
 aim_hud_offset_alt_pos                       = -0.1102, -0.0585, -0.04
@@ -722,7 +687,7 @@ inv_weight			= 4.400
 
 hud				= wpn_vintorez_isg_1p59_hud
 
-scope_dynamic_zoom                       = off
+scope_dynamic_zoom                       = on
 1icon_layer			    = 1p59
 1icon_layer_x			= 80
 1icon_layer_y			= 0
@@ -731,7 +696,6 @@ visual				= dynamics\weapons\wpn_vintorez_isg\wpn_vintorez_isg_world.ogf
 
 scope_texture			= wpn_crosshair_1p59
 scope_zoom_factor                                  = 11
-zoom_rotate_time		= 0.25
 
 [wpn_vintorez_isg_1p59_hud]:wpn_vintorez_isg_hud
 

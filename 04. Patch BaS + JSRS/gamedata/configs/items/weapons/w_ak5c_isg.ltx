@@ -180,8 +180,6 @@ kill_msg_width                           = 82
 kill_msg_height                          = 28
 
 scope_zoom_factor_alt             = 0
-	
-
 
 laser_status = true
 ;-----------------------------------------------------------------------------------------SND----------------------------------------------------------------------------------------------------------------
@@ -210,19 +208,24 @@ item_position                            = 0, 0, 0
 item_orientation                         = 0, 0, 0
 
 hands_position                          = 0.014, -0.018, 0.09
-hands_position_16x9			= 0.014, -0.018, 0.09
+hands_position_16x9						= 0.014, -0.018, 0.09
 hands_orientation                       = 0.51, 0.64, 0
-hands_orientation_16x9			= 0.51, 0.64, 0
+hands_orientation_16x9					= 0.51, 0.64, 0
 
 aim_hud_offset_pos                      = -0.05548, 0.0273, -0.03
-aim_hud_offset_pos_16x9			= -0.05548, 0.0273, -0.03
+aim_hud_offset_pos_16x9					= -0.05548, 0.0273, -0.03
 aim_hud_offset_rot                      = 0.0126, 0.012, 0
-aim_hud_offset_rot_16x9			= 0.0126, 0.012, 0
+aim_hud_offset_rot_16x9					= 0.0126, 0.012, 0
 
-lowered_hud_offset_pos			= 0.065, -0.036, -0.02
-lowered_hud_offset_pos_16x9		= 0.065, -0.036, -0.02
-lowered_hud_offset_rot			= -0.1, -0.63, 0.4
-lowered_hud_offset_rot_16x9		= -0.1, -0.63, 0.4
+aim_hud_offset_alt_pos                  = -0.093, -0.027, -0.02
+aim_hud_offset_alt_pos_16x9				= -0.093, -0.027, -0.02
+aim_hud_offset_alt_rot                  = 0.0052, 0.0154, 0.6
+aim_hud_offset_alt_rot_16x9				= 0.0052, 0.0154, 0.6
+
+lowered_hud_offset_pos					= 0.065, -0.036, -0.02
+lowered_hud_offset_pos_16x9				= 0.065, -0.036, -0.02
+lowered_hud_offset_rot					= -0.1, -0.63, 0.4
+lowered_hud_offset_rot_16x9				= -0.1, -0.63, 0.4
 
 gl_hud_offset_pos                        = -0.0625, 0.00, -0.11
 gl_hud_offset_pos_16x9                   = -0.0625, 0.00, -0.11
@@ -290,9 +293,9 @@ hud				= wpn_ak5c_isg_ac10632_hud
 item_visual                	= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_ac10632_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, -0.001, -0.055
-aim_hud_offset_pos_16x9			= -0.055, -0.001, -0.055
+aim_hud_offset_pos_16x9					= -0.055, -0.001, -0.055
 aim_hud_offset_rot                      = -0.0004, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.0004, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.0004, 0.0092, 0
 ;-------------------------------------------------------------------------------
 [wpn_ak5c_isg_acog]:wpn_ak5c_isg
 
@@ -306,7 +309,8 @@ inv_weight                                         = 3.350
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_acog
 scope_zoom_factor                                  = 25
-zoom_rotate_time                                   = 0.25
+
+use_alt_aim_hud                   = true
 
 hud					                               = wpn_ak5c_isg_acog_hud
 
@@ -315,9 +319,9 @@ hud					                               = wpn_ak5c_isg_acog_hud
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_acog_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, 0, -0.085
-aim_hud_offset_pos_16x9			= -0.055, 0, -0.085
+aim_hud_offset_pos_16x9					= -0.055, 0, -0.085
 aim_hud_offset_rot                      = 0, 0.009, 0
-aim_hud_offset_rot_16x9			= 0, 0.009, 0
+aim_hud_offset_rot_16x9					= 0, 0.009, 0
 ;-------------------------------------------------------------------------------
 [wpn_ak5c_isg_eot]:wpn_ak5c_isg
 
@@ -331,16 +335,14 @@ inv_weight                                         = 3.300
 
 hud				= wpn_ak5c_isg_eot_hud
 
-
-
 [wpn_ak5c_isg_eot_hud]:wpn_ak5c_isg_hud
 
 item_visual                	= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_eot_hud.ogf
 
 aim_hud_offset_pos                      = -0.0548, -0.0075, -0.055
-aim_hud_offset_pos_16x9			= -0.0548, -0.0075, -0.055
+aim_hud_offset_pos_16x9					= -0.0548, -0.0075, -0.055
 aim_hud_offset_rot                      = -0.0012, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.0012, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.0012, 0.0092, 0
 ;-----------------------------------------------------------------------------
 [wpn_ak5c_isg_c-more]:wpn_ak5c_isg
 
@@ -353,15 +355,14 @@ hud						= wpn_ak5c_isg_c-more_hud
 
 inv_weight                                         = 3.300
 
-
 [wpn_ak5c_isg_c-more_hud]:wpn_ak5c_isg_hud
 
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_c-more_hud.ogf
 
 aim_hud_offset_pos                      = -0.0548, 0.0015, -0.055
-aim_hud_offset_pos_16x9			= -0.0548, 0.0015, -0.055
+aim_hud_offset_pos_16x9					= -0.0548, 0.0015, -0.055
 aim_hud_offset_rot                      = 0, 0.0092, 0
-aim_hud_offset_rot_16x9			= 0, 0.0092, 0
+aim_hud_offset_rot_16x9					= 0, 0.0092, 0
 ;--------------------------------------------------------------------------------
 [wpn_ak5c_isg_specter]:wpn_ak5c_isg
 
@@ -377,7 +378,6 @@ inv_weight                                         = 3.670
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_specter
 scope_zoom_factor                                  = 25
-zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
 
 use_alt_aim_hud                   = true
@@ -387,14 +387,14 @@ use_alt_aim_hud                   = true
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_specter_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, 0.002, -0.075
-aim_hud_offset_pos_16x9			= -0.055, 0.002, -0.075
+aim_hud_offset_pos_16x9					= -0.055, 0.002, -0.075
 aim_hud_offset_rot                      = 0, 0.009, 0
-aim_hud_offset_rot_16x9			= 0, 0.009, 0
+aim_hud_offset_rot_16x9					= 0, 0.009, 0
 
 aim_hud_offset_alt_pos                  = -0.0549, -0.0163, -0.04
-aim_hud_offset_alt_pos_16x9		= -0.0549, -0.0163, -0.04
+aim_hud_offset_alt_pos_16x9				= -0.0549, -0.0163, -0.04
 aim_hud_offset_alt_rot                  = 0.0185, 0.0097, 0
-aim_hud_offset_alt_rot_16x9		= 0.0185, 0.0097, 0
+aim_hud_offset_alt_rot_16x9				= 0.0185, 0.0097, 0
 ;--------------------------------------------------------------------------------
 [wpn_ak5c_isg_0kp2]:wpn_ak5c_isg
 
@@ -413,9 +413,9 @@ inv_weight                                         = 3.200
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_0kp2_hud.ogf
 
 aim_hud_offset_pos                      = -0.052, 0.0044, -0.055
-aim_hud_offset_pos_16x9			= -0.052, 0.0044, -0.055
+aim_hud_offset_pos_16x9					= -0.052, 0.0044, -0.055
 aim_hud_offset_rot                      = 0.0006, 0.0088, 0
-aim_hud_offset_rot_16x9			= 0.0006, 0.0088, 0
+aim_hud_offset_rot_16x9					= 0.0006, 0.0088, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_d0cter]:wpn_ak5c_isg
 
@@ -434,9 +434,9 @@ inv_weight                                         = 3.030
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_docter_hud.ogf
 
 aim_hud_offset_pos                      = -0.0546, 0.0114, -0.055
-aim_hud_offset_pos_16x9			= -0.0546, 0.0114, -0.055
+aim_hud_offset_pos_16x9					= -0.0546, 0.0114, -0.055
 aim_hud_offset_rot                      = 0.0028, 0.0092, 0
-aim_hud_offset_rot_16x9			= 0.0028, 0.0092, 0
+aim_hud_offset_rot_16x9					= 0.0028, 0.0092, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_mepro]:wpn_ak5c_isg
 
@@ -450,17 +450,14 @@ inv_weight                                         = 3.372
 1icon_layer_x			= 130
 1icon_layer_y			= -8
 
-
-
-
 [wpn_ak5c_isg_mepro_hud]:wpn_ak5c_isg_hud
 
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_mepro_hud.ogf
 
 aim_hud_offset_pos                      = -0.0556, -0.0084, -0.055
-aim_hud_offset_pos_16x9			= -0.0556, -0.0084, -0.055
+aim_hud_offset_pos_16x9					= -0.0556, -0.0084, -0.055
 aim_hud_offset_rot                      = -0.0015, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.0015, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.0015, 0.0092, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_leupold]:wpn_ak5c_isg
 
@@ -476,17 +473,18 @@ inv_weight                                         = 3.680
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_leupold
 scope_zoom_factor                                  = 7
-zoom_rotate_time                                   = 0.25
-scope_dynamic_zoom                                 = off
+scope_dynamic_zoom                                 = on
+
+use_alt_aim_hud                   = true
 
 [wpn_ak5c_isg_leupold_hud]:wpn_ak5c_isg_hud
 
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_leupold_hud.ogf
 
 aim_hud_offset_pos                      = -0.0555, -0.001, -0.06
-aim_hud_offset_pos_16x9			= -0.0555, -0.001, -0.06
+aim_hud_offset_pos_16x9					= -0.0555, -0.001, -0.06
 aim_hud_offset_rot                      = 0, 0.009, 0
-aim_hud_offset_rot_16x9			= 0, 0.009, 0
+aim_hud_offset_rot_16x9					= 0, 0.009, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_aimpoint]:wpn_ak5c_isg
 
@@ -505,9 +503,9 @@ inv_weight                                         = 3.130
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_aimpoint_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, -0.0038, -0.055
-aim_hud_offset_pos_16x9			= -0.055, -0.0038, -0.055
+aim_hud_offset_pos_16x9					= -0.055, -0.0038, -0.055
 aim_hud_offset_rot                      = -0.0002, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.0002, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.0002, 0.0092, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_aim_low]:wpn_ak5c_isg
 
@@ -526,9 +524,9 @@ inv_weight                                         = 3.105
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_aim_low_hud.ogf
 
 aim_hud_offset_pos                      = -0.0552, 0.0124, -0.055
-aim_hud_offset_pos_16x9			= -0.0552, 0.0124, -0.055
+aim_hud_offset_pos_16x9					= -0.0552, 0.0124, -0.055
 aim_hud_offset_rot                      = 0.0025, 0.0092, 0
-aim_hud_offset_rot_16x9			= 0.0025, 0.0092, 0
+aim_hud_offset_rot_16x9					= 0.0025, 0.0092, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_point_aimpro]:wpn_ak5c_isg
 
@@ -547,9 +545,9 @@ inv_weight                                         = 3.330
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_aimpoint_pro_hud.ogf
 
 aim_hud_offset_pos                      = -0.0552, -0.0075, -0.055
-aim_hud_offset_pos_16x9			= -0.0552, -0.0075, -0.055
+aim_hud_offset_pos_16x9					= -0.0552, -0.0075, -0.055
 aim_hud_offset_rot                      = -0.001, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.001, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.001, 0.0092, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_ekp8_18]:wpn_ak5c_isg
 
@@ -568,9 +566,9 @@ inv_weight                                         = 3.273
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_ekp8_18_hud.ogf
 
 aim_hud_offset_pos                      = -0.0548, -0.008, -0.055
-aim_hud_offset_pos_16x9			= -0.0548, -0.008, -0.055
+aim_hud_offset_pos_16x9					= -0.0548, -0.008, -0.055
 aim_hud_offset_rot                      = -0.0013, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.0013, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.0013, 0.0092, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_e0t2]:wpn_ak5c_isg
 
@@ -589,9 +587,9 @@ inv_weight                                         = 3.227
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_e0t2_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, -0.0027, -0.055
-aim_hud_offset_pos_16x9			= -0.055, -0.0027, -0.055
+aim_hud_offset_pos_16x9					= -0.055, -0.0027, -0.055
 aim_hud_offset_rot                      = -0.0005, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.0005, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.0005, 0.0092, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_pn23]:wpn_ak5c_isg
 
@@ -605,23 +603,21 @@ hud					= wpn_ak5c_isg_pn23_hud
 
 nv_scope_status = 1
 
-;;installed_upgrades                       = up_fourte_svd_nimble
-;scope_nightvision                        = scope_nightvision_3gen
-
 inv_weight                                         = 3.650
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_pn23
 scope_zoom_factor                                  = 25
-zoom_rotate_time                                   = 0.25
+
+use_alt_aim_hud                   = true
 
 [wpn_ak5c_isg_pn23_hud]:wpn_ak5c_isg_hud
 
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_pn23_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, -0.0125, -0.01
-aim_hud_offset_pos_16x9			= -0.055, -0.0125, -0.01
+aim_hud_offset_pos_16x9					= -0.055, -0.0125, -0.01
 aim_hud_offset_rot                      = -0.002, 0.009, 0
-aim_hud_offset_rot_16x9			= -0.002, 0.009, 0
+aim_hud_offset_rot_16x9					= -0.002, 0.009, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_gauss_sight]:wpn_ak5c_isg
 
@@ -637,17 +633,18 @@ inv_weight                                         = 4.400
 scope_status                                       = 1
 scope_texture                                      = wpn_crosshair_gauss
 scope_zoom_factor                                  = 12
-zoom_rotate_time                                   = 0.25
-scope_dynamic_zoom                                 = off
+scope_dynamic_zoom                                 = on
+
+use_alt_aim_hud                   = true
 
 [wpn_ak5c_isg_gauss_sight_hud]:wpn_ak5c_isg_hud
 
 item_visual				= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_gauss_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, 0.008, -0.085
-aim_hud_offset_pos_16x9			= -0.055, 0.008, -0.085
+aim_hud_offset_pos_16x9					= -0.055, 0.008, -0.085
 aim_hud_offset_rot                      = 0.001, 0.009, 0
-aim_hud_offset_rot_16x9			= 0.001, 0.009, 0
+aim_hud_offset_rot_16x9					= 0.001, 0.009, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_deltapoint]:wpn_ak5c_isg
 
@@ -661,18 +658,14 @@ hud				= wpn_ak5c_isg_deltapoint_hud
 
 visual				= dynamics\weapons\wpn_ak5c_bas\wpn_ak5c_5c_tik_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak5c_isg_deltapoint_hud]:wpn_ak5c_isg_hud
 
 item_visual                	= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_deltapoint_hud.ogf
 
 aim_hud_offset_pos                      = -0.0554, 0.006, -0.055
-aim_hud_offset_pos_16x9			= -0.0554, 0.006, -0.055
+aim_hud_offset_pos_16x9					= -0.0554, 0.006, -0.055
 aim_hud_offset_rot                      = 0.0008, 0.0092, 0
-aim_hud_offset_rot_16x9			= 0.0008, 0.0092, 0
+aim_hud_offset_rot_16x9					= 0.0008, 0.0092, 0
 ;----------------------------------------------------------------------------------------
 [wpn_ak5c_isg_rmr]:wpn_ak5c_isg
 
@@ -686,18 +679,14 @@ hud				= wpn_ak5c_isg_rmr_hud
 
 visual				= dynamics\weapons\wpn_ak5c_bas\wpn_ak5c_5c_tik_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak5c_isg_rmr_hud]:wpn_ak5c_isg_hud
 
 item_visual                	= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_rmr_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, 0.0113, -0.055
-aim_hud_offset_pos_16x9			= -0.055, 0.0113, -0.055
+aim_hud_offset_pos_16x9					= -0.055, 0.0113, -0.055
 aim_hud_offset_rot                      = 0.0018, 0.0092, 0
-aim_hud_offset_rot_16x9			= 0.0018, 0.0092, 0
+aim_hud_offset_rot_16x9					= 0.0018, 0.0092, 0
 ;---------------------------------------------------------------------------------------
 [wpn_ak5c_isg_compm4s]:wpn_ak5c_isg
 
@@ -716,9 +705,9 @@ inv_weight                               = 3.380
 item_visual                		= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_compm4s_hud.ogf
 
 aim_hud_offset_pos                      = -0.0554, -0.003, -0.055
-aim_hud_offset_pos_16x9			= -0.0554, -0.003, -0.055
+aim_hud_offset_pos_16x9					= -0.0554, -0.003, -0.055
 aim_hud_offset_rot                      = -0.0002, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.0002, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.0002, 0.0092, 0
 ;--------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_rakurs]:wpn_ak5c_isg
 
@@ -737,9 +726,9 @@ inv_weight                               = 3.500
 item_visual                		= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_rakurs_hud.ogf
 
 aim_hud_offset_pos                      = -0.0541, 0.0075, -0.055
-aim_hud_offset_pos_16x9			= -0.0541, 0.0075, -0.055
+aim_hud_offset_pos_16x9					= -0.0541, 0.0075, -0.055
 aim_hud_offset_rot                      = 0.0012, 0.0092, 0
-aim_hud_offset_rot_16x9			= 0.0012, 0.0092, 0
+aim_hud_offset_rot_16x9					= 0.0012, 0.0092, 0
 ;-----------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_susat]:wpn_ak5c_isg
 
@@ -764,14 +753,14 @@ use_alt_aim_hud				= true
 item_visual                              = dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_susat_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, -0.0035, -0.07
-aim_hud_offset_pos_16x9			= -0.055, -0.0035, -0.07
+aim_hud_offset_pos_16x9					= -0.055, -0.0035, -0.07
 aim_hud_offset_rot                      = 0, 0.009, 0
-aim_hud_offset_rot_16x9			= 0, 0.009, 0
+aim_hud_offset_rot_16x9					= 0, 0.009, 0
 
 aim_hud_offset_alt_pos                  = -0.0548, -0.0204, -0.04
-aim_hud_offset_alt_pos_16x9		= -0.0548, -0.0204, -0.04
+aim_hud_offset_alt_pos_16x9				= -0.0548, -0.0204, -0.04
 aim_hud_offset_alt_rot                  = 0.018, 0.0097, 0
-aim_hud_offset_alt_rot_16x9		= 0.018, 0.0097, 0
+aim_hud_offset_alt_rot_16x9				= 0.018, 0.0097, 0
 ;-----------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_marchf]:wpn_ak5c_isg
 
@@ -785,18 +774,20 @@ hud                                      = wpn_ak5c_isg_marchf_hud
 visual                                   = dynamics\weapons\wpn_ak5c_bas\wpn_ak5c_5c_tik_world.ogf
 
 scope_status                             = 1
-scope_dynamic_zoom                       = off
+scope_dynamic_zoom                       = on
 scope_texture                            = wpn_crosshair_marchf
 scope_zoom_factor                        = 6
+
+use_alt_aim_hud                   = true
 
 [wpn_ak5c_isg_marchf_hud]:wpn_ak5c_isg_hud
 
 item_visual                              = dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_marchf_hud.ogf
 
 aim_hud_offset_pos                      = -0.055, -0.002, -0.08
-aim_hud_offset_pos_16x9			= -0.055, -0.002, -0.08
+aim_hud_offset_pos_16x9					= -0.055, -0.002, -0.08
 aim_hud_offset_rot                      = 0, 0.009, 0
-aim_hud_offset_rot_16x9			= 0, 0.009, 0
+aim_hud_offset_rot_16x9					= 0, 0.009, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_ak5c_isg_kemper]:wpn_ak5c_isg
 
@@ -810,18 +801,14 @@ hud				= wpn_ak5c_isg_kemper_hud
 
 visual				= dynamics\weapons\wpn_ak5c_bas\wpn_ak5c_5c_tik_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak5c_isg_kemper_hud]:wpn_ak5c_isg_hud
 
 item_visual                	= dynamics\weapons\wpn_ak5c_isg\wpn_ak5c_isg_kemper_hud.ogf
 
 aim_hud_offset_pos                      = -0.0554, -0.0055, -0.055
-aim_hud_offset_pos_16x9			= -0.0554, -0.0055, -0.055
+aim_hud_offset_pos_16x9					= -0.0554, -0.0055, -0.055
 aim_hud_offset_rot                      = -0.0011, 0.0092, 0
-aim_hud_offset_rot_16x9			= -0.0011, 0.0092, 0
+aim_hud_offset_rot_16x9					= -0.0011, 0.0092, 0
 ;------------------------------------------------------------------------------------------------
 
 

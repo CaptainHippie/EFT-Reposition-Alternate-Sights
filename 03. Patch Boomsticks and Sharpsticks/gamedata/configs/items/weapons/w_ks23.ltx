@@ -47,9 +47,9 @@ inv_grid_y         = 0
         strap_orientation           = -15, -9, 110
         ph_mass                     = 3
         
-        flame_particles             = weapons\generic_weapon05
+        ;flame_particles             = weapons\generic_weapon05
         ;smoke_particles            = amik\weapons\smoke_particles\smoke_particles_pump_01
-smoke_particles     			    = ghost_particles\weapons\flame_eft_shotgun          ;particles remade incomp.
+;smoke_particles     			    = ghost_particles\weapons\flame_eft_shotgun          ;particles remade incomp.
         
         light_color                 = 0.6, 0.5, 0.3
         light_range                 = 6.0
@@ -142,6 +142,10 @@ smoke_particles     			    = ghost_particles\weapons\flame_eft_shotgun          
         kill_msg_height             = 20
 		
 
+flame_particles = ghost_particles\weapons\flame_eft_shotgun
+smoke_particles = ghost_particles\weapons\flame_eft_sks
+silencer_smoke_particles = ghost_particles\weapons\generic_smoke_eft_sil
+grenade_flame_particles = weapons\generic_weapon01
 ;----------------------------------------------------------------------SOUNDS---------------------------------------------------------------------------
 snd_open_weapon          	= eft_wp\mp133\mp133_open
 snd_add_cartridge			= eft_wp\mp133\mp133_insert1, 1.0, 0.1
@@ -329,11 +333,9 @@ silencer_light_time                      = 0.2
 silencer_light_var_color                 = 0.05
 silencer_light_var_range                 = 0.5
 
-;silencer_smoke_particles                 = weapons\generic_shoot_00
+;silencer_smoke_particles   		= ghost_particles\weapons\generic_smoke_eft_sil
 
-silencer_smoke_particles   		= ghost_particles\weapons\generic_smoke_eft_sil
-
-fire_point				    = -0.036000,0.090000,0.342002
+fire_point				    = -0.036000,0.030000,0.342002
 
 snd_silncer_shot                                                  = weapons\ks23\ks23_shoot_silencer1
 

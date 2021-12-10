@@ -276,8 +276,6 @@ inv_weight                               = 3.8
 hud                                      = wpn_ak74u_tac_1p29_hud
 visual                                   = dynamics\weapons\wpn_ak74u_tac\wpn_ak74u_tac_world.ogf
 
-
-
 scope_status                             = 1
 scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_1p29
@@ -314,6 +312,8 @@ scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_pso2_vss
 scope_zoom_factor                                  = 25
 
+use_alt_aim_hud					= true
+
 inv_weight                               = 3.600
 
 [wpn_ak74u_tac_pso2_hud]:wpn_ak74u_tac_hud
@@ -324,6 +324,12 @@ aim_hud_offset_pos                       = -0.042, 0.012, -0.055
 aim_hud_offset_pos_16x9                  = -0.042, 0.012, -0.055
 aim_hud_offset_rot                       = 0.002, 0.0065, 0
 aim_hud_offset_rot_16x9                  = 0.002, 0.0065, 0
+
+aim_hud_offset_alt_pos                       = -0.092, -0.022, 0
+aim_hud_offset_alt_pos_16x9                  = -0.092, -0.022, 0
+aim_hud_offset_alt_rot                       = 0.004, 0.0134, 0.5
+aim_hud_offset_alt_rot_16x9                  = 0.004, 0.0134, 0.5
+
 ;---------------------------------------------------------------------------------------------
 [wpn_ak74u_tac_1pn93]:wpn_ak74u_tac
 
@@ -366,13 +372,12 @@ inv_weight                               = 3.500
 hud                                      = wpn_ak74u_tac_1p78gs_hud
 visual                                   = dynamics\weapons\wpn_ak74u_tac\wpn_ak74u_tac_world.ogf
 
-
-
 scope_status                             = 1
 scope_dynamic_zoom                       = off
 scope_texture                            = wpn_crosshair_1p78gs
 scope_zoom_factor                                  = 41
 
+use_alt_aim_hud							= true
 
 [wpn_ak74u_tac_1p78gs_hud]:wpn_ak74u_tac_hud
 
@@ -382,6 +387,12 @@ aim_hud_offset_pos                       = -0.0542, 0.001, 0
 aim_hud_offset_pos_16x9                  = -0.0542, 0.001, 0
 aim_hud_offset_rot                       = 0.0055, 0.0084, 0
 aim_hud_offset_rot_16x9                  = 0.0055, 0.0084, 0
+
+aim_hud_offset_alt_pos                       = -0.092, -0.022, 0
+aim_hud_offset_alt_pos_16x9                  = -0.092, -0.022, 0
+aim_hud_offset_alt_rot                       = 0.004, 0.0134, 0.5
+aim_hud_offset_alt_rot_16x9                  = 0.004, 0.0134, 0.5
+
 ;-----------------------------------------------------------------------------------------------------
 [wpn_ak74u_tac_1pn93n2_1gs]:wpn_ak74u_tac
 
@@ -423,8 +434,6 @@ inv_weight                               = 3.8
 
 hud                                      = wpn_ak74u_tac_usp1_hud
 visual                                   = dynamics\weapons\wpn_ak74u_tac\wpn_ak74u_tac_world.ogf
-
-
 
 scope_status                             = 1
 scope_dynamic_zoom                       = off
@@ -705,8 +714,6 @@ aim_hud_offset_rot_16x9                  = -0.0023, 0.0084, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_ak74u_tac_aim_low]:wpn_ak74u_tac
 
-
-
 visual				= dynamics\weapons\wpn_ak74u_tac\wpn_ak74u_tac_world.ogf
 
 hud						= wpn_ak74u_tac_aim_low_hud
@@ -780,10 +787,6 @@ hud				= wpn_ak74u_tac_deltapoint_hud
 
 visual				= dynamics\weapons\wpn_ak74u_tac\wpn_ak74u_tac_world.ogf
 
-scope_status			= 0
-
-scope_dynamic_zoom = off
-
 [wpn_ak74u_tac_deltapoint_hud]:wpn_ak74u_tac_hud
 
 item_visual                	= dynamics\weapons\wpn_ak74u_tac\wpn_ak74u_tac_deltapoint_hud.ogf
@@ -804,10 +807,6 @@ hud				= wpn_ak74u_tac_rmr_hud
 1icon_layer_y			= -4
 
 visual				= dynamics\weapons\wpn_ak74u_tac\wpn_ak74u_tac_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
 
 [wpn_ak74u_tac_rmr_hud]:wpn_ak74u_tac_hud
 
@@ -871,10 +870,6 @@ hud				= wpn_ak74u_tac_kemper_hud
 1icon_layer_y			= -6
 
 visual				= dynamics\weapons\wpn_ak74u_tac\wpn_ak74u_tac_world.ogf
-
-scope_status			= 0
-
-scope_dynamic_zoom = off
 
 [wpn_ak74u_tac_kemper_hud]:wpn_ak74u_tac_hud
 

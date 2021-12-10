@@ -1,4 +1,4 @@
-=== EFT REPOSITION UPDATED 1.7 ===
+=== EFT REPOSITION UPDATED 1.8 ===
 
 Installation :
 Important Note : use Mod organizer 2 using this MO2 guide. Don't mess up your game with JSGME or manual installation and come complaining to mod authors
@@ -18,6 +18,7 @@ You have to follow this precise load order below and install any other weapon ad
 11. Optional but highly recommended, install Firemode switcher sound because its better and I commented out the ones from BaS12. Optional individual weapon mods like G36 pack, Saiga replacer, SVD replacer, Abakan replacer,  must only be installed after all this
 
 Changelog:
+1.8 - Updated to December 07 BaS patch, added back laser altenate sight(which follows the same basic logic for canted sights)
 1.7 - Updated to December 04 BaS patch
 1.6 - Updated to BaS latest release(Nov 28), balanced the pka(pip scope) sights on all weapons
 1.5 - fixed vityaz ironsight, fixed PDAs and adjusted binocs
