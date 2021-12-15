@@ -1,0 +1,767 @@
+;-G36-----------------------------------------------------------------------------------------------
+[wpn_g36]:identity_immunities,weapon_probability,default_weapon_params,wpn_g36_sounds
+GroupControlSection                      = spawn_group
+$npc                                     = on
+$prefetch                                = 8
+$spawn                                   = "weapons\g36"
+scheduled                                = off
+cform                                    = skeleton
+parent_section                           = wpn_g36
+
+class                                    = WP_AK74
+slot                                     = 2
+animation_slot                           = 2
+ef_main_weapon_type                      = 2
+ef_weapon_type                           = 7
+hand_dependence                          = 1
+single_handed                            = 0
+
+default_to_ruck                          = false
+sprint_allowed                           = true
+
+inv_grid_height                          = 2
+inv_grid_width                           = 5
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+icons_texture                            = wpn\wpn_g36new_icons
+inv_name                                 = st_wpn_g36new
+inv_name_short                           = st_wpn_g36new
+description                              = st_wpn_g36new_descr
+
+kind                                     = w_rifle
+inv_weight                               = 3.77
+cost                                     = 48850
+repair_type                              = rifle_5
+weapon_class                             = assault_rifle
+
+hud                                      = wpn_g36_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36.ogf
+position                                 = -0.026, -0.132, 0.0
+orientation                              = 0, -8, 0
+fire_point                               = 0.0, 0.19, 0.66
+fire_point2                              = 0.0, 0.19, 0.66
+strap_bone0                              = bip01_spine2
+strap_bone1                              = bip01_spine1
+strap_position                           = -0.26, -0.11, 0.25
+strap_orientation                        = -15, -9, 110
+ph_mass                                  = 4
+
+flame_particles                          = weapons\generic_weapon05
+smoke_particles                          = weapons\generic_shoot_00
+grenade_flame_particles                  = weapons\generic_weapon01
+
+shell_point			                     = 0.0, 0.21, 0.13
+shell_dir			                     = 0.0, 0.0, 0.4
+shell_particles			                 = weapons\556x45
+
+light_disabled                           = false
+light_color                              = 0.6, 0.5, 0.3
+light_range                              = 5
+light_time                               = 0.2
+light_var_color                          = 0.05
+light_var_range                          = 0.5
+
+upgrades                                 = up_gr_firstab_g36, up_gr_seconab_g36, up_gr_thirdab_g36, up_gr_fourtab_g36, up_gr_fourtcd_g36, up_gr_fourtef_g36
+installed_upgrades                       =
+upgrade_scheme                           = upgrade_scheme_g36
+upgr_icon_x                              = 300
+upgr_icon_y                              = 700
+upgr_icon_width                          = 300
+upgr_icon_height                         = 100
+
+fire_modes                               = 1, 3, -1
+ammo_class                               = ammo_5.56x45_fmj, ammo_5.56x45_fmj_bad, ammo_5.56x45_fmj_verybad, ammo_5.56x45_ss190, ammo_5.56x45_ss190_bad, ammo_5.56x45_ss190_verybad, ammo_5.56x45_ap, ammo_5.56x45_ap_bad, ammo_5.56x45_ap_verybad
+ammo_elapsed                             = 30
+ammo_mag_size                            = 30
+startup_ammo                             = 90
+
+scope_status                             = 1
+scope_texture                            = wpn_crosshair_g36s
+scope_zoom_factor                        = 25
+scope_zoom_factor_alt					 = 0
+use_alt_aim_hud                          = true
+
+silencer_name                            = wpn_sil_nato
+silencer_status                          = 2
+silencer_x                               = 224
+silencer_y                               = 19
+silencer_light_color                     = 0.6, 0.5, 0.3
+silencer_light_range                     = 0.01
+silencer_light_time                      = 0.2
+silencer_light_var_color                 = 0.05
+silencer_light_var_range                 = 0.5
+silencer_smoke_particles                 = weapons\generic_shoot_00
+
+grenade_class                            = ammo_m209, ammo_m209_bad, ammo_m209_verybad
+grenade_launcher_name                    = wpn_addon_grenade_launcher_m203
+grenade_launcher_status                  = 0
+grenade_launcher_x                       = 128
+grenade_launcher_y                       = 27
+launch_speed                             = 0
+
+hit_impulse                              = 25
+hit_power                                = 0.5, 0.5, 0.5, 0.5
+hit_type                                 = fire_wound
+fire_distance                            = 1000
+bullet_speed                             = 915
+rpm                                      = 750
+rpm_empty_click                          = 200
+
+use_aim_bullet                           = false
+time_to_aim                              = 0.0 ;  3.0
+zoom_enabled                             = true
+zoom_rotate_time                         = 0.2
+reload_dof                               = 0.0, 0.5, 5, 2
+control_inertion_factor = 1.0f
+crosshair_inertion                       = 4.6
+fire_dispersion_base                     = 0.26
+fire_dispersion_condition_factor         = 0.001
+
+misfire_probability                      = 0.005
+misfire_start_condition                  = 0.7 ;  0.88
+misfire_start_prob                       = 0.007
+misfire_end_condition                    = 0.09
+misfire_end_prob                         = 0.11
+
+condition_queue_shot_dec                 = 0.0009
+condition_shot_dec                       = 0.0007
+
+cam_return                               = 0
+cam_relax_speed                          = 10
+cam_dispersion                           = 0.556
+cam_dispersion_frac                      = 1.0
+cam_dispersion_inc                       = 0.0675
+cam_max_angle                            = 50.0
+cam_max_angle_horz                       = 50.0
+cam_step_angle_horz                      = 0.95
+zoom_cam_relax_speed                     = 10
+zoom_cam_dispersion                      = 0.515
+zoom_cam_dispersion_frac                 = 1.0
+zoom_cam_dispersion_inc                  = 0.0525
+zoom_cam_max_angle                       = 50.0
+zoom_cam_max_angle_horz                  = 50.0
+zoom_cam_step_angle_horz                 = 0.9
+
+PDM_disp_accel_factor                    = 2.5
+PDM_disp_base                            = 1.21
+PDM_disp_crouch                          = 1.0
+PDM_disp_crouch_no_acc                   = 1.0
+PDM_disp_vel_factor                      = 2.5
+
+cam_relax_speed_ai                       = 120.75
+zoom_cam_relax_speed_ai                  = 360
+holder_fov_modifier                      = 1.0
+holder_range_modifier                    = 1.85
+min_radius                               = 0
+max_radius                               = 500
+hit_probability_gd_novice                = 1.00
+hit_probability_gd_stalker               = 1.00
+hit_probability_gd_veteran               = 1.00
+hit_probability_gd_master                = 1.00
+
+kill_msg_x                               = 0
+kill_msg_y                               = 28
+kill_msg_width                           = 84
+kill_msg_height                          = 28
+
+
+[wpn_g36_hud]:hud_base,hud_low_interia
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_hud.ogf
+attach_place_idx                         = 0
+zoom_hide_crosshair                      = true   
+
+item_position                            = 0, 0, 0
+item_orientation                         = 0, 0, 0
+
+hands_position                           = -0.065, -0.175, -0.06
+hands_position_16x9                      = -0.065, -0.175, -0.06
+hands_orientation                        = 0, 0, 0.15
+hands_orientation_16x9                   = 0, 0, 0.15
+
+aim_hud_offset_pos                       = -0.0885, 0.0225, -0.17
+aim_hud_offset_pos_16x9                  = -0.0885, 0.0225, -0.17
+aim_hud_offset_rot                       = 0.0007, 0.0005, 0
+aim_hud_offset_rot_16x9                  = 0.0007, 0.0005, 0
+
+aim_hud_offset_alt_pos                   = -0.0885, -0.0085, -0.105
+aim_hud_offset_alt_pos_16x9              = -0.0885, -0.0085, -0.105
+aim_hud_offset_alt_rot                   = 0.0007, 0.0005, 0
+aim_hud_offset_alt_rot_16x9              = 0.0007, 0.0005, 0
+
+lowered_hud_offset_pos			= 0.077, -0.04, -0.02
+lowered_hud_offset_pos_16x9		= 0.077, -0.04, -0.02
+lowered_hud_offset_rot			= -0.06, -0.65, 0.4
+lowered_hud_offset_rot_16x9		= -0.06, -0.65, 0.4
+
+gl_hud_offset_pos                        = -0.0878, -0.03, -0.12
+gl_hud_offset_pos_16x9                   = -0.0878, -0.03, -0.12
+gl_hud_offset_rot                        = -0.075, 0, 0
+gl_hud_offset_rot_16x9                   = -0.075, 0, 0
+
+lean_hud_offset_pos                      = 0, 0, 0
+lean_hud_offset_rot                      = 0, 0, 0
+
+anm_hide                                 = g36k_holster
+anm_hide_g                               = g36k_holster_grenade, idle_grenade
+anm_hide_w_gl                            = g36k_holster_w_gl, idle_w_gl
+anm_idle                                 = g36k_idle
+anm_idle_aim                             = g36k_idle_aim
+anm_idle_aim_moving                      = g36k_idle_moving, idle, 0.75
+anm_idle_aim_moving_crouch               = g36k_idle_moving, idle, 0.7
+anm_idle_g                               = g36k_idle_grenade, idle_grenade
+anm_idle_g_aim                           = g36k_idle_aim_grenade, idle_grenade
+anm_idle_moving                          = g36k_idle_moving
+anm_idle_moving_crouch                   = g36k_idle_crouch
+anm_idle_moving_crouch_g                 = g36k_idle_crouch_grenade, idle_grenade
+anm_idle_moving_crouch_g_aim             = g36k_idle_moving_grenade, idle_grenade, 0.7
+anm_idle_moving_crouch_w_gl              = g36k_idle_crouch_w_gl, idle_w_gl
+anm_idle_moving_crouch_w_gl_aim          = g36k_idle_moving_w_gl, idle_w_gl, 0.7
+anm_idle_moving_g                        = g36k_idle_moving_grenade, idle_grenade
+anm_idle_moving_g_aim                    = g36k_idle_moving_grenade, idle_grenade, 0.75
+anm_idle_moving_w_gl                     = g36k_idle_moving_w_gl, idle_w_gl
+anm_idle_moving_w_gl_aim                 = g36k_idle_moving_w_gl, idle_w_gl, 0.75
+anm_idle_sprint                          = g36k_idle_sprint
+anm_idle_sprint_g                        = g36k_idle_sprint_grenade, idle_grenade
+anm_idle_sprint_w_gl                     = g36k_idle_sprint_w_gl, idle_w_gl
+anm_idle_w_gl                            = g36k_idle_w_gl, idle_w_gl
+anm_idle_w_gl_aim                        = g36k_idle_aim_w_gl, idle_w_gl
+anm_reload                               = g36_new_reload, reload
+anm_reload_empty                         = g36_new_reload_empty, reload_empty
+anm_reload_empty_w_gl                    = g36_new_reload_empty_w_gl, reload_empty_w_gl
+anm_reload_g                             = g36_new_reload_grenade, reload_grenade
+anm_reload_w_gl                          = g36_new_reload_w_gl, reload_w_gl
+anm_shots                                = g36k_shoot, shoot
+anm_shots_g                              = g36k_shoot_grenade, shoot_grenade
+anm_shots_w_gl                           = g36k_shoot_w_gl, shoot_w_gl
+anm_show                                 = g36k_draw
+anm_show_g                               = g36k_draw_grenade, idle_grenade
+anm_show_w_gl                            = g36k_draw_w_gl, idle_w_gl
+anm_switch                               = g36k_switch_off, switch_off
+anm_switch_g                             = g36k_switch_on, switch_on
+
+shell_bone                               = gilza
+shell_dir                                = 0, 1, 0
+shell_point                              = 0, 0, 0
+
+fire_bone                                = muzzle
+fire_bone2                               = muzzle_gl
+fire_point                               = 0, -0.0035, 0.082
+fire_point2                              = 0, 0, 0
+
+freelook_z_offset_mul					 = 0.1
+
+;-G36K-----------------------------------------------------------------------------------------------
+[wpn_g36_camo]:wpn_g36
+inv_grid_y                               = 2
+inv_name                                 = st_wpn_g36new_k
+inv_name_short                           = st_wpn_g36new_k
+description                              = st_wpn_g36new_k_descr
+
+cost                                     = 43850
+
+hud                                      = wpn_g36_camo_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_sk1.ogf
+
+parent_section                           = wpn_g36_camo
+scope_status                             = 0
+scopes                                   = ac10632, acog, eot, c-more
+scope_texture                            = 
+scope_zoom_factor                        = 0
+scope_zoom_factor_alt					 = 0
+use_alt_aim_hud                          = false
+
+fire_point                               = 0.0, 0.188, 0.55
+
+silencer_x                               = 206
+silencer_y                               = 15
+
+inv_weight                               = 3.42
+
+grenade_launcher_status                  = 0
+
+fire_dispersion_base                     = 0.25
+
+cam_dispersion                           = 0.562
+cam_dispersion_frac                      = 1.0
+cam_dispersion_inc                       = 0.0705
+zoom_cam_dispersion                      = 0.518
+zoom_cam_dispersion_frac                 = 1.0
+zoom_cam_dispersion_inc                  = 0.0522
+
+PDM_disp_accel_factor                    = 2.5
+PDM_disp_base                            = 1.05
+PDM_disp_crouch                          = 1.0
+PDM_disp_crouch_no_acc                   = 1.0
+PDM_disp_vel_factor                      = 2.5
+
+[wpn_g36_camo_hud]:wpn_g36_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_sk1_hud.ogf
+
+aim_hud_offset_pos                       = -0.088, 0.0142, -0.08
+aim_hud_offset_pos_16x9                  = -0.088, 0.0142, -0.08
+aim_hud_offset_rot                       = 0.0005, 0.0005, 0
+aim_hud_offset_rot_16x9                  = 0.0005, 0.0005, 0
+
+fire_point                               = 0.0, -0.0035, -0.05
+
+;-G36K (ACOG)-----------------------------------------------------------------------------------------------
+[wpn_g36_camo_acog]:wpn_g36_camo
+1icon_layer                              = acog
+1icon_layer_x                            = 92
+1icon_layer_y                            = -16
+
+inv_weight                               = 3.46
+
+hud                                      = wpn_g36_camo_acog_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_sk1_acog.ogf
+
+scope_zoom_factor                        = 20
+zoom_rotate_time                         = 0.25
+
+[wpn_g36_camo_acog_hud]:wpn_g36_camo_hud,hud_low_interia
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_sk1_acog_hud.ogf
+
+aim_hud_offset_pos                       = -0.0838, -0.0032, -0.1
+aim_hud_offset_pos_16x9                  = -0.0838, -0.0032, -0.1
+aim_hud_offset_rot                       = 0.0112, -0.0125, 0
+aim_hud_offset_rot_16x9                  = 0.0112, -0.0125, 0
+
+;-G36K (EOT)-----------------------------------------------------------------------------------------------
+[wpn_g36_camo_eot]:wpn_g36_camo
+1icon_layer                              = eot
+1icon_layer_x                            = 94
+1icon_layer_y                            = -12
+
+inv_weight                               = 3.45
+
+hud                                      = wpn_g36_camo_eot_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_sk1_eot.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36_camo_eot_hud]:wpn_g36_camo_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_sk1_eot_hud.ogf
+
+aim_hud_offset_pos                       = -0.0886, -0.015, -0.08
+aim_hud_offset_pos_16x9                  = -0.0886, -0.015, -0.08
+
+;-G36K (BARSKA)-----------------------------------------------------------------------------------------------
+[wpn_g36_camo_ac10632]:wpn_g36_camo
+1icon_layer                              = ac10632
+1icon_layer_x                            = 92
+1icon_layer_y                            = -16
+
+inv_weight                               = 3.43
+
+hud                                      = wpn_g36_camo_ac10632_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_sk1_ac10632.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36_camo_ac10632_hud]:wpn_g36_camo_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_sk1_ac10632_hud.ogf
+
+aim_hud_offset_pos                       = -0.0883, -0.012, -0.08
+aim_hud_offset_pos_16x9                  = -0.0883, -0.012, -0.08
+aim_hud_offset_rot                       = 0.0005, 0.0025, 0
+aim_hud_offset_rot_16x9                  = 0.0005, 0.0025, 0
+
+;-G36K (CMORE)-----------------------------------------------------------------------------------------------
+[wpn_g36_camo_c-more]:wpn_g36_camo
+1icon_layer                              = c-more
+1icon_layer_x                            = 98
+1icon_layer_y                            = -11
+
+inv_weight                               = 3.45
+
+hud                                      = wpn_g36_camo_c-more_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_sk1_c-more.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36_camo_c-more_hud]:wpn_g36_camo_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_sk1_c-more_hud.ogf
+
+aim_hud_offset_pos                       = -0.0887, -0.005, -0.12
+aim_hud_offset_pos_16x9                  = -0.0887, -0.005, -0.12
+
+;-G36C-----------------------------------------------------------------------------------------------
+[wpn_g36k]:wpn_g36,wpn_g36_sounds
+inv_grid_y                               = 4
+inv_name                                 = st_wpn_g36new_c
+inv_name_short                           = st_wpn_g36new_c
+description                              = st_wpn_g36new_c_descr
+
+inv_weight                               = 2.89
+cost                                     = 39857
+weapon_class                             = assault_rifle
+
+hud                                      = wpn_g36k_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36k.ogf
+fire_point                               = 0.0, 0.19, 0.42
+
+parent_section                           = wpn_g36k
+scope_status                             = 0
+scopes                                   = ac10632, acog, eot, c-more
+scope_texture                            = 
+scope_zoom_factor                        = 0
+scope_zoom_factor_alt					 = 0
+use_alt_aim_hud                          = false
+
+silencer_x                               = 201
+silencer_y                               = 14
+
+grenade_launcher_status                  = 0
+
+use_aim_bullet                           = false
+time_to_aim                              = 0.0 ;  3.0
+zoom_enabled                             = true
+zoom_rotate_time                         = 0.2
+control_inertion_factor = 1.0f
+crosshair_inertion                       = 4.8
+fire_dispersion_base                     = 0.29
+
+misfire_probability                      = 0.005
+misfire_start_condition                  = 0.7 ;  0.92
+misfire_start_prob                       = 0.007
+misfire_end_condition                    = 0.11
+misfire_end_prob                         = 0.11
+
+condition_queue_shot_dec                 = 0.0009
+condition_shot_dec                       = 0.0008
+
+cam_dispersion                           = 0.568
+cam_dispersion_frac                      = 1.0
+cam_dispersion_inc                       = 0.0695
+cam_relax_speed                          = 15
+zoom_cam_dispersion                      = 0.524
+zoom_cam_dispersion_frac                 = 1.0
+zoom_cam_dispersion_inc                  = 0.052
+zoom_cam_relax_speed                     = 11
+
+PDM_disp_accel_factor                    = 2.5
+PDM_disp_base                            = 0.74
+PDM_disp_crouch                          = 1.0
+PDM_disp_crouch_no_acc                   = 1.0
+PDM_disp_vel_factor                      = 2.5
+
+cam_relax_speed_ai                       = 120.75
+zoom_cam_relax_speed_ai                  = 360
+
+
+[wpn_g36k_hud]:wpn_g36_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36k_hud.ogf 
+
+aim_hud_offset_pos                       = -0.08806, 0.0167, -0.08
+aim_hud_offset_pos_16x9                  = -0.08806, 0.0167, -0.08
+aim_hud_offset_rot                       = 0.0011, 0.0001, 0
+aim_hud_offset_rot_16x9                  = 0.0011, 0.0001, 0
+
+fire_point                               = 0.0, -0.0035, -0.16
+
+;-Old aim with non-lithsight
+;aim_hud_offset_pos                       = -0.1236,0.0437,-0.26
+;aim_hud_offset_pos_16x9                  = -0.1236,0.0437,-0.26
+;aim_hud_offset_rot                       = 0.035,0.036,0
+;aim_hud_offset_rot_16x9                  = 0.035,0.036,0
+
+;-G36C (ACOG)-----------------------------------------------------------------------------------------------
+[wpn_g36k_acog]:wpn_g36k
+1icon_layer                              = acog
+1icon_layer_x                            = 102
+1icon_layer_y                            = -16
+
+inv_weight                               = 2.93
+
+hud                                      = wpn_g36k_acog_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36k_acog.ogf
+
+scope_zoom_factor                        = 20
+zoom_rotate_time                         = 0.25
+
+[wpn_g36k_acog_hud]:wpn_g36k_hud,hud_low_interia
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36k_acog_hud.ogf
+
+aim_hud_offset_pos                       = -0.0842, -0.0038, -0.1
+aim_hud_offset_pos_16x9                  = -0.0842, -0.0038, -0.1
+aim_hud_offset_rot                       = 0.0093, -0.0112, 0
+aim_hud_offset_rot_16x9                  = 0.0093, -0.0112, 0
+
+;-G36C (EOT)-----------------------------------------------------------------------------------------------
+[wpn_g36k_eot]:wpn_g36k
+1icon_layer                              = eot
+1icon_layer_x                            = 102
+1icon_layer_y                            = -13
+
+inv_weight                               = 2.92
+
+hud                                      = wpn_g36k_eot_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36k_eot.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36k_eot_hud]:wpn_g36k_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36k_eot_hud.ogf
+
+aim_hud_offset_pos                       = -0.0884, -0.015, -0.08
+aim_hud_offset_pos_16x9                  = -0.0884, -0.015, -0.08
+aim_hud_offset_rot                       = 0.0005, 0.0001, 0
+aim_hud_offset_rot_16x9                  = 0.0005, 0.0001, 0
+
+;-G36C (BARSKA)-----------------------------------------------------------------------------------------------
+[wpn_g36k_ac10632]:wpn_g36k
+1icon_layer                              = ac10632
+1icon_layer_x                            = 102
+1icon_layer_y                            = -16
+
+inv_weight                               = 2.90
+
+hud                                      = wpn_g36k_ac10632_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36k_ac10632.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36k_ac10632_hud]:wpn_g36k_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36k_ac10632_hud.ogf
+
+aim_hud_offset_pos                       = -0.0883, -0.012, -0.08
+aim_hud_offset_pos_16x9                  = -0.0883, -0.012, -0.08
+aim_hud_offset_rot                       = 0.0005, 0.0021, 0
+aim_hud_offset_rot_16x9                  = 0.0005, 0.0021, 0
+
+;-G36C (CMORE)-----------------------------------------------------------------------------------------------
+[wpn_g36k_c-more]:wpn_g36k
+1icon_layer                              = c-more
+1icon_layer_x                            = 112
+1icon_layer_y                            = -12
+
+inv_weight                               = 2.92
+
+hud                                      = wpn_g36k_c-more_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36k_c-more.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36k_c-more_hud]:wpn_g36k_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36k_c-more_hud.ogf
+
+aim_hud_offset_pos                       = -0.0885, -0.005, -0.08
+aim_hud_offset_pos_16x9                  = -0.0885, -0.005, -0.08
+aim_hud_offset_rot                       = 0.0005, -0.0005, 0
+aim_hud_offset_rot_16x9                  = 0.0005, -0.0005, 0
+
+;-G36L-----------------------------------------------------------------------------------------------
+[wpn_g36_nimble]:wpn_g36
+inv_grid_y                               = 6
+inv_name                                 = st_wpn_g36new_nimble
+inv_name_short                           = st_wpn_g36new_nimble
+description                              = st_wpn_g36new_nimble_descr
+
+inv_weight                               = 3.0
+cost                                     = 66919
+weapon_class                             = assault_rifle
+
+hud                                      = wpn_g36_nimble_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_nimble.ogf
+fire_point                               = 0.0, 0.187, 0.604
+fire_point2                              = 0.0, 0.14, 0.6
+
+parent_section                           = wpn_g36_nimble
+scope_status                             = 0
+scopes                                   = ac10632, acog, eot, c-more
+scope_texture                            = 
+scope_zoom_factor                        = 0
+scope_zoom_factor_alt					 = 0
+use_alt_aim_hud                          = false
+
+silencer_x                               = 217
+silencer_y                               = 15
+
+grenade_launcher_status                  = 2
+
+rpm                                      = 800
+rpm_empty_click                          = 200
+
+use_aim_bullet                           = false
+time_to_aim                              = 0.0 ;  3.0
+zoom_enabled                             = true
+zoom_rotate_time                         = 0.2
+control_inertion_factor = 1.0f
+crosshair_inertion                       = 4.8
+fire_dispersion_base                     = 0.27
+
+misfire_probability                      = 0.005
+misfire_start_condition                  = 0.7 ;  0.92
+misfire_start_prob                       = 0.007
+misfire_end_condition                    = 0.11
+misfire_end_prob                         = 0.11
+
+condition_queue_shot_dec                 = 0.0009
+condition_shot_dec                       = 0.0008
+
+cam_return                               = 0
+cam_relax_speed                          = 12
+cam_dispersion                           = 1.2
+cam_dispersion_frac                      = 1.0
+cam_dispersion_inc                       = 0.0675
+cam_max_angle                            = 50.0
+cam_max_angle_horz                       = 50.0
+cam_step_angle_horz                      = 0.95
+zoom_cam_relax_speed                     = 12
+zoom_cam_dispersion                      = 0.9
+zoom_cam_dispersion_frac                 = 1.0
+zoom_cam_dispersion_inc                  = 0.0525
+zoom_cam_max_angle                       = 50.0
+zoom_cam_max_angle_horz                  = 50.0
+zoom_cam_step_angle_horz                 = 0.9
+
+PDM_disp_accel_factor                    = 2.5
+PDM_disp_base                            = 0.92
+PDM_disp_crouch                          = 1.0
+PDM_disp_crouch_no_acc                   = 1.0
+PDM_disp_vel_factor                      = 2.5
+
+cam_relax_speed_ai                       = 120.75
+zoom_cam_relax_speed_ai                  = 360
+
+
+[wpn_g36_nimble_hud]:wpn_g36_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_nimble_hud.ogf
+
+fire_point                               = 0.0, -0.0035, -0.01
+fire_point2                              = 0.0, 0.0, 0.11
+
+aim_hud_offset_pos                       = -0.088, 0.012, -0.08
+aim_hud_offset_pos_16x9                  = -0.088, 0.012, -0.08
+aim_hud_offset_rot                       = -0.002, 0.0001, 0
+aim_hud_offset_rot_16x9                  = -0.002, 0.0001, 0
+
+gl_hud_offset_pos                        = -0.0883, -0.075, -0.092
+gl_hud_offset_pos_16x9                   = -0.0883, -0.075, -0.092
+gl_hud_offset_rot                        = -0.137, 0.0001, 0
+gl_hud_offset_rot_16x9                   = -0.137, 0.0001, 0
+
+anm_hide                                 = g36l_holster
+anm_hide_g                               = g36l_holster_g, idle_grenade_g36l
+anm_hide_w_gl                            = g36k_holster_w_gl, idle_w_gl_g36l
+anm_idle                                 = g36l_idle
+anm_idle_aim                             = g36l_idle_aim
+anm_idle_aim_moving                      = g36l_idle_moving, idle_g36l, 0.75
+anm_idle_aim_moving_crouch               = g36l_idle_moving, idle_g36l, 0.7
+anm_idle_g                               = g36l_idle_g, idle_grenade_g36l
+anm_idle_g_aim                           = g36l_idle_aim_g, idle_grenade_g36l
+anm_idle_moving                          = g36l_idle_moving
+anm_idle_moving_crouch                   = g36l_idle_crouch
+anm_idle_moving_crouch_g                 = g36l_idle_move_g, idle_grenade_g36l
+anm_idle_moving_crouch_g_aim             = g36l_idle_move_g, idle_grenade_g36l, 0.7
+anm_idle_moving_crouch_w_gl              = g36k_idle_crouch_w_gl, idle_w_gl_g36l
+anm_idle_moving_crouch_w_gl_aim          = g36k_idle_moving_w_gl, idle_w_gl_g36l, 0.7
+anm_idle_moving_g                        = g36l_idle_move_g, idle_grenade_g36l
+anm_idle_moving_g_aim                    = g36l_idle_move_g, idle_grenade_g36l, 0.75
+anm_idle_moving_w_gl                     = g36k_idle_moving_w_gl, idle_w_gl_g36l
+anm_idle_moving_w_gl_aim                 = g36k_idle_moving_w_gl, idle_w_gl_g36l, 0.75
+anm_idle_sprint                          = g36l_idle_sprint
+anm_idle_sprint_g                        = g36l_idle_sprint_g, idle_grenade_g36l
+anm_idle_sprint_w_gl                     = g36k_idle_sprint_w_gl, idle_w_gl_g36l
+anm_idle_w_gl                            = g36k_idle_w_gl, idle_w_gl_g36l
+anm_idle_w_gl_aim                        = g36k_idle_aim_w_gl, idle_w_gl_g36l
+anm_reload                               = g36l_reload, reload_g36l
+anm_reload_empty                         = g36l_reload_empty, reload_empty_g36l
+anm_reload_empty_w_gl                    = g36l_reload_empty_w_gl, reload_empty_w_gl_g36l
+anm_reload_g                             = g36l_reload_g, reload_grenade_g36l
+anm_reload_w_gl                          = g36l_reload_w_gl, reload_w_gl_g36l
+anm_shots                                = g36l_shoot, shoot_g36l
+anm_shots_g                              = g36l_shoot_g, shoot_grenade_g36l
+anm_shots_w_gl                           = g36k_shoot_w_gl, shoot_w_gl_g36l
+anm_show                                 = g36l_draw
+anm_show_g                               = g36l_draw_g, idle_grenade_g36l
+anm_show_w_gl                            = g36k_draw_w_gl, idle_w_gl_g36l
+anm_switch                               = g36l_switch_off, switch_off_g36l
+anm_switch_g                             = g36l_switch_on, switch_on_g36l
+
+;-G36L "F34R" (ACOG)-----------------------------------------------------------------------------------------------
+[wpn_g36_nimble_acog]:wpn_g36_nimble
+1icon_layer                              = acog
+1icon_layer_x                            = 102
+1icon_layer_y                            = -16
+
+inv_weight                               = 3.35
+
+hud                                      = wpn_g36_nimble_acog_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_nimble_acog.ogf
+
+scope_zoom_factor                        = 20
+zoom_rotate_time                         = 0.25
+use_alt_aim_hud					= true
+
+[wpn_g36_nimble_acog_hud]:wpn_g36_nimble_hud,hud_low_interia
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_nimble_acog_hud.ogf
+
+aim_hud_offset_pos                       = -0.0843, 0.0023, -0.02
+aim_hud_offset_pos_16x9                  = -0.0843, 0.0023, -0.02
+aim_hud_offset_rot                       = 0.0095, -0.0146, 0
+aim_hud_offset_rot_16x9                  = 0.0095, -0.0146, 0
+
+aim_hud_offset_alt_pos                       = -0.0882, 0.027, 0.01
+aim_hud_offset_alt_pos_16x9                  = -0.0882, 0.027, 0.01
+aim_hud_offset_alt_rot                       = 0.0007, 0.0005, 0
+aim_hud_offset_alt_rot_16x9                  = 0.0007, 0.0005, 0
+
+;-G36L "F34R" (EOT)-----------------------------------------------------------------------------------------------
+[wpn_g36_nimble_eot]:wpn_g36_nimble
+1icon_layer                              = eot
+1icon_layer_x                            = 102
+1icon_layer_y                            = -13
+
+inv_weight                               = 3.3
+
+hud                                      = wpn_g36_nimble_eot_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_nimble_eot.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36_nimble_eot_hud]:wpn_g36_nimble_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_nimble_eot_hud.ogf
+
+aim_hud_offset_pos                       = -0.0884, -0.0095, -0.06
+aim_hud_offset_pos_16x9                  = -0.0884, -0.0095, -0.06
+
+;-G36L "F34R" (BARSKA)-----------------------------------------------------------------------------------------------
+[wpn_g36_nimble_ac10632]:wpn_g36_nimble
+1icon_layer                              = ac10632
+1icon_layer_x                            = 102
+1icon_layer_y                            = -16
+
+inv_weight                               = 3.12
+
+hud                                      = wpn_g36_nimble_ac10632_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_nimble_ac10632.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36_nimble_ac10632_hud]:wpn_g36_nimble_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_nimble_ac10632_hud.ogf
+
+aim_hud_offset_pos                       = -0.0883, -0.006, -0.08
+aim_hud_offset_pos_16x9                  = -0.0883, -0.006, -0.08
+aim_hud_offset_rot                       = -0.002, 0.0021, 0
+aim_hud_offset_rot_16x9                  = -0.002, 0.0021, 0
+
+;-G36L "F34R" (CMORE)-----------------------------------------------------------------------------------------------
+[wpn_g36_nimble_c-more]:wpn_g36_nimble
+1icon_layer                              = c-more
+1icon_layer_x                            = 78
+1icon_layer_y                            = -10
+
+inv_weight                               = 3.3
+
+hud                                      = wpn_g36_nimble_c-more_hud
+visual                                   = dynamics\weapons\wpn_g36\wpn_g36_nimble_c-more.ogf
+
+zoom_rotate_time                         = 0.25
+
+[wpn_g36_nimble_c-more_hud]:wpn_g36_nimble_hud
+item_visual                              = anomaly_weapons\wpn_g36\wpn_g36_nimble_c-more_hud.ogf
+
+aim_hud_offset_pos                       = -0.0886, 0.0014, -0.08
+aim_hud_offset_pos_16x9                  = -0.0886, 0.0014, -0.08
