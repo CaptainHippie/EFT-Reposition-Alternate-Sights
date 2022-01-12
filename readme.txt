@@ -1,4 +1,4 @@
-=== EFT REPOSITION UPDATED 1.8 ===
+=== EFT REPOSITION UPDATED 1.9 ===
 
 Installation :
 Important Note : use Mod organizer 2 using this MO2 guide. Don't mess up your game with JSGME or manual installation and come complaining to mod authors
@@ -12,12 +12,13 @@ You have to follow this precise load order below and install any other weapon ad
 5. Install adjustable scope view for the sights to scale properly. This just be installed only after the reanim because it makes sure the fov script is upto date
 6. Apply patch folder 02. EFT repos + Blindsides reanim (must) and after, optionally you can add 02. EFT repos + Blindsides reanim(vanilla stats) if you want to keep vanilla weapon attributes with just the animation changes(I personally prefer vanilla stats)
 7. Install Blindsides JSRS patch from moddb
-8. Install Boomsticks and Sharpsticks from moddb(must be 28-Nov-2021 version or it will crash!) and must use the 04 Dec patch(link) if you haven't already. 
+8. Install Boomsticks and Sharpsticks from moddb(must be 28-Nov-2021 version or it will crash!) and must use the 28 Dec patch if you haven't already. 
 9. Must apply BaS patch folder 03. Patch Boomsticks and Sharpsticks
 10. After that apply BaS JSRS patch 04. Patch BaS + JSRS if you have JSRS installed and if you want bas guns to use jsrs sounds instead
 11. Optional but highly recommended, install Firemode switcher sound because its better and I commented out the ones from BaS12. Optional individual weapon mods like G36 pack, Saiga replacer, SVD replacer, Abakan replacer,  must only be installed after all this
 
 Changelog:
+1.9 - Updated to Dec-28 BaS patch
 1.8 - Updated to December 07 BaS patch, added back laser altenate sight(which follows the same basic logic for canted sights)
 1.7 - Updated to December 04 BaS patch
 1.6 - Updated to BaS latest release(Nov 28), balanced the pka(pip scope) sights on all weapons
