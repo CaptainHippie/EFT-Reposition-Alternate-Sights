@@ -1,4 +1,4 @@
-=== EFT REPOSITION UPDATED 1.9 ===
+=== EFT REPOSITION UPDATED 2.0 ===
 
 Installation :
 Important Note : use Mod organizer 2 using this MO2 guide. Don't mess up your game with JSGME or manual installation and come complaining to mod authors
@@ -15,9 +15,12 @@ You have to follow this precise load order below and install any other weapon ad
 8. Install Boomsticks and Sharpsticks from moddb(must be 28-Nov-2021 version or it will crash!) and must use the 28 Dec patch if you haven't already. 
 9. Must apply BaS patch folder 03. Patch Boomsticks and Sharpsticks
 10. After that apply BaS JSRS patch 04. Patch BaS + JSRS if you have JSRS installed and if you want bas guns to use jsrs sounds instead
-11. Optional but highly recommended, install Firemode switcher sound because its better and I commented out the ones from BaS12. Optional individual weapon mods like G36 pack, Saiga replacer, SVD replacer, Abakan replacer,  must only be installed after all this
+11. Optional patch for people using BaS and BWRR audio handling pack, use only if you have the addon along with BaS and BWRR installed. Apply main folder 00 and the other two if you prefer
+12. Optional but highly recommended, install Firemode switcher sound because its better and I commented out the ones from BaS12. Optional individual weapon mods like G36 pack, Saiga replacer, SVD replacer, Abakan replacer,  must only be installed after all this
 
 Changelog:
+2.0 - Added an optional patch for BaS and BWRR audio handling pack, updated instructions and load order image
+1.9 hotfix - updated load order image because I didn't want to mislead anyone
 1.9 - Updated to Dec-28 BaS patch
 1.8 - Updated to December 07 BaS patch, added back laser altenate sight(which follows the same basic logic for canted sights)
 1.7 - Updated to December 04 BaS patch
