@@ -1,4 +1,4 @@
-=== EFT REPOSITION UPDATED 2.0 ===
+=== EFT REPOSITION UPDATED 2.1 ===
 
 Installation :
 Important Note : use Mod organizer 2 using this MO2 guide. Don't mess up your game with JSGME or manual installation and come complaining to mod authors
@@ -19,6 +19,7 @@ You have to follow this precise load order below and install any other weapon ad
 12. Optional but highly recommended, install Firemode switcher sound because its better and I commented out the ones from BaS12. Optional individual weapon mods like G36 pack, Saiga replacer, SVD replacer, Abakan replacer,  must only be installed after all this
 
 Changelog:
+2.1 - some small changes to keep up with changes made in adjustable scopes addon
 2.0 - Added an optional patch for BaS and BWRR audio handling pack, updated instructions and load order image
 1.9 hotfix - updated load order image because I didn't want to mislead anyone
 1.9 - Updated to Dec-28 BaS patch
