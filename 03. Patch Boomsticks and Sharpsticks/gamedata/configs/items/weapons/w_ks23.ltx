@@ -37,13 +37,13 @@ inv_grid_y         = 0
         
         hud                         = wpn_ks23_hud
         visual                      = dynamics\weapons\wpn_ks23\wpn_ks23_world.ogf
-        position                    = -0.064, 0.070, -0.160
-        orientation                 = 0, 0.080, 0
-        fire_point                  = 0, 0.0, 0.647
+        position                    = -0.064, 0.110, -0.140		; -0.064, 0.070, -0.160
+        orientation                 = 1.8, -5, 0			; 0, 0.080, 0
+        fire_point                  = 0.050, -0.030, 0.780		; 0, 0.0, 0.647
         fire_point2                 = 0, 0.158, 0.647
         strap_bone0                 = bip01_spine2
         strap_bone1                 = bip01_spine1
-        strap_position              = -0.26, -0.10, 0.05
+        strap_position              = -0.14, -0.10, 0.05		; -0.26, -0.10, 0.05
         strap_orientation           = -15, -9, 110
         ph_mass                     = 3
         
@@ -236,7 +236,10 @@ inv_weight                                         = 3.530
         hit_impulse                 = 57
         hit_power                   = 0.48, 0.48, 0.48, 0.48
 
-visual                                             = dynamics\weapons\wpn_ks23\wpn_ks23_up_world.ogf
+	visual                      = dynamics\weapons\wpn_ks23\wpn_ks23_up_world.ogf
+        position                    = -0.064, 0.110, -0.140
+        orientation                 = 1.8, -5, 0
+        fire_point                  = 0.050, -0.028, 0.660
 
         cam_dispersion              = 9.4
 		cam_dispersion_inc          = 10.2
@@ -281,6 +284,9 @@ cost                                     = 38950
 hud                                      = wpn_ks23_kaban_hud
 
 visual                                   = dynamics\weapons\wpn_ks23\wpn_ks23_kaban_world.ogf
+        position                    = -0.064, 0.110, -0.140
+        orientation                 = 1.8, -5, 0
+        fire_point                  = 0.050, -0.028, 0.660
 
 		scope_zoom_factor_alt             = 0
 
@@ -321,7 +327,9 @@ inv_weight                                         = 3.600
 
 parent_section                           = wpn_ks23_kaban_kab_up
 
-visual                                             = dynamics\weapons\wpn_ks23\wpn_ks23_kaban_up_world.ogf
+visual                                   = dynamics\weapons\wpn_ks23\wpn_ks23_kaban_up_world.ogf
+position                    		 = -0.064, 0.110, -0.140
+orientation                 		 = 1.8, -5, 0
 
 silencer_name                            = wpn_sil_hex23
 silencer_status                          = 2

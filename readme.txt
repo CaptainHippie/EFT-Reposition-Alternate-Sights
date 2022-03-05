@@ -1,4 +1,4 @@
-=== EFT REPOSITION UPDATED 2.1 ===
+=== EFT REPOSITION UPDATED 2.2 ===
 
 Installation :
 Important Note : use Mod organizer 2 using this MO2 guide. Don't mess up your game with JSGME or manual installation and come complaining to mod authors
@@ -19,6 +19,7 @@ You have to follow this precise load order below and install any other weapon ad
 12. Optional but highly recommended, install Firemode switcher sound because its better and I commented out the ones from BaS12. Optional individual weapon mods like G36 pack, Saiga replacer, SVD replacer, Abakan replacer,  must only be installed after all this
 
 Changelog:
+2.2 - Merged in 3rd person weapon reposition fixes from Crimsonvirus, huge thanks to him. Fixed AS Val misalignment, fixed the blue Lebedev PL15 pistol and PP2000 lowered positions
 2.1 - some small changes to keep up with changes made in adjustable scopes addon
 2.0 - Added an optional patch for BaS and BWRR audio handling pack, updated instructions and load order image
 1.9 hotfix - updated load order image because I didn't want to mislead anyone
@@ -36,5 +37,6 @@ v1.1 - readjusted sights for all weapons, updated to the latest blindsides reani
 Credits :
 Apathy knight for original EFT reposition mod which is now integrated with my fixes
 Some of the previous authors for the general idea
+Crimsonvirus for his 3rd person reposition fixes
 Cr3pis for the screenshots
 SD and Maid for help with testing and stuff
